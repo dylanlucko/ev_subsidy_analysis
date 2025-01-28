@@ -1,0 +1,709 @@
+"","County","State","Year","Income_per_Capita","Unit","Multiplier"
+"1","Alamosa","CO",2013,31054,"Dollars",0
+"2","Alamosa","CO",2014,32457,"Dollars",0
+"3","Alamosa","CO",2015,34224,"Dollars",0
+"4","Alamosa","CO",2004,24335,"Dollars",0
+"5","Alamosa","CO",2005,25409,"Dollars",0
+"6","Alamosa","CO",2006,25976,"Dollars",0
+"7","Alamosa","CO",2007,27561,"Dollars",0
+"8","Alamosa","CO",2008,29061,"Dollars",0
+"9","Alamosa","CO",2009,29036,"Dollars",0
+"10","Alamosa","CO",2010,28891,"Dollars",0
+"11","Alamosa","CO",2011,30315,"Dollars",0
+"12","Alamosa","CO",2012,30402,"Dollars",0
+"13","Arapahoe","CO",2013,49269,"Dollars",0
+"14","Arapahoe","CO",2014,52522,"Dollars",0
+"15","Arapahoe","CO",2015,54025,"Dollars",0
+"16","Arapahoe","CO",2004,40522,"Dollars",0
+"17","Arapahoe","CO",2005,41382,"Dollars",0
+"18","Arapahoe","CO",2006,44482,"Dollars",0
+"19","Arapahoe","CO",2007,45922,"Dollars",0
+"20","Arapahoe","CO",2008,45544,"Dollars",0
+"21","Arapahoe","CO",2009,42227,"Dollars",0
+"22","Arapahoe","CO",2010,43121,"Dollars",0
+"23","Arapahoe","CO",2011,48044,"Dollars",0
+"24","Arapahoe","CO",2012,49325,"Dollars",0
+"25","Archuleta","CO",2013,34678,"Dollars",0
+"26","Archuleta","CO",2014,38177,"Dollars",0
+"27","Archuleta","CO",2015,40281,"Dollars",0
+"28","Archuleta","CO",2004,24565,"Dollars",0
+"29","Archuleta","CO",2005,26549,"Dollars",0
+"30","Archuleta","CO",2006,29026,"Dollars",0
+"31","Archuleta","CO",2007,30542,"Dollars",0
+"32","Archuleta","CO",2008,32015,"Dollars",0
+"33","Archuleta","CO",2009,30502,"Dollars",0
+"34","Archuleta","CO",2010,30535,"Dollars",0
+"35","Archuleta","CO",2011,33096,"Dollars",0
+"36","Archuleta","CO",2012,33605,"Dollars",0
+"37","Baca","CO",2004,26459,"Dollars",0
+"38","Baca","CO",2005,28703,"Dollars",0
+"39","Baca","CO",2006,24523,"Dollars",0
+"40","Baca","CO",2007,30653,"Dollars",0
+"41","Baca","CO",2008,33024,"Dollars",0
+"42","Baca","CO",2009,37160,"Dollars",0
+"43","Baca","CO",2010,38398,"Dollars",0
+"44","Baca","CO",2011,42719,"Dollars",0
+"45","Baca","CO",2012,35737,"Dollars",0
+"46","Baca","CO",2013,43032,"Dollars",0
+"47","Baca","CO",2014,37647,"Dollars",0
+"48","Baca","CO",2015,37796,"Dollars",0
+"49","Bent","CO",2010,21723,"Dollars",0
+"50","Bent","CO",2009,22212,"Dollars",0
+"51","Bent","CO",2008,23725,"Dollars",0
+"52","Bent","CO",2007,23759,"Dollars",0
+"53","Bent","CO",2006,20881,"Dollars",0
+"54","Bent","CO",2005,21585,"Dollars",0
+"55","Bent","CO",2004,20791,"Dollars",0
+"56","Bent","CO",2015,24592,"Dollars",0
+"57","Bent","CO",2014,24060,"Dollars",0
+"58","Bent","CO",2013,23303,"Dollars",0
+"59","Bent","CO",2012,23159,"Dollars",0
+"60","Bent","CO",2011,22420,"Dollars",0
+"61","Chaffee","CO",2014,38969,"Dollars",0
+"62","Chaffee","CO",2013,35498,"Dollars",0
+"63","Chaffee","CO",2012,34096,"Dollars",0
+"64","Chaffee","CO",2011,33213,"Dollars",0
+"65","Chaffee","CO",2010,31087,"Dollars",0
+"66","Chaffee","CO",2009,30722,"Dollars",0
+"67","Chaffee","CO",2008,30690,"Dollars",0
+"68","Chaffee","CO",2007,29831,"Dollars",0
+"69","Chaffee","CO",2006,28024,"Dollars",0
+"70","Chaffee","CO",2005,26090,"Dollars",0
+"71","Chaffee","CO",2004,24765,"Dollars",0
+"72","Chaffee","CO",2015,41366,"Dollars",0
+"73","Cheyenne","CO",2013,58323,"Dollars",0
+"74","Cheyenne","CO",2014,52174,"Dollars",0
+"75","Cheyenne","CO",2015,44380,"Dollars",0
+"76","Cheyenne","CO",2004,33320,"Dollars",0
+"77","Cheyenne","CO",2005,35214,"Dollars",0
+"78","Cheyenne","CO",2006,31770,"Dollars",0
+"79","Cheyenne","CO",2007,47210,"Dollars",0
+"80","Cheyenne","CO",2008,41330,"Dollars",0
+"81","Cheyenne","CO",2009,48243,"Dollars",0
+"82","Cheyenne","CO",2010,54465,"Dollars",0
+"83","Cheyenne","CO",2011,58302,"Dollars",0
+"84","Cheyenne","CO",2012,50785,"Dollars",0
+"85","Clear Creek","CO",2013,51306,"Dollars",0
+"86","Clear Creek","CO",2014,52494,"Dollars",0
+"87","Clear Creek","CO",2015,55716,"Dollars",0
+"88","Clear Creek","CO",2004,43732,"Dollars",0
+"89","Clear Creek","CO",2005,45166,"Dollars",0
+"90","Clear Creek","CO",2006,46824,"Dollars",0
+"91","Clear Creek","CO",2007,45088,"Dollars",0
+"92","Clear Creek","CO",2008,46985,"Dollars",0
+"93","Clear Creek","CO",2009,45334,"Dollars",0
+"94","Clear Creek","CO",2010,44975,"Dollars",0
+"95","Clear Creek","CO",2011,47433,"Dollars",0
+"96","Clear Creek","CO",2012,48971,"Dollars",0
+"97","Conejos","CO",2004,20047,"Dollars",0
+"98","Conejos","CO",2005,20499,"Dollars",0
+"99","Conejos","CO",2006,21089,"Dollars",0
+"100","Conejos","CO",2007,22203,"Dollars",0
+"101","Conejos","CO",2008,23573,"Dollars",0
+"102","Conejos","CO",2009,24538,"Dollars",0
+"103","Conejos","CO",2010,24436,"Dollars",0
+"104","Conejos","CO",2011,26530,"Dollars",0
+"105","Conejos","CO",2012,27123,"Dollars",0
+"106","Conejos","CO",2013,28016,"Dollars",0
+"107","Conejos","CO",2014,29823,"Dollars",0
+"108","Conejos","CO",2015,33489,"Dollars",0
+"109","Costilla","CO",2004,20120,"Dollars",0
+"110","Costilla","CO",2005,21518,"Dollars",0
+"111","Costilla","CO",2006,22300,"Dollars",0
+"112","Costilla","CO",2007,23355,"Dollars",0
+"113","Costilla","CO",2008,23826,"Dollars",0
+"114","Costilla","CO",2009,25349,"Dollars",0
+"115","Costilla","CO",2010,24832,"Dollars",0
+"116","Costilla","CO",2011,27295,"Dollars",0
+"117","Costilla","CO",2012,26938,"Dollars",0
+"118","Costilla","CO",2013,28520,"Dollars",0
+"119","Costilla","CO",2014,29465,"Dollars",0
+"120","Costilla","CO",2015,32481,"Dollars",0
+"121","Crowley","CO",2004,15091,"Dollars",0
+"122","Crowley","CO",2005,16919,"Dollars",0
+"123","Crowley","CO",2006,16157,"Dollars",0
+"124","Crowley","CO",2007,16503,"Dollars",0
+"125","Crowley","CO",2008,17460,"Dollars",0
+"126","Crowley","CO",2009,16627,"Dollars",0
+"127","Crowley","CO",2010,16262,"Dollars",0
+"128","Crowley","CO",2011,16191,"Dollars",0
+"129","Crowley","CO",2012,17424,"Dollars",0
+"130","Crowley","CO",2013,18160,"Dollars",0
+"131","Crowley","CO",2014,18082,"Dollars",0
+"132","Crowley","CO",2015,20930,"Dollars",0
+"133","Custer","CO",2013,37699,"Dollars",0
+"134","Custer","CO",2014,40880,"Dollars",0
+"135","Custer","CO",2015,43302,"Dollars",0
+"136","Custer","CO",2004,28377,"Dollars",0
+"137","Custer","CO",2005,27486,"Dollars",0
+"138","Custer","CO",2006,29122,"Dollars",0
+"139","Custer","CO",2007,30833,"Dollars",0
+"140","Custer","CO",2008,32928,"Dollars",0
+"141","Custer","CO",2009,33113,"Dollars",0
+"142","Custer","CO",2010,31163,"Dollars",0
+"143","Custer","CO",2011,35508,"Dollars",0
+"144","Custer","CO",2012,34556,"Dollars",0
+"145","Delta","CO",2013,31267,"Dollars",0
+"146","Delta","CO",2014,32636,"Dollars",0
+"147","Delta","CO",2015,33584,"Dollars",0
+"148","Delta","CO",2004,23343,"Dollars",0
+"149","Delta","CO",2005,24844,"Dollars",0
+"150","Delta","CO",2006,26378,"Dollars",0
+"151","Delta","CO",2007,29098,"Dollars",0
+"152","Delta","CO",2008,29291,"Dollars",0
+"153","Delta","CO",2009,28425,"Dollars",0
+"154","Delta","CO",2010,28430,"Dollars",0
+"155","Delta","CO",2011,30811,"Dollars",0
+"156","Delta","CO",2012,31102,"Dollars",0
+"157","Denver","CO",2004,41506,"Dollars",0
+"158","Denver","CO",2005,45769,"Dollars",0
+"159","Denver","CO",2006,49967,"Dollars",0
+"160","Denver","CO",2007,51386,"Dollars",0
+"161","Denver","CO",2008,53724,"Dollars",0
+"162","Denver","CO",2009,46123,"Dollars",0
+"163","Denver","CO",2010,47939,"Dollars",0
+"164","Denver","CO",2011,53542,"Dollars",0
+"165","Denver","CO",2012,56928,"Dollars",0
+"166","Denver","CO",2013,62142,"Dollars",0
+"167","Denver","CO",2014,68252,"Dollars",0
+"168","Denver","CO",2015,67395,"Dollars",0
+"169","Dolores","CO",2013,30958,"Dollars",0
+"170","Dolores","CO",2014,32026,"Dollars",0
+"171","Dolores","CO",2015,34304,"Dollars",0
+"172","Dolores","CO",2004,21079,"Dollars",0
+"173","Dolores","CO",2005,22717,"Dollars",0
+"174","Dolores","CO",2006,22470,"Dollars",0
+"175","Dolores","CO",2007,25242,"Dollars",0
+"176","Dolores","CO",2008,23367,"Dollars",0
+"177","Dolores","CO",2009,25182,"Dollars",0
+"178","Dolores","CO",2010,24871,"Dollars",0
+"179","Dolores","CO",2011,30310,"Dollars",0
+"180","Dolores","CO",2012,29529,"Dollars",0
+"181","Douglas","CO",2004,41413,"Dollars",0
+"182","Douglas","CO",2005,46470,"Dollars",0
+"183","Douglas","CO",2006,51028,"Dollars",0
+"184","Douglas","CO",2007,54689,"Dollars",0
+"185","Douglas","CO",2008,56529,"Dollars",0
+"186","Douglas","CO",2009,55378,"Dollars",0
+"187","Douglas","CO",2010,54316,"Dollars",0
+"188","Douglas","CO",2011,57523,"Dollars",0
+"189","Douglas","CO",2012,61160,"Dollars",0
+"190","Douglas","CO",2013,63218,"Dollars",0
+"191","Douglas","CO",2014,66509,"Dollars",0
+"192","Douglas","CO",2015,61451,"Dollars",0
+"193","Eagle","CO",2013,55781,"Dollars",0
+"194","Eagle","CO",2014,59998,"Dollars",0
+"195","Eagle","CO",2015,65425,"Dollars",0
+"196","Eagle","CO",2004,44552,"Dollars",0
+"197","Eagle","CO",2005,48482,"Dollars",0
+"198","Eagle","CO",2006,55181,"Dollars",0
+"199","Eagle","CO",2007,60622,"Dollars",0
+"200","Eagle","CO",2008,56729,"Dollars",0
+"201","Eagle","CO",2009,48617,"Dollars",0
+"202","Eagle","CO",2010,43781,"Dollars",0
+"203","Eagle","CO",2011,46392,"Dollars",0
+"204","Eagle","CO",2012,47577,"Dollars",0
+"205","Elbert","CO",2013,47758,"Dollars",0
+"206","Elbert","CO",2014,50141,"Dollars",0
+"207","Elbert","CO",2015,52011,"Dollars",0
+"208","Elbert","CO",2004,34989,"Dollars",0
+"209","Elbert","CO",2005,36645,"Dollars",0
+"210","Elbert","CO",2006,37341,"Dollars",0
+"211","Elbert","CO",2007,40282,"Dollars",0
+"212","Elbert","CO",2008,42293,"Dollars",0
+"213","Elbert","CO",2009,41876,"Dollars",0
+"214","Elbert","CO",2010,39126,"Dollars",0
+"215","Elbert","CO",2011,48200,"Dollars",0
+"216","Elbert","CO",2012,44851,"Dollars",0
+"217","El Paso","CO",2013,40905,"Dollars",0
+"218","El Paso","CO",2014,42776,"Dollars",0
+"219","El Paso","CO",2015,44157,"Dollars",0
+"220","El Paso","CO",2004,32864,"Dollars",0
+"221","El Paso","CO",2005,34356,"Dollars",0
+"222","El Paso","CO",2006,35414,"Dollars",0
+"223","El Paso","CO",2007,36994,"Dollars",0
+"224","El Paso","CO",2008,37893,"Dollars",0
+"225","El Paso","CO",2009,37780,"Dollars",0
+"226","El Paso","CO",2010,38311,"Dollars",0
+"227","El Paso","CO",2011,40242,"Dollars",0
+"228","El Paso","CO",2012,41099,"Dollars",0
+"229","Fremont","CO",2013,27965,"Dollars",0
+"230","Fremont","CO",2014,29310,"Dollars",0
+"231","Fremont","CO",2015,30754,"Dollars",0
+"232","Fremont","CO",2004,21325,"Dollars",0
+"233","Fremont","CO",2005,21754,"Dollars",0
+"234","Fremont","CO",2006,22408,"Dollars",0
+"235","Fremont","CO",2007,23667,"Dollars",0
+"236","Fremont","CO",2008,25075,"Dollars",0
+"237","Fremont","CO",2009,25327,"Dollars",0
+"238","Fremont","CO",2010,25915,"Dollars",0
+"239","Fremont","CO",2011,27057,"Dollars",0
+"240","Fremont","CO",2012,27208,"Dollars",0
+"241","Garfield","CO",2013,44257,"Dollars",0
+"242","Garfield","CO",2014,49383,"Dollars",0
+"243","Garfield","CO",2015,54316,"Dollars",0
+"244","Garfield","CO",2004,33259,"Dollars",0
+"245","Garfield","CO",2005,36351,"Dollars",0
+"246","Garfield","CO",2006,40351,"Dollars",0
+"247","Garfield","CO",2007,43418,"Dollars",0
+"248","Garfield","CO",2008,45065,"Dollars",0
+"249","Garfield","CO",2009,41090,"Dollars",0
+"250","Garfield","CO",2010,37582,"Dollars",0
+"251","Garfield","CO",2011,40133,"Dollars",0
+"252","Garfield","CO",2012,41972,"Dollars",0
+"253","Gilpin","CO",2013,43002,"Dollars",0
+"254","Gilpin","CO",2014,43111,"Dollars",0
+"255","Gilpin","CO",2015,45889,"Dollars",0
+"256","Gilpin","CO",2004,39476,"Dollars",0
+"257","Gilpin","CO",2005,48428,"Dollars",0
+"258","Gilpin","CO",2006,47102,"Dollars",0
+"259","Gilpin","CO",2007,42908,"Dollars",0
+"260","Gilpin","CO",2008,41390,"Dollars",0
+"261","Gilpin","CO",2009,37400,"Dollars",0
+"262","Gilpin","CO",2010,36650,"Dollars",0
+"263","Gilpin","CO",2011,36666,"Dollars",0
+"264","Gilpin","CO",2012,37323,"Dollars",0
+"265","Grand","CO",2004,30581,"Dollars",0
+"266","Grand","CO",2005,31497,"Dollars",0
+"267","Grand","CO",2006,32607,"Dollars",0
+"268","Grand","CO",2007,34157,"Dollars",0
+"269","Grand","CO",2008,33991,"Dollars",0
+"270","Grand","CO",2009,31559,"Dollars",0
+"271","Grand","CO",2010,30937,"Dollars",0
+"272","Grand","CO",2011,34564,"Dollars",0
+"273","Grand","CO",2012,37115,"Dollars",0
+"274","Grand","CO",2013,42079,"Dollars",0
+"275","Grand","CO",2014,43168,"Dollars",0
+"276","Grand","CO",2015,46226,"Dollars",0
+"277","Gunnison","CO",2004,29292,"Dollars",0
+"278","Gunnison","CO",2015,42531,"Dollars",0
+"279","Gunnison","CO",2014,40782,"Dollars",0
+"280","Gunnison","CO",2013,38158,"Dollars",0
+"281","Gunnison","CO",2012,36371,"Dollars",0
+"282","Gunnison","CO",2011,37210,"Dollars",0
+"283","Gunnison","CO",2010,34097,"Dollars",0
+"284","Gunnison","CO",2009,35153,"Dollars",0
+"285","Gunnison","CO",2008,36545,"Dollars",0
+"286","Gunnison","CO",2007,35226,"Dollars",0
+"287","Gunnison","CO",2006,33576,"Dollars",0
+"288","Gunnison","CO",2005,31177,"Dollars",0
+"289","Hinsdale","CO",2013,39175,"Dollars",0
+"290","Hinsdale","CO",2014,42366,"Dollars",0
+"291","Hinsdale","CO",2015,44615,"Dollars",0
+"292","Hinsdale","CO",2004,26351,"Dollars",0
+"293","Hinsdale","CO",2005,29582,"Dollars",0
+"294","Hinsdale","CO",2006,28147,"Dollars",0
+"295","Hinsdale","CO",2007,29125,"Dollars",0
+"296","Hinsdale","CO",2008,33707,"Dollars",0
+"297","Hinsdale","CO",2009,35321,"Dollars",0
+"298","Hinsdale","CO",2010,35750,"Dollars",0
+"299","Hinsdale","CO",2011,41757,"Dollars",0
+"300","Hinsdale","CO",2012,38945,"Dollars",0
+"301","Huerfano","CO",2005,23071,"Dollars",0
+"302","Huerfano","CO",2004,22087,"Dollars",0
+"303","Huerfano","CO",2015,36764,"Dollars",0
+"304","Huerfano","CO",2014,35288,"Dollars",0
+"305","Huerfano","CO",2013,33513,"Dollars",0
+"306","Huerfano","CO",2012,32754,"Dollars",0
+"307","Huerfano","CO",2011,31328,"Dollars",0
+"308","Huerfano","CO",2010,29856,"Dollars",0
+"309","Huerfano","CO",2009,29127,"Dollars",0
+"310","Huerfano","CO",2008,28406,"Dollars",0
+"311","Huerfano","CO",2007,27404,"Dollars",0
+"312","Huerfano","CO",2006,25131,"Dollars",0
+"313","Jackson","CO",2013,40139,"Dollars",0
+"314","Jackson","CO",2014,42528,"Dollars",0
+"315","Jackson","CO",2015,48264,"Dollars",0
+"316","Jackson","CO",2004,26633,"Dollars",0
+"317","Jackson","CO",2005,30777,"Dollars",0
+"318","Jackson","CO",2006,32823,"Dollars",0
+"319","Jackson","CO",2007,34803,"Dollars",0
+"320","Jackson","CO",2008,34425,"Dollars",0
+"321","Jackson","CO",2009,35667,"Dollars",0
+"322","Jackson","CO",2010,37634,"Dollars",0
+"323","Jackson","CO",2011,40283,"Dollars",0
+"324","Jackson","CO",2012,35513,"Dollars",0
+"325","Kiowa","CO",2004,29638,"Dollars",0
+"326","Kiowa","CO",2005,30744,"Dollars",0
+"327","Kiowa","CO",2006,26773,"Dollars",0
+"328","Kiowa","CO",2007,43500,"Dollars",0
+"329","Kiowa","CO",2008,37221,"Dollars",0
+"330","Kiowa","CO",2009,39213,"Dollars",0
+"331","Kiowa","CO",2010,43547,"Dollars",0
+"332","Kiowa","CO",2011,49778,"Dollars",0
+"333","Kiowa","CO",2012,50475,"Dollars",0
+"334","Kiowa","CO",2013,66017,"Dollars",0
+"335","Kiowa","CO",2014,55418,"Dollars",0
+"336","Kiowa","CO",2015,45816,"Dollars",0
+"337","Kit Carson","CO",2013,35160,"Dollars",0
+"338","Kit Carson","CO",2014,35889,"Dollars",0
+"339","Kit Carson","CO",2015,34622,"Dollars",0
+"340","Kit Carson","CO",2004,26215,"Dollars",0
+"341","Kit Carson","CO",2005,27655,"Dollars",0
+"342","Kit Carson","CO",2006,24948,"Dollars",0
+"343","Kit Carson","CO",2007,30633,"Dollars",0
+"344","Kit Carson","CO",2008,31865,"Dollars",0
+"345","Kit Carson","CO",2009,30575,"Dollars",0
+"346","Kit Carson","CO",2010,34558,"Dollars",0
+"347","Kit Carson","CO",2011,35517,"Dollars",0
+"348","Kit Carson","CO",2012,35140,"Dollars",0
+"349","Lake","CO",2013,30430,"Dollars",0
+"350","Lake","CO",2014,31917,"Dollars",0
+"351","Lake","CO",2015,33397,"Dollars",0
+"352","Lake","CO",2004,23911,"Dollars",0
+"353","Lake","CO",2005,25063,"Dollars",0
+"354","Lake","CO",2006,26790,"Dollars",0
+"355","Lake","CO",2007,27548,"Dollars",0
+"356","Lake","CO",2008,29399,"Dollars",0
+"357","Lake","CO",2009,27630,"Dollars",0
+"358","Lake","CO",2010,27188,"Dollars",0
+"359","Lake","CO",2011,29354,"Dollars",0
+"360","Lake","CO",2012,29312,"Dollars",0
+"361","La Plata","CO",2013,51182,"Dollars",0
+"362","La Plata","CO",2014,53478,"Dollars",0
+"363","La Plata","CO",2015,53757,"Dollars",0
+"364","La Plata","CO",2004,33660,"Dollars",0
+"365","La Plata","CO",2005,35879,"Dollars",0
+"366","La Plata","CO",2006,38635,"Dollars",0
+"367","La Plata","CO",2007,41205,"Dollars",0
+"368","La Plata","CO",2008,44857,"Dollars",0
+"369","La Plata","CO",2009,42169,"Dollars",0
+"370","La Plata","CO",2010,42040,"Dollars",0
+"371","La Plata","CO",2011,43370,"Dollars",0
+"372","La Plata","CO",2012,45631,"Dollars",0
+"373","Larimer","CO",2004,32719,"Dollars",0
+"374","Larimer","CO",2005,33972,"Dollars",0
+"375","Larimer","CO",2006,35739,"Dollars",0
+"376","Larimer","CO",2007,37666,"Dollars",0
+"377","Larimer","CO",2008,38301,"Dollars",0
+"378","Larimer","CO",2009,37027,"Dollars",0
+"379","Larimer","CO",2010,37474,"Dollars",0
+"380","Larimer","CO",2011,39109,"Dollars",0
+"381","Larimer","CO",2012,40768,"Dollars",0
+"382","Larimer","CO",2013,42294,"Dollars",0
+"383","Larimer","CO",2014,44658,"Dollars",0
+"384","Larimer","CO",2015,46451,"Dollars",0
+"385","Las Animas","CO",2013,33043,"Dollars",0
+"386","Las Animas","CO",2014,35277,"Dollars",0
+"387","Las Animas","CO",2015,34653,"Dollars",0
+"388","Las Animas","CO",2004,24566,"Dollars",0
+"389","Las Animas","CO",2005,25952,"Dollars",0
+"390","Las Animas","CO",2006,27595,"Dollars",0
+"391","Las Animas","CO",2007,28778,"Dollars",0
+"392","Las Animas","CO",2008,29675,"Dollars",0
+"393","Las Animas","CO",2009,27613,"Dollars",0
+"394","Las Animas","CO",2010,28371,"Dollars",0
+"395","Las Animas","CO",2011,30014,"Dollars",0
+"396","Las Animas","CO",2012,30998,"Dollars",0
+"397","Lincoln","CO",2013,25521,"Dollars",0
+"398","Lincoln","CO",2014,28520,"Dollars",0
+"399","Lincoln","CO",2015,27766,"Dollars",0
+"400","Lincoln","CO",2004,21330,"Dollars",0
+"401","Lincoln","CO",2005,22116,"Dollars",0
+"402","Lincoln","CO",2006,21605,"Dollars",0
+"403","Lincoln","CO",2007,25519,"Dollars",0
+"404","Lincoln","CO",2008,25099,"Dollars",0
+"405","Lincoln","CO",2009,26549,"Dollars",0
+"406","Lincoln","CO",2010,26346,"Dollars",0
+"407","Lincoln","CO",2011,27583,"Dollars",0
+"408","Lincoln","CO",2012,26765,"Dollars",0
+"409","Logan","CO",2013,44567,"Dollars",0
+"410","Logan","CO",2014,46331,"Dollars",0
+"411","Logan","CO",2015,47973,"Dollars",0
+"412","Logan","CO",2004,26109,"Dollars",0
+"413","Logan","CO",2005,27583,"Dollars",0
+"414","Logan","CO",2006,29413,"Dollars",0
+"415","Logan","CO",2007,33330,"Dollars",0
+"416","Logan","CO",2008,37120,"Dollars",0
+"417","Logan","CO",2009,33843,"Dollars",0
+"418","Logan","CO",2010,34314,"Dollars",0
+"419","Logan","CO",2011,39143,"Dollars",0
+"420","Logan","CO",2012,42523,"Dollars",0
+"421","Mesa","CO",2013,37443,"Dollars",0
+"422","Mesa","CO",2014,39589,"Dollars",0
+"423","Mesa","CO",2015,40302,"Dollars",0
+"424","Mesa","CO",2004,28695,"Dollars",0
+"425","Mesa","CO",2005,30470,"Dollars",0
+"426","Mesa","CO",2006,32669,"Dollars",0
+"427","Mesa","CO",2007,35446,"Dollars",0
+"428","Mesa","CO",2008,38775,"Dollars",0
+"429","Mesa","CO",2009,34819,"Dollars",0
+"430","Mesa","CO",2010,34343,"Dollars",0
+"431","Mesa","CO",2011,35645,"Dollars",0
+"432","Mesa","CO",2012,36961,"Dollars",0
+"433","Mineral","CO",2004,29846,"Dollars",0
+"434","Mineral","CO",2005,30865,"Dollars",0
+"435","Mineral","CO",2006,33212,"Dollars",0
+"436","Mineral","CO",2007,33235,"Dollars",0
+"437","Mineral","CO",2008,39050,"Dollars",0
+"438","Mineral","CO",2009,43507,"Dollars",0
+"439","Mineral","CO",2010,41960,"Dollars",0
+"440","Mineral","CO",2011,50322,"Dollars",0
+"441","Mineral","CO",2012,47395,"Dollars",0
+"442","Mineral","CO",2013,51066,"Dollars",0
+"443","Mineral","CO",2014,55140,"Dollars",0
+"444","Mineral","CO",2015,56956,"Dollars",0
+"445","Moffat","CO",2004,27960,"Dollars",0
+"446","Moffat","CO",2015,39723,"Dollars",0
+"447","Moffat","CO",2014,39963,"Dollars",0
+"448","Moffat","CO",2013,38652,"Dollars",0
+"449","Moffat","CO",2012,37588,"Dollars",0
+"450","Moffat","CO",2011,36107,"Dollars",0
+"451","Moffat","CO",2010,33169,"Dollars",0
+"452","Moffat","CO",2009,35223,"Dollars",0
+"453","Moffat","CO",2008,34761,"Dollars",0
+"454","Moffat","CO",2007,34864,"Dollars",0
+"455","Moffat","CO",2006,32668,"Dollars",0
+"456","Moffat","CO",2005,30980,"Dollars",0
+"457","Montezuma","CO",2004,25218,"Dollars",0
+"458","Montezuma","CO",2005,26852,"Dollars",0
+"459","Montezuma","CO",2006,28243,"Dollars",0
+"460","Montezuma","CO",2007,30576,"Dollars",0
+"461","Montezuma","CO",2008,31802,"Dollars",0
+"462","Montezuma","CO",2009,31171,"Dollars",0
+"463","Montezuma","CO",2010,30980,"Dollars",0
+"464","Montezuma","CO",2011,33248,"Dollars",0
+"465","Montezuma","CO",2012,33987,"Dollars",0
+"466","Montezuma","CO",2013,35713,"Dollars",0
+"467","Montezuma","CO",2014,39636,"Dollars",0
+"468","Montezuma","CO",2015,40507,"Dollars",0
+"469","Montrose","CO",2013,32326,"Dollars",0
+"470","Montrose","CO",2014,34363,"Dollars",0
+"471","Montrose","CO",2015,36346,"Dollars",0
+"472","Montrose","CO",2004,26369,"Dollars",0
+"473","Montrose","CO",2005,28659,"Dollars",0
+"474","Montrose","CO",2006,29515,"Dollars",0
+"475","Montrose","CO",2007,30822,"Dollars",0
+"476","Montrose","CO",2008,31702,"Dollars",0
+"477","Montrose","CO",2009,30427,"Dollars",0
+"478","Montrose","CO",2010,29833,"Dollars",0
+"479","Montrose","CO",2011,31094,"Dollars",0
+"480","Montrose","CO",2012,31937,"Dollars",0
+"481","Morgan","CO",2013,36067,"Dollars",0
+"482","Morgan","CO",2014,39395,"Dollars",0
+"483","Morgan","CO",2015,40411,"Dollars",0
+"484","Morgan","CO",2004,25111,"Dollars",0
+"485","Morgan","CO",2005,25940,"Dollars",0
+"486","Morgan","CO",2006,26483,"Dollars",0
+"487","Morgan","CO",2007,27474,"Dollars",0
+"488","Morgan","CO",2008,29228,"Dollars",0
+"489","Morgan","CO",2009,27673,"Dollars",0
+"490","Morgan","CO",2010,30795,"Dollars",0
+"491","Morgan","CO",2011,33996,"Dollars",0
+"492","Morgan","CO",2012,35407,"Dollars",0
+"493","Otero","CO",2013,30672,"Dollars",0
+"494","Otero","CO",2014,32116,"Dollars",0
+"495","Otero","CO",2015,33614,"Dollars",0
+"496","Otero","CO",2004,24939,"Dollars",0
+"497","Otero","CO",2005,26450,"Dollars",0
+"498","Otero","CO",2006,26607,"Dollars",0
+"499","Otero","CO",2007,28126,"Dollars",0
+"500","Otero","CO",2008,28359,"Dollars",0
+"501","Otero","CO",2009,28018,"Dollars",0
+"502","Otero","CO",2010,28961,"Dollars",0
+"503","Otero","CO",2011,30148,"Dollars",0
+"504","Otero","CO",2012,30371,"Dollars",0
+"505","Ouray","CO",2013,47427,"Dollars",0
+"506","Ouray","CO",2014,50920,"Dollars",0
+"507","Ouray","CO",2015,53828,"Dollars",0
+"508","Ouray","CO",2004,38926,"Dollars",0
+"509","Ouray","CO",2005,38870,"Dollars",0
+"510","Ouray","CO",2006,43044,"Dollars",0
+"511","Ouray","CO",2007,45263,"Dollars",0
+"512","Ouray","CO",2008,43868,"Dollars",0
+"513","Ouray","CO",2009,42292,"Dollars",0
+"514","Ouray","CO",2010,38579,"Dollars",0
+"515","Ouray","CO",2011,42246,"Dollars",0
+"516","Ouray","CO",2012,43605,"Dollars",0
+"517","Park","CO",2013,37000,"Dollars",0
+"518","Park","CO",2014,38291,"Dollars",0
+"519","Park","CO",2015,41345,"Dollars",0
+"520","Park","CO",2004,30545,"Dollars",0
+"521","Park","CO",2005,31509,"Dollars",0
+"522","Park","CO",2006,32266,"Dollars",0
+"523","Park","CO",2007,32826,"Dollars",0
+"524","Park","CO",2008,34274,"Dollars",0
+"525","Park","CO",2009,33188,"Dollars",0
+"526","Park","CO",2010,32480,"Dollars",0
+"527","Park","CO",2011,35755,"Dollars",0
+"528","Park","CO",2012,36299,"Dollars",0
+"529","Phillips","CO",2013,38127,"Dollars",0
+"530","Phillips","CO",2014,37575,"Dollars",0
+"531","Phillips","CO",2015,37134,"Dollars",0
+"532","Phillips","CO",2004,25009,"Dollars",0
+"533","Phillips","CO",2005,25380,"Dollars",0
+"534","Phillips","CO",2006,24385,"Dollars",0
+"535","Phillips","CO",2007,30971,"Dollars",0
+"536","Phillips","CO",2008,33671,"Dollars",0
+"537","Phillips","CO",2009,34580,"Dollars",0
+"538","Phillips","CO",2010,35971,"Dollars",0
+"539","Phillips","CO",2011,42858,"Dollars",0
+"540","Phillips","CO",2012,40046,"Dollars",0
+"541","Pitkin","CO",2004,85400,"Dollars",0
+"542","Pitkin","CO",2005,95630,"Dollars",0
+"543","Pitkin","CO",2006,107329,"Dollars",0
+"544","Pitkin","CO",2007,121304,"Dollars",0
+"545","Pitkin","CO",2008,119065,"Dollars",0
+"546","Pitkin","CO",2009,89420,"Dollars",0
+"547","Pitkin","CO",2010,87923,"Dollars",0
+"548","Pitkin","CO",2011,92979,"Dollars",0
+"549","Pitkin","CO",2012,109444,"Dollars",0
+"550","Pitkin","CO",2013,102196,"Dollars",0
+"551","Pitkin","CO",2014,123247,"Dollars",0
+"552","Pitkin","CO",2015,128877,"Dollars",0
+"553","Prowers","CO",2004,25489,"Dollars",0
+"554","Prowers","CO",2005,26312,"Dollars",0
+"555","Prowers","CO",2006,26033,"Dollars",0
+"556","Prowers","CO",2007,28555,"Dollars",0
+"557","Prowers","CO",2008,29630,"Dollars",0
+"558","Prowers","CO",2009,30880,"Dollars",0
+"559","Prowers","CO",2010,32315,"Dollars",0
+"560","Prowers","CO",2011,33713,"Dollars",0
+"561","Prowers","CO",2012,34808,"Dollars",0
+"562","Prowers","CO",2013,37410,"Dollars",0
+"563","Prowers","CO",2014,37721,"Dollars",0
+"564","Prowers","CO",2015,39780,"Dollars",0
+"565","Pueblo","CO",2004,25977,"Dollars",0
+"566","Pueblo","CO",2005,26456,"Dollars",0
+"567","Pueblo","CO",2006,27277,"Dollars",0
+"568","Pueblo","CO",2007,28814,"Dollars",0
+"569","Pueblo","CO",2008,28571,"Dollars",0
+"570","Pueblo","CO",2009,28579,"Dollars",0
+"571","Pueblo","CO",2010,29348,"Dollars",0
+"572","Pueblo","CO",2011,30404,"Dollars",0
+"573","Pueblo","CO",2012,31099,"Dollars",0
+"574","Pueblo","CO",2013,31636,"Dollars",0
+"575","Pueblo","CO",2014,33241,"Dollars",0
+"576","Pueblo","CO",2015,34564,"Dollars",0
+"577","Rio Blanco","CO",2004,28537,"Dollars",0
+"578","Rio Blanco","CO",2005,33494,"Dollars",0
+"579","Rio Blanco","CO",2006,36283,"Dollars",0
+"580","Rio Blanco","CO",2007,40319,"Dollars",0
+"581","Rio Blanco","CO",2008,41636,"Dollars",0
+"582","Rio Blanco","CO",2009,38956,"Dollars",0
+"583","Rio Blanco","CO",2010,39511,"Dollars",0
+"584","Rio Blanco","CO",2011,41181,"Dollars",0
+"585","Rio Blanco","CO",2012,42094,"Dollars",0
+"586","Rio Blanco","CO",2013,43248,"Dollars",0
+"587","Rio Blanco","CO",2014,45535,"Dollars",0
+"588","Rio Blanco","CO",2015,44766,"Dollars",0
+"589","Rio Grande","CO",2004,24426,"Dollars",0
+"590","Rio Grande","CO",2005,25694,"Dollars",0
+"591","Rio Grande","CO",2006,26741,"Dollars",0
+"592","Rio Grande","CO",2007,29399,"Dollars",0
+"593","Rio Grande","CO",2008,31435,"Dollars",0
+"594","Rio Grande","CO",2009,31520,"Dollars",0
+"595","Rio Grande","CO",2010,31272,"Dollars",0
+"596","Rio Grande","CO",2011,33829,"Dollars",0
+"597","Rio Grande","CO",2012,33895,"Dollars",0
+"598","Rio Grande","CO",2013,35794,"Dollars",0
+"599","Rio Grande","CO",2014,37816,"Dollars",0
+"600","Rio Grande","CO",2015,40756,"Dollars",0
+"601","Routt","CO",2013,60346,"Dollars",0
+"602","Routt","CO",2014,65179,"Dollars",0
+"603","Routt","CO",2015,69611,"Dollars",0
+"604","Routt","CO",2004,45723,"Dollars",0
+"605","Routt","CO",2005,46768,"Dollars",0
+"606","Routt","CO",2006,49051,"Dollars",0
+"607","Routt","CO",2007,50095,"Dollars",0
+"608","Routt","CO",2008,52490,"Dollars",0
+"609","Routt","CO",2009,49065,"Dollars",0
+"610","Routt","CO",2010,51298,"Dollars",0
+"611","Routt","CO",2011,60154,"Dollars",0
+"612","Routt","CO",2012,61303,"Dollars",0
+"613","Saguache","CO",2013,28782,"Dollars",0
+"614","Saguache","CO",2014,31365,"Dollars",0
+"615","Saguache","CO",2015,34627,"Dollars",0
+"616","Saguache","CO",2004,18960,"Dollars",0
+"617","Saguache","CO",2005,21536,"Dollars",0
+"618","Saguache","CO",2006,21550,"Dollars",0
+"619","Saguache","CO",2007,24309,"Dollars",0
+"620","Saguache","CO",2008,25574,"Dollars",0
+"621","Saguache","CO",2009,24686,"Dollars",0
+"622","Saguache","CO",2010,25180,"Dollars",0
+"623","Saguache","CO",2011,27886,"Dollars",0
+"624","Saguache","CO",2012,26084,"Dollars",0
+"625","San Juan","CO",2004,27593,"Dollars",0
+"626","San Juan","CO",2005,31321,"Dollars",0
+"627","San Juan","CO",2006,36935,"Dollars",0
+"628","San Juan","CO",2007,42815,"Dollars",0
+"629","San Juan","CO",2008,43801,"Dollars",0
+"630","San Juan","CO",2009,41237,"Dollars",0
+"631","San Juan","CO",2010,34269,"Dollars",0
+"632","San Juan","CO",2011,41685,"Dollars",0
+"633","San Juan","CO",2012,44851,"Dollars",0
+"634","San Juan","CO",2013,52270,"Dollars",0
+"635","San Juan","CO",2014,48195,"Dollars",0
+"636","San Juan","CO",2015,56110,"Dollars",0
+"637","San Miguel","CO",2004,47920,"Dollars",0
+"638","San Miguel","CO",2005,52470,"Dollars",0
+"639","San Miguel","CO",2006,57943,"Dollars",0
+"640","San Miguel","CO",2007,58979,"Dollars",0
+"641","San Miguel","CO",2008,53313,"Dollars",0
+"642","San Miguel","CO",2009,51553,"Dollars",0
+"643","San Miguel","CO",2010,47593,"Dollars",0
+"644","San Miguel","CO",2011,50665,"Dollars",0
+"645","San Miguel","CO",2012,51074,"Dollars",0
+"646","San Miguel","CO",2013,59112,"Dollars",0
+"647","San Miguel","CO",2014,70328,"Dollars",0
+"648","San Miguel","CO",2015,75872,"Dollars",0
+"649","Sedgwick","CO",2013,47413,"Dollars",0
+"650","Sedgwick","CO",2014,46821,"Dollars",0
+"651","Sedgwick","CO",2015,42826,"Dollars",0
+"652","Sedgwick","CO",2004,29262,"Dollars",0
+"653","Sedgwick","CO",2005,29798,"Dollars",0
+"654","Sedgwick","CO",2006,27821,"Dollars",0
+"655","Sedgwick","CO",2007,38732,"Dollars",0
+"656","Sedgwick","CO",2008,40234,"Dollars",0
+"657","Sedgwick","CO",2009,36571,"Dollars",0
+"658","Sedgwick","CO",2010,40713,"Dollars",0
+"659","Sedgwick","CO",2011,46134,"Dollars",0
+"660","Sedgwick","CO",2012,46717,"Dollars",0
+"661","Summit","CO",2013,53266,"Dollars",0
+"662","Summit","CO",2014,55610,"Dollars",0
+"663","Summit","CO",2015,59410,"Dollars",0
+"664","Summit","CO",2004,37744,"Dollars",0
+"665","Summit","CO",2005,39325,"Dollars",0
+"666","Summit","CO",2006,45187,"Dollars",0
+"667","Summit","CO",2007,46730,"Dollars",0
+"668","Summit","CO",2008,48301,"Dollars",0
+"669","Summit","CO",2009,42885,"Dollars",0
+"670","Summit","CO",2010,43324,"Dollars",0
+"671","Summit","CO",2011,47832,"Dollars",0
+"672","Summit","CO",2012,48526,"Dollars",0
+"673","Teller","CO",2013,42765,"Dollars",0
+"674","Teller","CO",2012,42405,"Dollars",0
+"675","Teller","CO",2011,41640,"Dollars",0
+"676","Teller","CO",2010,38720,"Dollars",0
+"677","Teller","CO",2009,38564,"Dollars",0
+"678","Teller","CO",2008,38414,"Dollars",0
+"679","Teller","CO",2007,36540,"Dollars",0
+"680","Teller","CO",2006,35578,"Dollars",0
+"681","Teller","CO",2005,34277,"Dollars",0
+"682","Teller","CO",2004,32789,"Dollars",0
+"683","Teller","CO",2015,46524,"Dollars",0
+"684","Teller","CO",2014,44566,"Dollars",0
+"685","Washington","CO",2004,24684,"Dollars",0
+"686","Washington","CO",2005,24980,"Dollars",0
+"687","Washington","CO",2006,23817,"Dollars",0
+"688","Washington","CO",2007,28103,"Dollars",0
+"689","Washington","CO",2008,29215,"Dollars",0
+"690","Washington","CO",2009,32217,"Dollars",0
+"691","Washington","CO",2010,35247,"Dollars",0
+"692","Washington","CO",2011,40323,"Dollars",0
+"693","Washington","CO",2012,39239,"Dollars",0
+"694","Washington","CO",2013,39123,"Dollars",0
+"695","Washington","CO",2014,39000,"Dollars",0
+"696","Washington","CO",2015,39730,"Dollars",0
+"697","Yuma","CO",2013,48051,"Dollars",0
+"698","Yuma","CO",2014,49041,"Dollars",0
+"699","Yuma","CO",2015,50134,"Dollars",0
+"700","Yuma","CO",2004,33321,"Dollars",0
+"701","Yuma","CO",2005,37398,"Dollars",0
+"702","Yuma","CO",2006,37355,"Dollars",0
+"703","Yuma","CO",2007,39224,"Dollars",0
+"704","Yuma","CO",2008,40645,"Dollars",0
+"705","Yuma","CO",2009,33531,"Dollars",0
+"706","Yuma","CO",2010,38841,"Dollars",0
+"707","Yuma","CO",2011,44315,"Dollars",0
+"708","Yuma","CO",2012,48670,"Dollars",0

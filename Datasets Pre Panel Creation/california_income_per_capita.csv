@@ -1,0 +1,697 @@
+"","County","State","Year","Income_per_Capita","Unit","Multiplier"
+"1","Alameda","CA",2013,54131,"Dollars",0
+"2","Alameda","CA",2014,57009,"Dollars",0
+"3","Alameda","CA",2015,61618,"Dollars",0
+"4","Alameda","CA",2004,41472,"Dollars",0
+"5","Alameda","CA",2005,42921,"Dollars",0
+"6","Alameda","CA",2006,46093,"Dollars",0
+"7","Alameda","CA",2007,47750,"Dollars",0
+"8","Alameda","CA",2008,48349,"Dollars",0
+"9","Alameda","CA",2009,45893,"Dollars",0
+"10","Alameda","CA",2010,47625,"Dollars",0
+"11","Alameda","CA",2011,50432,"Dollars",0
+"12","Alameda","CA",2012,52296,"Dollars",0
+"13","Alpine","CA",2004,32589,"Dollars",0
+"14","Alpine","CA",2005,33584,"Dollars",0
+"15","Alpine","CA",2006,32627,"Dollars",0
+"16","Alpine","CA",2007,35410,"Dollars",0
+"17","Alpine","CA",2008,37726,"Dollars",0
+"18","Alpine","CA",2009,38420,"Dollars",0
+"19","Alpine","CA",2010,41867,"Dollars",0
+"20","Alpine","CA",2011,54040,"Dollars",0
+"21","Alpine","CA",2012,56293,"Dollars",0
+"22","Alpine","CA",2013,54549,"Dollars",0
+"23","Alpine","CA",2014,61368,"Dollars",0
+"24","Alpine","CA",2015,63924,"Dollars",0
+"25","Amador","CA",2004,29774,"Dollars",0
+"26","Amador","CA",2005,29818,"Dollars",0
+"27","Amador","CA",2006,31468,"Dollars",0
+"28","Amador","CA",2007,32783,"Dollars",0
+"29","Amador","CA",2008,33890,"Dollars",0
+"30","Amador","CA",2009,33042,"Dollars",0
+"31","Amador","CA",2010,34327,"Dollars",0
+"32","Amador","CA",2011,34847,"Dollars",0
+"33","Amador","CA",2012,35633,"Dollars",0
+"34","Amador","CA",2013,36375,"Dollars",0
+"35","Amador","CA",2014,37936,"Dollars",0
+"36","Amador","CA",2015,39764,"Dollars",0
+"37","Butte","CA",2014,36603,"Dollars",0
+"38","Butte","CA",2013,35368,"Dollars",0
+"39","Butte","CA",2012,34536,"Dollars",0
+"40","Butte","CA",2011,33669,"Dollars",0
+"41","Butte","CA",2010,32994,"Dollars",0
+"42","Butte","CA",2009,31868,"Dollars",0
+"43","Butte","CA",2008,31806,"Dollars",0
+"44","Butte","CA",2007,31301,"Dollars",0
+"45","Butte","CA",2006,29791,"Dollars",0
+"46","Butte","CA",2005,28071,"Dollars",0
+"47","Butte","CA",2004,27353,"Dollars",0
+"48","Butte","CA",2015,39352,"Dollars",0
+"49","Calaveras","CA",2013,37734,"Dollars",0
+"50","Calaveras","CA",2012,37399,"Dollars",0
+"51","Calaveras","CA",2011,37516,"Dollars",0
+"52","Calaveras","CA",2010,36742,"Dollars",0
+"53","Calaveras","CA",2009,35585,"Dollars",0
+"54","Calaveras","CA",2008,36079,"Dollars",0
+"55","Calaveras","CA",2007,35107,"Dollars",0
+"56","Calaveras","CA",2006,33243,"Dollars",0
+"57","Calaveras","CA",2005,31562,"Dollars",0
+"58","Calaveras","CA",2004,30814,"Dollars",0
+"59","Calaveras","CA",2015,42659,"Dollars",0
+"60","Calaveras","CA",2014,39733,"Dollars",0
+"61","Colusa","CA",2013,39501,"Dollars",0
+"62","Colusa","CA",2014,34844,"Dollars",0
+"63","Colusa","CA",2015,39272,"Dollars",0
+"64","Colusa","CA",2004,26885,"Dollars",0
+"65","Colusa","CA",2005,27023,"Dollars",0
+"66","Colusa","CA",2006,27488,"Dollars",0
+"67","Colusa","CA",2007,32112,"Dollars",0
+"68","Colusa","CA",2008,38177,"Dollars",0
+"69","Colusa","CA",2009,40740,"Dollars",0
+"70","Colusa","CA",2010,40294,"Dollars",0
+"71","Colusa","CA",2011,40313,"Dollars",0
+"72","Colusa","CA",2012,36669,"Dollars",0
+"73","Contra Costa","CA",2013,60387,"Dollars",0
+"74","Contra Costa","CA",2014,62381,"Dollars",0
+"75","Contra Costa","CA",2015,67056,"Dollars",0
+"76","Contra Costa","CA",2004,49555,"Dollars",0
+"77","Contra Costa","CA",2005,51875,"Dollars",0
+"78","Contra Costa","CA",2006,55749,"Dollars",0
+"79","Contra Costa","CA",2007,57499,"Dollars",0
+"80","Contra Costa","CA",2008,58263,"Dollars",0
+"81","Contra Costa","CA",2009,53921,"Dollars",0
+"82","Contra Costa","CA",2010,53631,"Dollars",0
+"83","Contra Costa","CA",2011,57227,"Dollars",0
+"84","Contra Costa","CA",2012,61059,"Dollars",0
+"85","Del Norte","CA",2004,21708,"Dollars",0
+"86","Del Norte","CA",2005,22015,"Dollars",0
+"87","Del Norte","CA",2006,23537,"Dollars",0
+"88","Del Norte","CA",2007,24715,"Dollars",0
+"89","Del Norte","CA",2008,25857,"Dollars",0
+"90","Del Norte","CA",2009,25993,"Dollars",0
+"91","Del Norte","CA",2010,27355,"Dollars",0
+"92","Del Norte","CA",2011,28194,"Dollars",0
+"93","Del Norte","CA",2012,28596,"Dollars",0
+"94","Del Norte","CA",2013,29550,"Dollars",0
+"95","Del Norte","CA",2014,31479,"Dollars",0
+"96","Del Norte","CA",2015,33072,"Dollars",0
+"97","El Dorado","CA",2004,41414,"Dollars",0
+"98","El Dorado","CA",2005,42961,"Dollars",0
+"99","El Dorado","CA",2006,45304,"Dollars",0
+"100","El Dorado","CA",2007,46762,"Dollars",0
+"101","El Dorado","CA",2008,48203,"Dollars",0
+"102","El Dorado","CA",2009,46674,"Dollars",0
+"103","El Dorado","CA",2010,48228,"Dollars",0
+"104","El Dorado","CA",2011,50362,"Dollars",0
+"105","El Dorado","CA",2012,52415,"Dollars",0
+"106","El Dorado","CA",2013,53830,"Dollars",0
+"107","El Dorado","CA",2014,56210,"Dollars",0
+"108","El Dorado","CA",2015,58818,"Dollars",0
+"109","Fresno","CA",2004,26923,"Dollars",0
+"110","Fresno","CA",2005,27597,"Dollars",0
+"111","Fresno","CA",2006,29137,"Dollars",0
+"112","Fresno","CA",2007,30293,"Dollars",0
+"113","Fresno","CA",2008,30454,"Dollars",0
+"114","Fresno","CA",2009,30176,"Dollars",0
+"115","Fresno","CA",2010,31181,"Dollars",0
+"116","Fresno","CA",2011,32669,"Dollars",0
+"117","Fresno","CA",2012,33288,"Dollars",0
+"118","Fresno","CA",2013,34426,"Dollars",0
+"119","Fresno","CA",2014,36385,"Dollars",0
+"120","Fresno","CA",2015,38296,"Dollars",0
+"121","Glenn","CA",2013,37911,"Dollars",0
+"122","Glenn","CA",2014,36446,"Dollars",0
+"123","Glenn","CA",2015,38924,"Dollars",0
+"124","Glenn","CA",2004,24480,"Dollars",0
+"125","Glenn","CA",2005,24893,"Dollars",0
+"126","Glenn","CA",2006,24563,"Dollars",0
+"127","Glenn","CA",2007,29216,"Dollars",0
+"128","Glenn","CA",2008,29994,"Dollars",0
+"129","Glenn","CA",2009,30925,"Dollars",0
+"130","Glenn","CA",2010,32112,"Dollars",0
+"131","Glenn","CA",2011,34053,"Dollars",0
+"132","Glenn","CA",2012,34953,"Dollars",0
+"133","Humboldt","CA",2013,36739,"Dollars",0
+"134","Humboldt","CA",2014,38324,"Dollars",0
+"135","Humboldt","CA",2015,40594,"Dollars",0
+"136","Humboldt","CA",2004,29446,"Dollars",0
+"137","Humboldt","CA",2005,29840,"Dollars",0
+"138","Humboldt","CA",2006,31282,"Dollars",0
+"139","Humboldt","CA",2007,32246,"Dollars",0
+"140","Humboldt","CA",2008,32816,"Dollars",0
+"141","Humboldt","CA",2009,33085,"Dollars",0
+"142","Humboldt","CA",2010,35490,"Dollars",0
+"143","Humboldt","CA",2011,35892,"Dollars",0
+"144","Humboldt","CA",2012,36182,"Dollars",0
+"145","Imperial","CA",2013,32627,"Dollars",0
+"146","Imperial","CA",2014,33758,"Dollars",0
+"147","Imperial","CA",2015,36121,"Dollars",0
+"148","Imperial","CA",2004,23530,"Dollars",0
+"149","Imperial","CA",2005,24097,"Dollars",0
+"150","Imperial","CA",2006,25334,"Dollars",0
+"151","Imperial","CA",2007,26270,"Dollars",0
+"152","Imperial","CA",2008,28108,"Dollars",0
+"153","Imperial","CA",2009,27867,"Dollars",0
+"154","Imperial","CA",2010,29124,"Dollars",0
+"155","Imperial","CA",2011,31225,"Dollars",0
+"156","Imperial","CA",2012,31428,"Dollars",0
+"157","Inyo","CA",2004,34385,"Dollars",0
+"158","Inyo","CA",2005,36095,"Dollars",0
+"159","Inyo","CA",2006,38571,"Dollars",0
+"160","Inyo","CA",2007,39553,"Dollars",0
+"161","Inyo","CA",2008,42280,"Dollars",0
+"162","Inyo","CA",2009,41363,"Dollars",0
+"163","Inyo","CA",2010,42443,"Dollars",0
+"164","Inyo","CA",2011,43618,"Dollars",0
+"165","Inyo","CA",2012,45319,"Dollars",0
+"166","Inyo","CA",2013,45780,"Dollars",0
+"167","Inyo","CA",2014,48579,"Dollars",0
+"168","Inyo","CA",2015,50961,"Dollars",0
+"169","Kern","CA",2005,26034,"Dollars",0
+"170","Kern","CA",2004,24985,"Dollars",0
+"171","Kern","CA",2015,36532,"Dollars",0
+"172","Kern","CA",2014,36164,"Dollars",0
+"173","Kern","CA",2013,34301,"Dollars",0
+"174","Kern","CA",2012,33731,"Dollars",0
+"175","Kern","CA",2011,32141,"Dollars",0
+"176","Kern","CA",2010,30669,"Dollars",0
+"177","Kern","CA",2009,28590,"Dollars",0
+"178","Kern","CA",2008,29194,"Dollars",0
+"179","Kern","CA",2007,28861,"Dollars",0
+"180","Kern","CA",2006,27293,"Dollars",0
+"181","Kings","CA",2013,29642,"Dollars",0
+"182","Kings","CA",2014,32810,"Dollars",0
+"183","Kings","CA",2015,32733,"Dollars",0
+"184","Kings","CA",2004,23201,"Dollars",0
+"185","Kings","CA",2005,23663,"Dollars",0
+"186","Kings","CA",2006,23514,"Dollars",0
+"187","Kings","CA",2007,26563,"Dollars",0
+"188","Kings","CA",2008,25479,"Dollars",0
+"189","Kings","CA",2009,24494,"Dollars",0
+"190","Kings","CA",2010,26345,"Dollars",0
+"191","Kings","CA",2011,29308,"Dollars",0
+"192","Kings","CA",2012,28626,"Dollars",0
+"193","Lake","CA",2013,32632,"Dollars",0
+"194","Lake","CA",2014,34201,"Dollars",0
+"195","Lake","CA",2015,35796,"Dollars",0
+"196","Lake","CA",2004,26568,"Dollars",0
+"197","Lake","CA",2005,26722,"Dollars",0
+"198","Lake","CA",2006,28083,"Dollars",0
+"199","Lake","CA",2007,29238,"Dollars",0
+"200","Lake","CA",2008,29594,"Dollars",0
+"201","Lake","CA",2009,29672,"Dollars",0
+"202","Lake","CA",2010,31081,"Dollars",0
+"203","Lake","CA",2011,31444,"Dollars",0
+"204","Lake","CA",2012,32005,"Dollars",0
+"205","Lassen","CA",2004,21687,"Dollars",0
+"206","Lassen","CA",2005,22292,"Dollars",0
+"207","Lassen","CA",2006,23805,"Dollars",0
+"208","Lassen","CA",2007,24905,"Dollars",0
+"209","Lassen","CA",2008,26750,"Dollars",0
+"210","Lassen","CA",2009,26202,"Dollars",0
+"211","Lassen","CA",2010,27575,"Dollars",0
+"212","Lassen","CA",2011,28218,"Dollars",0
+"213","Lassen","CA",2012,28086,"Dollars",0
+"214","Lassen","CA",2013,28498,"Dollars",0
+"215","Lassen","CA",2014,29488,"Dollars",0
+"216","Lassen","CA",2015,31092,"Dollars",0
+"217","Los Angeles","CA",2004,34494,"Dollars",0
+"218","Los Angeles","CA",2005,36606,"Dollars",0
+"219","Los Angeles","CA",2006,39784,"Dollars",0
+"220","Los Angeles","CA",2007,41765,"Dollars",0
+"221","Los Angeles","CA",2008,42732,"Dollars",0
+"222","Los Angeles","CA",2009,41229,"Dollars",0
+"223","Los Angeles","CA",2010,42794,"Dollars",0
+"224","Los Angeles","CA",2011,45439,"Dollars",0
+"225","Los Angeles","CA",2012,48075,"Dollars",0
+"226","Los Angeles","CA",2013,47541,"Dollars",0
+"227","Los Angeles","CA",2014,50052,"Dollars",0
+"228","Los Angeles","CA",2015,53067,"Dollars",0
+"229","Madera","CA",2004,23665,"Dollars",0
+"230","Madera","CA",2005,24126,"Dollars",0
+"231","Madera","CA",2006,24905,"Dollars",0
+"232","Madera","CA",2007,26800,"Dollars",0
+"233","Madera","CA",2008,26478,"Dollars",0
+"234","Madera","CA",2009,25595,"Dollars",0
+"235","Madera","CA",2010,28121,"Dollars",0
+"236","Madera","CA",2011,29341,"Dollars",0
+"237","Madera","CA",2012,30904,"Dollars",0
+"238","Madera","CA",2013,32072,"Dollars",0
+"239","Madera","CA",2014,33801,"Dollars",0
+"240","Madera","CA",2015,34323,"Dollars",0
+"241","Marin","CA",2013,95473,"Dollars",0
+"242","Marin","CA",2014,102032,"Dollars",0
+"243","Marin","CA",2015,109274,"Dollars",0
+"244","Marin","CA",2004,76517,"Dollars",0
+"245","Marin","CA",2005,80034,"Dollars",0
+"246","Marin","CA",2006,86274,"Dollars",0
+"247","Marin","CA",2007,88333,"Dollars",0
+"248","Marin","CA",2008,89322,"Dollars",0
+"249","Marin","CA",2009,81770,"Dollars",0
+"250","Marin","CA",2010,83247,"Dollars",0
+"251","Marin","CA",2011,89206,"Dollars",0
+"252","Marin","CA",2012,94993,"Dollars",0
+"253","Mariposa","CA",2004,28313,"Dollars",0
+"254","Mariposa","CA",2005,29557,"Dollars",0
+"255","Mariposa","CA",2006,31371,"Dollars",0
+"256","Mariposa","CA",2007,33037,"Dollars",0
+"257","Mariposa","CA",2008,34105,"Dollars",0
+"258","Mariposa","CA",2009,34556,"Dollars",0
+"259","Mariposa","CA",2010,36244,"Dollars",0
+"260","Mariposa","CA",2011,36741,"Dollars",0
+"261","Mariposa","CA",2012,37665,"Dollars",0
+"262","Mariposa","CA",2013,38320,"Dollars",0
+"263","Mariposa","CA",2014,40809,"Dollars",0
+"264","Mariposa","CA",2015,43701,"Dollars",0
+"265","Mendocino","CA",2004,29613,"Dollars",0
+"266","Mendocino","CA",2005,29830,"Dollars",0
+"267","Mendocino","CA",2006,31822,"Dollars",0
+"268","Mendocino","CA",2007,33603,"Dollars",0
+"269","Mendocino","CA",2008,34438,"Dollars",0
+"270","Mendocino","CA",2009,34822,"Dollars",0
+"271","Mendocino","CA",2010,37858,"Dollars",0
+"272","Mendocino","CA",2011,37658,"Dollars",0
+"273","Mendocino","CA",2012,37262,"Dollars",0
+"274","Mendocino","CA",2013,37882,"Dollars",0
+"275","Mendocino","CA",2014,40074,"Dollars",0
+"276","Mendocino","CA",2015,41701,"Dollars",0
+"277","Merced","CA",2004,24467,"Dollars",0
+"278","Merced","CA",2005,24839,"Dollars",0
+"279","Merced","CA",2006,25255,"Dollars",0
+"280","Merced","CA",2007,27971,"Dollars",0
+"281","Merced","CA",2008,26809,"Dollars",0
+"282","Merced","CA",2009,26855,"Dollars",0
+"283","Merced","CA",2010,27985,"Dollars",0
+"284","Merced","CA",2011,29817,"Dollars",0
+"285","Merced","CA",2012,30248,"Dollars",0
+"286","Merced","CA",2013,31492,"Dollars",0
+"287","Merced","CA",2014,34240,"Dollars",0
+"288","Merced","CA",2015,35167,"Dollars",0
+"289","Modoc","CA",2014,40683,"Dollars",0
+"290","Modoc","CA",2013,37643,"Dollars",0
+"291","Modoc","CA",2012,36311,"Dollars",0
+"292","Modoc","CA",2011,36359,"Dollars",0
+"293","Modoc","CA",2010,35092,"Dollars",0
+"294","Modoc","CA",2009,34678,"Dollars",0
+"295","Modoc","CA",2008,33033,"Dollars",0
+"296","Modoc","CA",2007,30145,"Dollars",0
+"297","Modoc","CA",2006,27930,"Dollars",0
+"298","Modoc","CA",2005,27383,"Dollars",0
+"299","Modoc","CA",2004,25755,"Dollars",0
+"300","Modoc","CA",2015,42461,"Dollars",0
+"301","Mono","CA",2013,41157,"Dollars",0
+"302","Mono","CA",2014,42683,"Dollars",0
+"303","Mono","CA",2015,44056,"Dollars",0
+"304","Mono","CA",2004,35830,"Dollars",0
+"305","Mono","CA",2005,38459,"Dollars",0
+"306","Mono","CA",2006,37171,"Dollars",0
+"307","Mono","CA",2007,37698,"Dollars",0
+"308","Mono","CA",2008,39089,"Dollars",0
+"309","Mono","CA",2009,38355,"Dollars",0
+"310","Mono","CA",2010,40528,"Dollars",0
+"311","Mono","CA",2011,41168,"Dollars",0
+"312","Mono","CA",2012,40329,"Dollars",0
+"313","Monterey","CA",2013,44355,"Dollars",0
+"314","Monterey","CA",2014,46374,"Dollars",0
+"315","Monterey","CA",2015,49757,"Dollars",0
+"316","Monterey","CA",2004,34337,"Dollars",0
+"317","Monterey","CA",2005,35856,"Dollars",0
+"318","Monterey","CA",2006,39070,"Dollars",0
+"319","Monterey","CA",2007,40621,"Dollars",0
+"320","Monterey","CA",2008,40435,"Dollars",0
+"321","Monterey","CA",2009,40094,"Dollars",0
+"322","Monterey","CA",2010,41004,"Dollars",0
+"323","Monterey","CA",2011,41452,"Dollars",0
+"324","Monterey","CA",2012,42873,"Dollars",0
+"325","Napa","CA",2004,41480,"Dollars",0
+"326","Napa","CA",2005,43781,"Dollars",0
+"327","Napa","CA",2006,45918,"Dollars",0
+"328","Napa","CA",2007,47390,"Dollars",0
+"329","Napa","CA",2008,47212,"Dollars",0
+"330","Napa","CA",2009,46041,"Dollars",0
+"331","Napa","CA",2010,46720,"Dollars",0
+"332","Napa","CA",2011,48198,"Dollars",0
+"333","Napa","CA",2012,52821,"Dollars",0
+"334","Napa","CA",2013,54298,"Dollars",0
+"335","Napa","CA",2014,58241,"Dollars",0
+"336","Napa","CA",2015,62781,"Dollars",0
+"337","Nevada","CA",2013,49191,"Dollars",0
+"338","Nevada","CA",2014,51373,"Dollars",0
+"339","Nevada","CA",2015,53134,"Dollars",0
+"340","Nevada","CA",2004,37838,"Dollars",0
+"341","Nevada","CA",2005,39031,"Dollars",0
+"342","Nevada","CA",2006,42079,"Dollars",0
+"343","Nevada","CA",2007,44042,"Dollars",0
+"344","Nevada","CA",2008,43798,"Dollars",0
+"345","Nevada","CA",2009,43670,"Dollars",0
+"346","Nevada","CA",2010,45650,"Dollars",0
+"347","Nevada","CA",2011,47210,"Dollars",0
+"348","Nevada","CA",2012,48696,"Dollars",0
+"349","Orange","CA",2013,53545,"Dollars",0
+"350","Orange","CA",2014,55461,"Dollars",0
+"351","Orange","CA",2015,59242,"Dollars",0
+"352","Orange","CA",2004,43948,"Dollars",0
+"353","Orange","CA",2005,46849,"Dollars",0
+"354","Orange","CA",2006,50360,"Dollars",0
+"355","Orange","CA",2007,50670,"Dollars",0
+"356","Orange","CA",2008,49571,"Dollars",0
+"357","Orange","CA",2009,46192,"Dollars",0
+"358","Orange","CA",2010,48646,"Dollars",0
+"359","Orange","CA",2011,51265,"Dollars",0
+"360","Orange","CA",2012,54321,"Dollars",0
+"361","Placer","CA",2013,52942,"Dollars",0
+"362","Placer","CA",2012,52292,"Dollars",0
+"363","Placer","CA",2011,49609,"Dollars",0
+"364","Placer","CA",2010,47680,"Dollars",0
+"365","Placer","CA",2009,46208,"Dollars",0
+"366","Placer","CA",2008,47800,"Dollars",0
+"367","Placer","CA",2007,46918,"Dollars",0
+"368","Placer","CA",2006,46336,"Dollars",0
+"369","Placer","CA",2005,44390,"Dollars",0
+"370","Placer","CA",2004,43207,"Dollars",0
+"371","Placer","CA",2015,58519,"Dollars",0
+"372","Placer","CA",2014,55204,"Dollars",0
+"373","Plumas","CA",2004,32909,"Dollars",0
+"374","Plumas","CA",2005,32845,"Dollars",0
+"375","Plumas","CA",2006,34829,"Dollars",0
+"376","Plumas","CA",2007,35702,"Dollars",0
+"377","Plumas","CA",2008,37198,"Dollars",0
+"378","Plumas","CA",2009,37641,"Dollars",0
+"379","Plumas","CA",2010,39409,"Dollars",0
+"380","Plumas","CA",2011,39560,"Dollars",0
+"381","Plumas","CA",2012,39094,"Dollars",0
+"382","Plumas","CA",2013,40346,"Dollars",0
+"383","Plumas","CA",2014,42932,"Dollars",0
+"384","Plumas","CA",2015,44091,"Dollars",0
+"385","Riverside","CA",2004,27898,"Dollars",0
+"386","Riverside","CA",2005,29226,"Dollars",0
+"387","Riverside","CA",2006,30795,"Dollars",0
+"388","Riverside","CA",2007,31497,"Dollars",0
+"389","Riverside","CA",2008,31615,"Dollars",0
+"390","Riverside","CA",2009,30615,"Dollars",0
+"391","Riverside","CA",2010,30970,"Dollars",0
+"392","Riverside","CA",2011,32420,"Dollars",0
+"393","Riverside","CA",2012,32828,"Dollars",0
+"394","Riverside","CA",2013,33565,"Dollars",0
+"395","Riverside","CA",2014,34786,"Dollars",0
+"396","Riverside","CA",2015,36590,"Dollars",0
+"397","Sacramento","CA",2013,41581,"Dollars",0
+"398","Sacramento","CA",2014,43469,"Dollars",0
+"399","Sacramento","CA",2015,45866,"Dollars",0
+"400","Sacramento","CA",2004,34253,"Dollars",0
+"401","Sacramento","CA",2005,35225,"Dollars",0
+"402","Sacramento","CA",2006,36975,"Dollars",0
+"403","Sacramento","CA",2007,38310,"Dollars",0
+"404","Sacramento","CA",2008,39055,"Dollars",0
+"405","Sacramento","CA",2009,37892,"Dollars",0
+"406","Sacramento","CA",2010,38280,"Dollars",0
+"407","Sacramento","CA",2011,39655,"Dollars",0
+"408","Sacramento","CA",2012,40623,"Dollars",0
+"409","San Benito","CA",2013,39293,"Dollars",0
+"410","San Benito","CA",2014,40388,"Dollars",0
+"411","San Benito","CA",2015,44028,"Dollars",0
+"412","San Benito","CA",2004,30510,"Dollars",0
+"413","San Benito","CA",2005,31674,"Dollars",0
+"414","San Benito","CA",2006,34115,"Dollars",0
+"415","San Benito","CA",2007,36659,"Dollars",0
+"416","San Benito","CA",2008,36718,"Dollars",0
+"417","San Benito","CA",2009,35974,"Dollars",0
+"418","San Benito","CA",2010,35929,"Dollars",0
+"419","San Benito","CA",2011,36937,"Dollars",0
+"420","San Benito","CA",2012,37878,"Dollars",0
+"421","San Bernardino","CA",2004,26680,"Dollars",0
+"422","San Bernardino","CA",2005,27610,"Dollars",0
+"423","San Bernardino","CA",2006,28874,"Dollars",0
+"424","San Bernardino","CA",2007,29882,"Dollars",0
+"425","San Bernardino","CA",2008,29963,"Dollars",0
+"426","San Bernardino","CA",2009,28955,"Dollars",0
+"427","San Bernardino","CA",2010,29436,"Dollars",0
+"428","San Bernardino","CA",2011,30773,"Dollars",0
+"429","San Bernardino","CA",2012,31261,"Dollars",0
+"430","San Bernardino","CA",2013,31889,"Dollars",0
+"431","San Bernardino","CA",2014,33381,"Dollars",0
+"432","San Bernardino","CA",2015,35179,"Dollars",0
+"433","San Diego","CA",2004,39831,"Dollars",0
+"434","San Diego","CA",2005,41457,"Dollars",0
+"435","San Diego","CA",2006,43473,"Dollars",0
+"436","San Diego","CA",2007,44352,"Dollars",0
+"437","San Diego","CA",2008,44776,"Dollars",0
+"438","San Diego","CA",2009,42884,"Dollars",0
+"439","San Diego","CA",2010,43889,"Dollars",0
+"440","San Diego","CA",2011,46113,"Dollars",0
+"441","San Diego","CA",2012,47700,"Dollars",0
+"442","San Diego","CA",2013,48645,"Dollars",0
+"443","San Diego","CA",2014,50915,"Dollars",0
+"444","San Diego","CA",2015,53357,"Dollars",0
+"445","San Francisco","CA",2014,96047,"Dollars",0
+"446","San Francisco","CA",2013,87302,"Dollars",0
+"447","San Francisco","CA",2012,86583,"Dollars",0
+"448","San Francisco","CA",2011,79899,"Dollars",0
+"449","San Francisco","CA",2010,75267,"Dollars",0
+"450","San Francisco","CA",2009,71500,"Dollars",0
+"451","San Francisco","CA",2008,74712,"Dollars",0
+"452","San Francisco","CA",2007,74402,"Dollars",0
+"453","San Francisco","CA",2006,71398,"Dollars",0
+"454","San Francisco","CA",2005,64790,"Dollars",0
+"455","San Francisco","CA",2004,59294,"Dollars",0
+"456","San Francisco","CA",2015,103625,"Dollars",0
+"457","San Joaquin","CA",2004,28715,"Dollars",0
+"458","San Joaquin","CA",2005,29693,"Dollars",0
+"459","San Joaquin","CA",2006,31082,"Dollars",0
+"460","San Joaquin","CA",2007,31964,"Dollars",0
+"461","San Joaquin","CA",2008,32003,"Dollars",0
+"462","San Joaquin","CA",2009,31955,"Dollars",0
+"463","San Joaquin","CA",2010,32597,"Dollars",0
+"464","San Joaquin","CA",2011,32947,"Dollars",0
+"465","San Joaquin","CA",2012,33631,"Dollars",0
+"466","San Joaquin","CA",2013,34791,"Dollars",0
+"467","San Joaquin","CA",2014,36290,"Dollars",0
+"468","San Joaquin","CA",2015,38463,"Dollars",0
+"469","San Luis Obispo","CA",2004,34151,"Dollars",0
+"470","San Luis Obispo","CA",2005,35336,"Dollars",0
+"471","San Luis Obispo","CA",2006,37745,"Dollars",0
+"472","San Luis Obispo","CA",2007,39634,"Dollars",0
+"473","San Luis Obispo","CA",2008,39504,"Dollars",0
+"474","San Luis Obispo","CA",2009,39021,"Dollars",0
+"475","San Luis Obispo","CA",2010,40064,"Dollars",0
+"476","San Luis Obispo","CA",2011,42219,"Dollars",0
+"477","San Luis Obispo","CA",2012,43666,"Dollars",0
+"478","San Luis Obispo","CA",2013,44771,"Dollars",0
+"479","San Luis Obispo","CA",2014,47054,"Dollars",0
+"480","San Luis Obispo","CA",2015,49914,"Dollars",0
+"481","San Mateo","CA",2004,59805,"Dollars",0
+"482","San Mateo","CA",2005,64351,"Dollars",0
+"483","San Mateo","CA",2006,71196,"Dollars",0
+"484","San Mateo","CA",2007,75009,"Dollars",0
+"485","San Mateo","CA",2008,74407,"Dollars",0
+"486","San Mateo","CA",2009,71230,"Dollars",0
+"487","San Mateo","CA",2010,73095,"Dollars",0
+"488","San Mateo","CA",2011,78684,"Dollars",0
+"489","San Mateo","CA",2012,86408,"Dollars",0
+"490","San Mateo","CA",2013,85557,"Dollars",0
+"491","San Mateo","CA",2014,90760,"Dollars",0
+"492","San Mateo","CA",2015,99076,"Dollars",0
+"493","Santa Barbara","CA",2004,39165,"Dollars",0
+"494","Santa Barbara","CA",2005,41163,"Dollars",0
+"495","Santa Barbara","CA",2006,44226,"Dollars",0
+"496","Santa Barbara","CA",2007,45186,"Dollars",0
+"497","Santa Barbara","CA",2008,45037,"Dollars",0
+"498","Santa Barbara","CA",2009,43923,"Dollars",0
+"499","Santa Barbara","CA",2010,45155,"Dollars",0
+"500","Santa Barbara","CA",2011,47840,"Dollars",0
+"501","Santa Barbara","CA",2012,49987,"Dollars",0
+"502","Santa Barbara","CA",2013,49091,"Dollars",0
+"503","Santa Barbara","CA",2014,51447,"Dollars",0
+"504","Santa Barbara","CA",2015,54318,"Dollars",0
+"505","Santa Clara","CA",2013,71593,"Dollars",0
+"506","Santa Clara","CA",2014,77059,"Dollars",0
+"507","Santa Clara","CA",2015,83773,"Dollars",0
+"508","Santa Clara","CA",2004,50509,"Dollars",0
+"509","Santa Clara","CA",2005,52884,"Dollars",0
+"510","Santa Clara","CA",2006,57611,"Dollars",0
+"511","Santa Clara","CA",2007,61760,"Dollars",0
+"512","Santa Clara","CA",2008,60928,"Dollars",0
+"513","Santa Clara","CA",2009,56816,"Dollars",0
+"514","Santa Clara","CA",2010,60863,"Dollars",0
+"515","Santa Clara","CA",2011,65684,"Dollars",0
+"516","Santa Clara","CA",2012,71690,"Dollars",0
+"517","Santa Cruz","CA",2013,52252,"Dollars",0
+"518","Santa Cruz","CA",2014,54072,"Dollars",0
+"519","Santa Cruz","CA",2015,56902,"Dollars",0
+"520","Santa Cruz","CA",2004,41075,"Dollars",0
+"521","Santa Cruz","CA",2005,41417,"Dollars",0
+"522","Santa Cruz","CA",2006,43669,"Dollars",0
+"523","Santa Cruz","CA",2007,45656,"Dollars",0
+"524","Santa Cruz","CA",2008,46666,"Dollars",0
+"525","Santa Cruz","CA",2009,45308,"Dollars",0
+"526","Santa Cruz","CA",2010,48843,"Dollars",0
+"527","Santa Cruz","CA",2011,49290,"Dollars",0
+"528","Santa Cruz","CA",2012,51725,"Dollars",0
+"529","Shasta","CA",2013,35799,"Dollars",0
+"530","Shasta","CA",2014,37909,"Dollars",0
+"531","Shasta","CA",2015,40252,"Dollars",0
+"532","Shasta","CA",2004,28875,"Dollars",0
+"533","Shasta","CA",2005,29352,"Dollars",0
+"534","Shasta","CA",2006,31302,"Dollars",0
+"535","Shasta","CA",2007,32582,"Dollars",0
+"536","Shasta","CA",2008,32669,"Dollars",0
+"537","Shasta","CA",2009,33096,"Dollars",0
+"538","Shasta","CA",2010,34493,"Dollars",0
+"539","Shasta","CA",2011,34982,"Dollars",0
+"540","Shasta","CA",2012,35512,"Dollars",0
+"541","Sierra","CA",2013,35366,"Dollars",0
+"542","Sierra","CA",2014,37111,"Dollars",0
+"543","Sierra","CA",2015,36501,"Dollars",0
+"544","Sierra","CA",2004,25664,"Dollars",0
+"545","Sierra","CA",2005,26237,"Dollars",0
+"546","Sierra","CA",2006,26359,"Dollars",0
+"547","Sierra","CA",2007,27705,"Dollars",0
+"548","Sierra","CA",2008,28172,"Dollars",0
+"549","Sierra","CA",2009,29909,"Dollars",0
+"550","Sierra","CA",2010,31945,"Dollars",0
+"551","Sierra","CA",2011,33655,"Dollars",0
+"552","Sierra","CA",2012,35047,"Dollars",0
+"553","Siskiyou","CA",2004,27225,"Dollars",0
+"554","Siskiyou","CA",2005,26948,"Dollars",0
+"555","Siskiyou","CA",2006,28881,"Dollars",0
+"556","Siskiyou","CA",2007,30219,"Dollars",0
+"557","Siskiyou","CA",2008,31663,"Dollars",0
+"558","Siskiyou","CA",2009,30695,"Dollars",0
+"559","Siskiyou","CA",2010,31805,"Dollars",0
+"560","Siskiyou","CA",2011,33248,"Dollars",0
+"561","Siskiyou","CA",2012,33571,"Dollars",0
+"562","Siskiyou","CA",2013,34302,"Dollars",0
+"563","Siskiyou","CA",2014,36561,"Dollars",0
+"564","Siskiyou","CA",2015,39585,"Dollars",0
+"565","Solano","CA",2004,32965,"Dollars",0
+"566","Solano","CA",2005,33987,"Dollars",0
+"567","Solano","CA",2006,35768,"Dollars",0
+"568","Solano","CA",2007,37429,"Dollars",0
+"569","Solano","CA",2008,38004,"Dollars",0
+"570","Solano","CA",2009,37518,"Dollars",0
+"571","Solano","CA",2010,37656,"Dollars",0
+"572","Solano","CA",2011,38635,"Dollars",0
+"573","Solano","CA",2012,38975,"Dollars",0
+"574","Solano","CA",2013,40025,"Dollars",0
+"575","Solano","CA",2014,41195,"Dollars",0
+"576","Solano","CA",2015,43597,"Dollars",0
+"577","Sonoma","CA",2013,47527,"Dollars",0
+"578","Sonoma","CA",2014,49836,"Dollars",0
+"579","Sonoma","CA",2015,53594,"Dollars",0
+"580","Sonoma","CA",2004,38865,"Dollars",0
+"581","Sonoma","CA",2005,40023,"Dollars",0
+"582","Sonoma","CA",2006,42764,"Dollars",0
+"583","Sonoma","CA",2007,44055,"Dollars",0
+"584","Sonoma","CA",2008,43214,"Dollars",0
+"585","Sonoma","CA",2009,41550,"Dollars",0
+"586","Sonoma","CA",2010,42813,"Dollars",0
+"587","Sonoma","CA",2011,44462,"Dollars",0
+"588","Sonoma","CA",2012,46251,"Dollars",0
+"589","Stanislaus","CA",2004,27733,"Dollars",0
+"590","Stanislaus","CA",2005,28371,"Dollars",0
+"591","Stanislaus","CA",2006,29359,"Dollars",0
+"592","Stanislaus","CA",2007,30799,"Dollars",0
+"593","Stanislaus","CA",2008,31076,"Dollars",0
+"594","Stanislaus","CA",2009,30583,"Dollars",0
+"595","Stanislaus","CA",2010,31909,"Dollars",0
+"596","Stanislaus","CA",2011,32860,"Dollars",0
+"597","Stanislaus","CA",2012,33794,"Dollars",0
+"598","Stanislaus","CA",2013,34382,"Dollars",0
+"599","Stanislaus","CA",2014,36753,"Dollars",0
+"600","Stanislaus","CA",2015,39006,"Dollars",0
+"601","Sutter","CA",2004,28460,"Dollars",0
+"602","Sutter","CA",2005,28964,"Dollars",0
+"603","Sutter","CA",2006,30870,"Dollars",0
+"604","Sutter","CA",2007,32772,"Dollars",0
+"605","Sutter","CA",2008,34076,"Dollars",0
+"606","Sutter","CA",2009,34369,"Dollars",0
+"607","Sutter","CA",2010,34433,"Dollars",0
+"608","Sutter","CA",2011,35304,"Dollars",0
+"609","Sutter","CA",2012,34985,"Dollars",0
+"610","Sutter","CA",2013,36468,"Dollars",0
+"611","Sutter","CA",2014,36688,"Dollars",0
+"612","Sutter","CA",2015,39130,"Dollars",0
+"613","Tehama","CA",2005,24620,"Dollars",0
+"614","Tehama","CA",2004,23381,"Dollars",0
+"615","Tehama","CA",2015,35500,"Dollars",0
+"616","Tehama","CA",2014,33917,"Dollars",0
+"617","Tehama","CA",2013,31594,"Dollars",0
+"618","Tehama","CA",2012,31293,"Dollars",0
+"619","Tehama","CA",2011,29964,"Dollars",0
+"620","Tehama","CA",2010,28725,"Dollars",0
+"621","Tehama","CA",2009,27719,"Dollars",0
+"622","Tehama","CA",2008,26953,"Dollars",0
+"623","Tehama","CA",2007,27142,"Dollars",0
+"624","Tehama","CA",2006,25377,"Dollars",0
+"625","Trinity","CA",2004,23956,"Dollars",0
+"626","Trinity","CA",2005,22957,"Dollars",0
+"627","Trinity","CA",2013,26688,"Dollars",0
+"628","Trinity","CA",2014,28420,"Dollars",0
+"629","Trinity","CA",2015,29552,"Dollars",0
+"630","Trinity","CA",2006,23284,"Dollars",0
+"631","Trinity","CA",2007,25133,"Dollars",0
+"632","Trinity","CA",2008,26170,"Dollars",0
+"633","Trinity","CA",2009,26654,"Dollars",0
+"634","Trinity","CA",2010,27821,"Dollars",0
+"635","Trinity","CA",2011,27311,"Dollars",0
+"636","Trinity","CA",2012,26857,"Dollars",0
+"637","Tulare","CA",2013,32017,"Dollars",0
+"638","Tulare","CA",2014,34983,"Dollars",0
+"639","Tulare","CA",2015,35556,"Dollars",0
+"640","Tulare","CA",2004,24922,"Dollars",0
+"641","Tulare","CA",2005,25606,"Dollars",0
+"642","Tulare","CA",2006,25996,"Dollars",0
+"643","Tulare","CA",2007,29074,"Dollars",0
+"644","Tulare","CA",2008,28639,"Dollars",0
+"645","Tulare","CA",2009,27740,"Dollars",0
+"646","Tulare","CA",2010,30109,"Dollars",0
+"647","Tulare","CA",2011,31644,"Dollars",0
+"648","Tulare","CA",2012,31434,"Dollars",0
+"649","Tuolumne","CA",2004,28296,"Dollars",0
+"650","Tuolumne","CA",2005,29132,"Dollars",0
+"651","Tuolumne","CA",2006,30459,"Dollars",0
+"652","Tuolumne","CA",2007,31811,"Dollars",0
+"653","Tuolumne","CA",2008,32424,"Dollars",0
+"654","Tuolumne","CA",2009,32168,"Dollars",0
+"655","Tuolumne","CA",2010,34579,"Dollars",0
+"656","Tuolumne","CA",2011,35841,"Dollars",0
+"657","Tuolumne","CA",2012,36606,"Dollars",0
+"658","Tuolumne","CA",2013,36116,"Dollars",0
+"659","Tuolumne","CA",2014,38181,"Dollars",0
+"660","Tuolumne","CA",2015,40912,"Dollars",0
+"661","Ventura","CA",2013,49787,"Dollars",0
+"662","Ventura","CA",2014,51943,"Dollars",0
+"663","Ventura","CA",2015,54241,"Dollars",0
+"664","Ventura","CA",2004,39950,"Dollars",0
+"665","Ventura","CA",2005,41390,"Dollars",0
+"666","Ventura","CA",2006,44042,"Dollars",0
+"667","Ventura","CA",2007,45736,"Dollars",0
+"668","Ventura","CA",2008,45775,"Dollars",0
+"669","Ventura","CA",2009,44435,"Dollars",0
+"670","Ventura","CA",2010,45947,"Dollars",0
+"671","Ventura","CA",2011,47868,"Dollars",0
+"672","Ventura","CA",2012,49592,"Dollars",0
+"673","Yolo","CA",2004,33182,"Dollars",0
+"674","Yolo","CA",2005,34286,"Dollars",0
+"675","Yolo","CA",2006,36651,"Dollars",0
+"676","Yolo","CA",2007,38498,"Dollars",0
+"677","Yolo","CA",2008,39765,"Dollars",0
+"678","Yolo","CA",2009,39447,"Dollars",0
+"679","Yolo","CA",2010,39970,"Dollars",0
+"680","Yolo","CA",2011,42841,"Dollars",0
+"681","Yolo","CA",2012,43527,"Dollars",0
+"682","Yolo","CA",2013,44581,"Dollars",0
+"683","Yolo","CA",2014,46763,"Dollars",0
+"684","Yolo","CA",2015,49027,"Dollars",0
+"685","Yuba","CA",2013,33459,"Dollars",0
+"686","Yuba","CA",2014,34303,"Dollars",0
+"687","Yuba","CA",2015,36587,"Dollars",0
+"688","Yuba","CA",2004,25627,"Dollars",0
+"689","Yuba","CA",2005,26666,"Dollars",0
+"690","Yuba","CA",2006,27744,"Dollars",0
+"691","Yuba","CA",2007,29421,"Dollars",0
+"692","Yuba","CA",2008,30658,"Dollars",0
+"693","Yuba","CA",2009,30832,"Dollars",0
+"694","Yuba","CA",2010,31375,"Dollars",0
+"695","Yuba","CA",2011,32320,"Dollars",0
+"696","Yuba","CA",2012,32564,"Dollars",0
