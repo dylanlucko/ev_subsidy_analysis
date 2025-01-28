@@ -1,0 +1,697 @@
+"","County","State","Year","Population","Unit","Multiplier"
+"1","Alameda","CA",2013,1584620,"Number of persons",0
+"2","Alameda","CA",2014,1614447,"Number of persons",0
+"3","Alameda","CA",2015,1642880,"Number of persons",0
+"4","Alameda","CA",2004,1445721,"Number of persons",0
+"5","Alameda","CA",2005,1441545,"Number of persons",0
+"6","Alameda","CA",2006,1444484,"Number of persons",0
+"7","Alameda","CA",2007,1455715,"Number of persons",0
+"8","Alameda","CA",2008,1477208,"Number of persons",0
+"9","Alameda","CA",2009,1498539,"Number of persons",0
+"10","Alameda","CA",2010,1513371,"Number of persons",0
+"11","Alameda","CA",2011,1532793,"Number of persons",0
+"12","Alameda","CA",2012,1557209,"Number of persons",0
+"13","Alpine","CA",2004,1263,"Number of persons",0
+"14","Alpine","CA",2005,1219,"Number of persons",0
+"15","Alpine","CA",2006,1276,"Number of persons",0
+"16","Alpine","CA",2007,1274,"Number of persons",0
+"17","Alpine","CA",2008,1202,"Number of persons",0
+"18","Alpine","CA",2009,1197,"Number of persons",0
+"19","Alpine","CA",2010,1163,"Number of persons",0
+"20","Alpine","CA",2011,1102,"Number of persons",0
+"21","Alpine","CA",2012,1128,"Number of persons",0
+"22","Alpine","CA",2013,1156,"Number of persons",0
+"23","Alpine","CA",2014,1114,"Number of persons",0
+"24","Alpine","CA",2015,1118,"Number of persons",0
+"25","Amador","CA",2004,37400,"Number of persons",0
+"26","Amador","CA",2005,38040,"Number of persons",0
+"27","Amador","CA",2006,38353,"Number of persons",0
+"28","Amador","CA",2007,38756,"Number of persons",0
+"29","Amador","CA",2008,38248,"Number of persons",0
+"30","Amador","CA",2009,38238,"Number of persons",0
+"31","Amador","CA",2010,37893,"Number of persons",0
+"32","Amador","CA",2011,37590,"Number of persons",0
+"33","Amador","CA",2012,37196,"Number of persons",0
+"34","Amador","CA",2013,36753,"Number of persons",0
+"35","Amador","CA",2014,36903,"Number of persons",0
+"36","Amador","CA",2015,37250,"Number of persons",0
+"37","Butte","CA",2014,222335,"Number of persons",0
+"38","Butte","CA",2013,220746,"Number of persons",0
+"39","Butte","CA",2012,220253,"Number of persons",0
+"40","Butte","CA",2011,219638,"Number of persons",0
+"41","Butte","CA",2010,219882,"Number of persons",0
+"42","Butte","CA",2009,219777,"Number of persons",0
+"43","Butte","CA",2008,219034,"Number of persons",0
+"44","Butte","CA",2007,217469,"Number of persons",0
+"45","Butte","CA",2006,216824,"Number of persons",0
+"46","Butte","CA",2005,214752,"Number of persons",0
+"47","Butte","CA",2004,213065,"Number of persons",0
+"48","Butte","CA",2015,223167,"Number of persons",0
+"49","Calaveras","CA",2004,44530,"Number of persons",0
+"50","Calaveras","CA",2005,45295,"Number of persons",0
+"51","Calaveras","CA",2006,46045,"Number of persons",0
+"52","Calaveras","CA",2007,46268,"Number of persons",0
+"53","Calaveras","CA",2008,46265,"Number of persons",0
+"54","Calaveras","CA",2009,45900,"Number of persons",0
+"55","Calaveras","CA",2010,45443,"Number of persons",0
+"56","Calaveras","CA",2011,45039,"Number of persons",0
+"57","Calaveras","CA",2012,44603,"Number of persons",0
+"58","Calaveras","CA",2013,44352,"Number of persons",0
+"59","Calaveras","CA",2014,44277,"Number of persons",0
+"60","Calaveras","CA",2015,44475,"Number of persons",0
+"61","Colusa","CA",2014,21273,"Number of persons",0
+"62","Colusa","CA",2013,21329,"Number of persons",0
+"63","Colusa","CA",2012,21337,"Number of persons",0
+"64","Colusa","CA",2011,21349,"Number of persons",0
+"65","Colusa","CA",2010,21442,"Number of persons",0
+"66","Colusa","CA",2009,21250,"Number of persons",0
+"67","Colusa","CA",2008,21134,"Number of persons",0
+"68","Colusa","CA",2007,21075,"Number of persons",0
+"69","Colusa","CA",2006,20890,"Number of persons",0
+"70","Colusa","CA",2005,20540,"Number of persons",0
+"71","Colusa","CA",2004,20207,"Number of persons",0
+"72","Colusa","CA",2015,21353,"Number of persons",0
+"73","Contra Costa","CA",2013,1097115,"Number of persons",0
+"74","Contra Costa","CA",2014,1113790,"Number of persons",0
+"75","Contra Costa","CA",2015,1130570,"Number of persons",0
+"76","Contra Costa","CA",2004,992424,"Number of persons",0
+"77","Contra Costa","CA",2005,999013,"Number of persons",0
+"78","Contra Costa","CA",2006,1000834,"Number of persons",0
+"79","Contra Costa","CA",2007,1009152,"Number of persons",0
+"80","Contra Costa","CA",2008,1023344,"Number of persons",0
+"81","Contra Costa","CA",2009,1037890,"Number of persons",0
+"82","Contra Costa","CA",2010,1052800,"Number of persons",0
+"83","Contra Costa","CA",2011,1066804,"Number of persons",0
+"84","Contra Costa","CA",2012,1080073,"Number of persons",0
+"85","Del Norte","CA",2013,27736,"Number of persons",0
+"86","Del Norte","CA",2014,27074,"Number of persons",0
+"87","Del Norte","CA",2015,27065,"Number of persons",0
+"88","Del Norte","CA",2004,27950,"Number of persons",0
+"89","Del Norte","CA",2005,28281,"Number of persons",0
+"90","Del Norte","CA",2006,28211,"Number of persons",0
+"91","Del Norte","CA",2007,28415,"Number of persons",0
+"92","Del Norte","CA",2008,28496,"Number of persons",0
+"93","Del Norte","CA",2009,28599,"Number of persons",0
+"94","Del Norte","CA",2010,28562,"Number of persons",0
+"95","Del Norte","CA",2011,28414,"Number of persons",0
+"96","Del Norte","CA",2012,28135,"Number of persons",0
+"97","El Dorado","CA",2004,171653,"Number of persons",0
+"98","El Dorado","CA",2005,175003,"Number of persons",0
+"99","El Dorado","CA",2006,176773,"Number of persons",0
+"100","El Dorado","CA",2007,177694,"Number of persons",0
+"101","El Dorado","CA",2008,179150,"Number of persons",0
+"102","El Dorado","CA",2009,180455,"Number of persons",0
+"103","El Dorado","CA",2010,181118,"Number of persons",0
+"104","El Dorado","CA",2011,180748,"Number of persons",0
+"105","El Dorado","CA",2012,180227,"Number of persons",0
+"106","El Dorado","CA",2013,180970,"Number of persons",0
+"107","El Dorado","CA",2014,182420,"Number of persons",0
+"108","El Dorado","CA",2015,183711,"Number of persons",0
+"109","Fresno","CA",2004,861035,"Number of persons",0
+"110","Fresno","CA",2005,872470,"Number of persons",0
+"111","Fresno","CA",2006,883862,"Number of persons",0
+"112","Fresno","CA",2007,895933,"Number of persons",0
+"113","Fresno","CA",2008,909630,"Number of persons",0
+"114","Fresno","CA",2009,921478,"Number of persons",0
+"115","Fresno","CA",2010,932185,"Number of persons",0
+"116","Fresno","CA",2011,940133,"Number of persons",0
+"117","Fresno","CA",2012,946381,"Number of persons",0
+"118","Fresno","CA",2013,953473,"Number of persons",0
+"119","Fresno","CA",2014,963149,"Number of persons",0
+"120","Fresno","CA",2015,972726,"Number of persons",0
+"121","Glenn","CA",2013,27970,"Number of persons",0
+"122","Glenn","CA",2014,28046,"Number of persons",0
+"123","Glenn","CA",2015,28024,"Number of persons",0
+"124","Glenn","CA",2004,27122,"Number of persons",0
+"125","Glenn","CA",2005,27393,"Number of persons",0
+"126","Glenn","CA",2006,27652,"Number of persons",0
+"127","Glenn","CA",2007,27775,"Number of persons",0
+"128","Glenn","CA",2008,28019,"Number of persons",0
+"129","Glenn","CA",2009,28100,"Number of persons",0
+"130","Glenn","CA",2010,28140,"Number of persons",0
+"131","Glenn","CA",2011,28203,"Number of persons",0
+"132","Glenn","CA",2012,27965,"Number of persons",0
+"133","Humboldt","CA",2013,134866,"Number of persons",0
+"134","Humboldt","CA",2014,135106,"Number of persons",0
+"135","Humboldt","CA",2015,135860,"Number of persons",0
+"136","Humboldt","CA",2004,130702,"Number of persons",0
+"137","Humboldt","CA",2005,131497,"Number of persons",0
+"138","Humboldt","CA",2006,132093,"Number of persons",0
+"139","Humboldt","CA",2007,132001,"Number of persons",0
+"140","Humboldt","CA",2008,132657,"Number of persons",0
+"141","Humboldt","CA",2009,133744,"Number of persons",0
+"142","Humboldt","CA",2010,135042,"Number of persons",0
+"143","Humboldt","CA",2011,135419,"Number of persons",0
+"144","Humboldt","CA",2012,134888,"Number of persons",0
+"145","Imperial","CA",2004,152259,"Number of persons",0
+"146","Imperial","CA",2005,156113,"Number of persons",0
+"147","Imperial","CA",2006,160505,"Number of persons",0
+"148","Imperial","CA",2007,164596,"Number of persons",0
+"149","Imperial","CA",2008,167917,"Number of persons",0
+"150","Imperial","CA",2009,172008,"Number of persons",0
+"151","Imperial","CA",2010,174685,"Number of persons",0
+"152","Imperial","CA",2011,175632,"Number of persons",0
+"153","Imperial","CA",2012,176308,"Number of persons",0
+"154","Imperial","CA",2013,176043,"Number of persons",0
+"155","Imperial","CA",2014,177447,"Number of persons",0
+"156","Imperial","CA",2015,178280,"Number of persons",0
+"157","Inyo","CA",2004,18578,"Number of persons",0
+"158","Inyo","CA",2005,18478,"Number of persons",0
+"159","Inyo","CA",2006,18370,"Number of persons",0
+"160","Inyo","CA",2007,18426,"Number of persons",0
+"161","Inyo","CA",2008,18318,"Number of persons",0
+"162","Inyo","CA",2009,18544,"Number of persons",0
+"163","Inyo","CA",2010,18527,"Number of persons",0
+"164","Inyo","CA",2011,18502,"Number of persons",0
+"165","Inyo","CA",2012,18557,"Number of persons",0
+"166","Inyo","CA",2013,18655,"Number of persons",0
+"167","Inyo","CA",2014,18682,"Number of persons",0
+"168","Inyo","CA",2015,18589,"Number of persons",0
+"169","Kern","CA",2005,760726,"Number of persons",0
+"170","Kern","CA",2004,736296,"Number of persons",0
+"171","Kern","CA",2015,880708,"Number of persons",0
+"172","Kern","CA",2014,873177,"Number of persons",0
+"173","Kern","CA",2013,865259,"Number of persons",0
+"174","Kern","CA",2012,856127,"Number of persons",0
+"175","Kern","CA",2011,849606,"Number of persons",0
+"176","Kern","CA",2010,841554,"Number of persons",0
+"177","Kern","CA",2009,830137,"Number of persons",0
+"178","Kern","CA",2008,818327,"Number of persons",0
+"179","Kern","CA",2007,803281,"Number of persons",0
+"180","Kern","CA",2006,784511,"Number of persons",0
+"181","Kings","CA",2004,143601,"Number of persons",0
+"182","Kings","CA",2005,145147,"Number of persons",0
+"183","Kings","CA",2006,147712,"Number of persons",0
+"184","Kings","CA",2007,150420,"Number of persons",0
+"185","Kings","CA",2008,152027,"Number of persons",0
+"186","Kings","CA",2009,152278,"Number of persons",0
+"187","Kings","CA",2010,152339,"Number of persons",0
+"188","Kings","CA",2011,151765,"Number of persons",0
+"189","Kings","CA",2012,150860,"Number of persons",0
+"190","Kings","CA",2013,150203,"Number of persons",0
+"191","Kings","CA",2014,149329,"Number of persons",0
+"192","Kings","CA",2015,149905,"Number of persons",0
+"193","Lake","CA",2004,63116,"Number of persons",0
+"194","Lake","CA",2005,63811,"Number of persons",0
+"195","Lake","CA",2006,64202,"Number of persons",0
+"196","Lake","CA",2007,64077,"Number of persons",0
+"197","Lake","CA",2008,64392,"Number of persons",0
+"198","Lake","CA",2009,64413,"Number of persons",0
+"199","Lake","CA",2010,64823,"Number of persons",0
+"200","Lake","CA",2011,64694,"Number of persons",0
+"201","Lake","CA",2012,64749,"Number of persons",0
+"202","Lake","CA",2013,64942,"Number of persons",0
+"203","Lake","CA",2014,65545,"Number of persons",0
+"204","Lake","CA",2015,66116,"Number of persons",0
+"205","Lassen","CA",2004,34458,"Number of persons",0
+"206","Lassen","CA",2005,34488,"Number of persons",0
+"207","Lassen","CA",2006,34605,"Number of persons",0
+"208","Lassen","CA",2007,35615,"Number of persons",0
+"209","Lassen","CA",2008,35221,"Number of persons",0
+"210","Lassen","CA",2009,35160,"Number of persons",0
+"211","Lassen","CA",2010,34901,"Number of persons",0
+"212","Lassen","CA",2011,34595,"Number of persons",0
+"213","Lassen","CA",2012,34263,"Number of persons",0
+"214","Lassen","CA",2013,33015,"Number of persons",0
+"215","Lassen","CA",2014,32812,"Number of persons",0
+"216","Lassen","CA",2015,32662,"Number of persons",0
+"217","Los Angeles","CA",2004,9793263,"Number of persons",0
+"218","Los Angeles","CA",2005,9786373,"Number of persons",0
+"219","Los Angeles","CA",2006,9737955,"Number of persons",0
+"220","Los Angeles","CA",2007,9700359,"Number of persons",0
+"221","Los Angeles","CA",2008,9735147,"Number of persons",0
+"222","Los Angeles","CA",2009,9787400,"Number of persons",0
+"223","Los Angeles","CA",2010,9822677,"Number of persons",0
+"224","Los Angeles","CA",2011,9878903,"Number of persons",0
+"225","Los Angeles","CA",2012,9940845,"Number of persons",0
+"226","Los Angeles","CA",2013,10000924,"Number of persons",0
+"227","Los Angeles","CA",2014,10051511,"Number of persons",0
+"228","Los Angeles","CA",2015,10099677,"Number of persons",0
+"229","Madera","CA",2004,137106,"Number of persons",0
+"230","Madera","CA",2005,140313,"Number of persons",0
+"231","Madera","CA",2006,143622,"Number of persons",0
+"232","Madera","CA",2007,146067,"Number of persons",0
+"233","Madera","CA",2008,148359,"Number of persons",0
+"234","Madera","CA",2009,149234,"Number of persons",0
+"235","Madera","CA",2010,150978,"Number of persons",0
+"236","Madera","CA",2011,151545,"Number of persons",0
+"237","Madera","CA",2012,151269,"Number of persons",0
+"238","Madera","CA",2013,150933,"Number of persons",0
+"239","Madera","CA",2014,152878,"Number of persons",0
+"240","Madera","CA",2015,152856,"Number of persons",0
+"241","Marin","CA",2013,259824,"Number of persons",0
+"242","Marin","CA",2014,262227,"Number of persons",0
+"243","Marin","CA",2015,263233,"Number of persons",0
+"244","Marin","CA",2004,243769,"Number of persons",0
+"245","Marin","CA",2005,244206,"Number of persons",0
+"246","Marin","CA",2006,244580,"Number of persons",0
+"247","Marin","CA",2007,246248,"Number of persons",0
+"248","Marin","CA",2008,248398,"Number of persons",0
+"249","Marin","CA",2009,250862,"Number of persons",0
+"250","Marin","CA",2010,253009,"Number of persons",0
+"251","Marin","CA",2011,255904,"Number of persons",0
+"252","Marin","CA",2012,257034,"Number of persons",0
+"253","Mariposa","CA",2004,17844,"Number of persons",0
+"254","Mariposa","CA",2005,17972,"Number of persons",0
+"255","Mariposa","CA",2006,18219,"Number of persons",0
+"256","Mariposa","CA",2007,18366,"Number of persons",0
+"257","Mariposa","CA",2008,18412,"Number of persons",0
+"258","Mariposa","CA",2009,18212,"Number of persons",0
+"259","Mariposa","CA",2010,18301,"Number of persons",0
+"260","Mariposa","CA",2011,18193,"Number of persons",0
+"261","Mariposa","CA",2012,17903,"Number of persons",0
+"262","Mariposa","CA",2013,17826,"Number of persons",0
+"263","Mariposa","CA",2014,17728,"Number of persons",0
+"264","Mariposa","CA",2015,17631,"Number of persons",0
+"265","Mendocino","CA",2004,88030,"Number of persons",0
+"266","Mendocino","CA",2005,87981,"Number of persons",0
+"267","Mendocino","CA",2006,87345,"Number of persons",0
+"268","Mendocino","CA",2007,87071,"Number of persons",0
+"269","Mendocino","CA",2008,87468,"Number of persons",0
+"270","Mendocino","CA",2009,87722,"Number of persons",0
+"271","Mendocino","CA",2010,87922,"Number of persons",0
+"272","Mendocino","CA",2011,87969,"Number of persons",0
+"273","Mendocino","CA",2012,88438,"Number of persons",0
+"274","Mendocino","CA",2013,88725,"Number of persons",0
+"275","Mendocino","CA",2014,89422,"Number of persons",0
+"276","Mendocino","CA",2015,89822,"Number of persons",0
+"277","Merced","CA",2004,237180,"Number of persons",0
+"278","Merced","CA",2005,242554,"Number of persons",0
+"279","Merced","CA",2006,245338,"Number of persons",0
+"280","Merced","CA",2007,248540,"Number of persons",0
+"281","Merced","CA",2008,250538,"Number of persons",0
+"282","Merced","CA",2009,252302,"Number of persons",0
+"283","Merced","CA",2010,256762,"Number of persons",0
+"284","Merced","CA",2011,259518,"Number of persons",0
+"285","Merced","CA",2012,261264,"Number of persons",0
+"286","Merced","CA",2013,262597,"Number of persons",0
+"287","Merced","CA",2014,265177,"Number of persons",0
+"288","Merced","CA",2015,267299,"Number of persons",0
+"289","Modoc","CA",2014,9032,"Number of persons",0
+"290","Modoc","CA",2013,9118,"Number of persons",0
+"291","Modoc","CA",2012,9332,"Number of persons",0
+"292","Modoc","CA",2011,9499,"Number of persons",0
+"293","Modoc","CA",2010,9695,"Number of persons",0
+"294","Modoc","CA",2009,9646,"Number of persons",0
+"295","Modoc","CA",2008,9551,"Number of persons",0
+"296","Modoc","CA",2007,9525,"Number of persons",0
+"297","Modoc","CA",2006,9617,"Number of persons",0
+"298","Modoc","CA",2005,9565,"Number of persons",0
+"299","Modoc","CA",2004,9605,"Number of persons",0
+"300","Modoc","CA",2015,9007,"Number of persons",0
+"301","Mono","CA",2004,13360,"Number of persons",0
+"302","Mono","CA",2005,13474,"Number of persons",0
+"303","Mono","CA",2006,13743,"Number of persons",0
+"304","Mono","CA",2007,13678,"Number of persons",0
+"305","Mono","CA",2008,13862,"Number of persons",0
+"306","Mono","CA",2009,14008,"Number of persons",0
+"307","Mono","CA",2010,14223,"Number of persons",0
+"308","Mono","CA",2011,14256,"Number of persons",0
+"309","Mono","CA",2012,14029,"Number of persons",0
+"310","Mono","CA",2013,13642,"Number of persons",0
+"311","Mono","CA",2014,13578,"Number of persons",0
+"312","Mono","CA",2015,13398,"Number of persons",0
+"313","Monterey","CA",2011,421259,"Number of persons",0
+"314","Monterey","CA",2010,416532,"Number of persons",0
+"315","Monterey","CA",2009,410263,"Number of persons",0
+"316","Monterey","CA",2008,406022,"Number of persons",0
+"317","Monterey","CA",2007,402376,"Number of persons",0
+"318","Monterey","CA",2006,401831,"Number of persons",0
+"319","Monterey","CA",2005,405139,"Number of persons",0
+"320","Monterey","CA",2004,408731,"Number of persons",0
+"321","Monterey","CA",2015,433979,"Number of persons",0
+"322","Monterey","CA",2014,431044,"Number of persons",0
+"323","Monterey","CA",2013,428490,"Number of persons",0
+"324","Monterey","CA",2012,425824,"Number of persons",0
+"325","Napa","CA",2004,130387,"Number of persons",0
+"326","Napa","CA",2005,130381,"Number of persons",0
+"327","Napa","CA",2006,131440,"Number of persons",0
+"328","Napa","CA",2007,132583,"Number of persons",0
+"329","Napa","CA",2008,134093,"Number of persons",0
+"330","Napa","CA",2009,135280,"Number of persons",0
+"331","Napa","CA",2010,136791,"Number of persons",0
+"332","Napa","CA",2011,137865,"Number of persons",0
+"333","Napa","CA",2012,138861,"Number of persons",0
+"334","Napa","CA",2013,140041,"Number of persons",0
+"335","Napa","CA",2014,141014,"Number of persons",0
+"336","Napa","CA",2015,141613,"Number of persons",0
+"337","Nevada","CA",2013,98761,"Number of persons",0
+"338","Nevada","CA",2014,99649,"Number of persons",0
+"339","Nevada","CA",2015,100009,"Number of persons",0
+"340","Nevada","CA",2004,96512,"Number of persons",0
+"341","Nevada","CA",2005,97250,"Number of persons",0
+"342","Nevada","CA",2006,97549,"Number of persons",0
+"343","Nevada","CA",2007,97794,"Number of persons",0
+"344","Nevada","CA",2008,98200,"Number of persons",0
+"345","Nevada","CA",2009,98591,"Number of persons",0
+"346","Nevada","CA",2010,98856,"Number of persons",0
+"347","Nevada","CA",2011,99021,"Number of persons",0
+"348","Nevada","CA",2012,98714,"Number of persons",0
+"349","Orange","CA",2004,2941711,"Number of persons",0
+"350","Orange","CA",2005,2940055,"Number of persons",0
+"351","Orange","CA",2006,2932261,"Number of persons",0
+"352","Orange","CA",2007,2931629,"Number of persons",0
+"353","Orange","CA",2008,2957593,"Number of persons",0
+"354","Orange","CA",2009,2987177,"Number of persons",0
+"355","Orange","CA",2010,3016751,"Number of persons",0
+"356","Orange","CA",2011,3052105,"Number of persons",0
+"357","Orange","CA",2012,3082183,"Number of persons",0
+"358","Orange","CA",2013,3110324,"Number of persons",0
+"359","Orange","CA",2014,3133194,"Number of persons",0
+"360","Orange","CA",2015,3157254,"Number of persons",0
+"361","Placer","CA",2014,370255,"Number of persons",0
+"362","Placer","CA",2013,366182,"Number of persons",0
+"363","Placer","CA",2012,360792,"Number of persons",0
+"364","Placer","CA",2011,356610,"Number of persons",0
+"365","Placer","CA",2010,350063,"Number of persons",0
+"366","Placer","CA",2009,343810,"Number of persons",0
+"367","Placer","CA",2008,337568,"Number of persons",0
+"368","Placer","CA",2007,329023,"Number of persons",0
+"369","Placer","CA",2006,321934,"Number of persons",0
+"370","Placer","CA",2005,312762,"Number of persons",0
+"371","Placer","CA",2004,302841,"Number of persons",0
+"372","Placer","CA",2015,374135,"Number of persons",0
+"373","Plumas","CA",2004,21000,"Number of persons",0
+"374","Plumas","CA",2005,21010,"Number of persons",0
+"375","Plumas","CA",2006,20762,"Number of persons",0
+"376","Plumas","CA",2007,20667,"Number of persons",0
+"377","Plumas","CA",2008,20410,"Number of persons",0
+"378","Plumas","CA",2009,20169,"Number of persons",0
+"379","Plumas","CA",2010,19935,"Number of persons",0
+"380","Plumas","CA",2011,19819,"Number of persons",0
+"381","Plumas","CA",2012,19556,"Number of persons",0
+"382","Plumas","CA",2013,19149,"Number of persons",0
+"383","Plumas","CA",2014,18952,"Number of persons",0
+"384","Plumas","CA",2015,18827,"Number of persons",0
+"385","Riverside","CA",2004,1856542,"Number of persons",0
+"386","Riverside","CA",2005,1931785,"Number of persons",0
+"387","Riverside","CA",2006,2012370,"Number of persons",0
+"388","Riverside","CA",2007,2075183,"Number of persons",0
+"389","Riverside","CA",2008,2109712,"Number of persons",0
+"390","Riverside","CA",2009,2146725,"Number of persons",0
+"391","Riverside","CA",2010,2200098,"Number of persons",0
+"392","Riverside","CA",2011,2226411,"Number of persons",0
+"393","Riverside","CA",2012,2247232,"Number of persons",0
+"394","Riverside","CA",2013,2266357,"Number of persons",0
+"395","Riverside","CA",2014,2289151,"Number of persons",0
+"396","Riverside","CA",2015,2312059,"Number of persons",0
+"397","Sacramento","CA",2013,1465129,"Number of persons",0
+"398","Sacramento","CA",2014,1485221,"Number of persons",0
+"399","Sacramento","CA",2015,1506558,"Number of persons",0
+"400","Sacramento","CA",2004,1348932,"Number of persons",0
+"401","Sacramento","CA",2005,1360816,"Number of persons",0
+"402","Sacramento","CA",2006,1369563,"Number of persons",0
+"403","Sacramento","CA",2007,1381161,"Number of persons",0
+"404","Sacramento","CA",2008,1394438,"Number of persons",0
+"405","Sacramento","CA",2009,1408601,"Number of persons",0
+"406","Sacramento","CA",2010,1421965,"Number of persons",0
+"407","Sacramento","CA",2011,1436671,"Number of persons",0
+"408","Sacramento","CA",2012,1450201,"Number of persons",0
+"409","San Benito","CA",2013,57443,"Number of persons",0
+"410","San Benito","CA",2014,58053,"Number of persons",0
+"411","San Benito","CA",2015,58477,"Number of persons",0
+"412","San Benito","CA",2004,54849,"Number of persons",0
+"413","San Benito","CA",2005,54647,"Number of persons",0
+"414","San Benito","CA",2006,54124,"Number of persons",0
+"415","San Benito","CA",2007,54072,"Number of persons",0
+"416","San Benito","CA",2008,54267,"Number of persons",0
+"417","San Benito","CA",2009,54436,"Number of persons",0
+"418","San Benito","CA",2010,55553,"Number of persons",0
+"419","San Benito","CA",2011,56140,"Number of persons",0
+"420","San Benito","CA",2012,56788,"Number of persons",0
+"421","San Bernardino","CA",2004,1899065,"Number of persons",0
+"422","San Bernardino","CA",2005,1943924,"Number of persons",0
+"423","San Bernardino","CA",2006,1974140,"Number of persons",0
+"424","San Bernardino","CA",2007,1992161,"Number of persons",0
+"425","San Bernardino","CA",2008,2003735,"Number of persons",0
+"426","San Bernardino","CA",2009,2013960,"Number of persons",0
+"427","San Bernardino","CA",2010,2040641,"Number of persons",0
+"428","San Bernardino","CA",2011,2059780,"Number of persons",0
+"429","San Bernardino","CA",2012,2071613,"Number of persons",0
+"430","San Bernardino","CA",2013,2079963,"Number of persons",0
+"431","San Bernardino","CA",2014,2095533,"Number of persons",0
+"432","San Bernardino","CA",2015,2110852,"Number of persons",0
+"433","San Diego","CA",2013,3199707,"Number of persons",0
+"434","San Diego","CA",2012,3167554,"Number of persons",0
+"435","San Diego","CA",2011,3133069,"Number of persons",0
+"436","San Diego","CA",2010,3102436,"Number of persons",0
+"437","San Diego","CA",2009,3061203,"Number of persons",0
+"438","San Diego","CA",2008,3022116,"Number of persons",0
+"439","San Diego","CA",2007,2975742,"Number of persons",0
+"440","San Diego","CA",2006,2947289,"Number of persons",0
+"441","San Diego","CA",2005,2938375,"Number of persons",0
+"442","San Diego","CA",2004,2930007,"Number of persons",0
+"443","San Diego","CA",2015,3262566,"Number of persons",0
+"444","San Diego","CA",2014,3234658,"Number of persons",0
+"445","San Francisco","CA",2014,852202,"Number of persons",0
+"446","San Francisco","CA",2013,840663,"Number of persons",0
+"447","San Francisco","CA",2012,829624,"Number of persons",0
+"448","San Francisco","CA",2011,816054,"Number of persons",0
+"449","San Francisco","CA",2010,805590,"Number of persons",0
+"450","San Francisco","CA",2009,801922,"Number of persons",0
+"451","San Francisco","CA",2008,791152,"Number of persons",0
+"452","San Francisco","CA",2007,778673,"Number of persons",0
+"453","San Francisco","CA",2006,768650,"Number of persons",0
+"454","San Francisco","CA",2005,763016,"Number of persons",0
+"455","San Francisco","CA",2004,761325,"Number of persons",0
+"456","San Francisco","CA",2015,864846,"Number of persons",0
+"457","San Joaquin","CA",2004,642898,"Number of persons",0
+"458","San Joaquin","CA",2005,656985,"Number of persons",0
+"459","San Joaquin","CA",2006,662812,"Number of persons",0
+"460","San Joaquin","CA",2007,668080,"Number of persons",0
+"461","San Joaquin","CA",2008,671692,"Number of persons",0
+"462","San Joaquin","CA",2009,677736,"Number of persons",0
+"463","San Joaquin","CA",2010,687381,"Number of persons",0
+"464","San Joaquin","CA",2011,695611,"Number of persons",0
+"465","San Joaquin","CA",2012,701892,"Number of persons",0
+"466","San Joaquin","CA",2013,705382,"Number of persons",0
+"467","San Joaquin","CA",2014,716006,"Number of persons",0
+"468","San Joaquin","CA",2015,727828,"Number of persons",0
+"469","San Luis Obispo","CA",2004,256842,"Number of persons",0
+"470","San Luis Obispo","CA",2005,258615,"Number of persons",0
+"471","San Luis Obispo","CA",2006,260498,"Number of persons",0
+"472","San Luis Obispo","CA",2007,262770,"Number of persons",0
+"473","San Luis Obispo","CA",2008,266358,"Number of persons",0
+"474","San Luis Obispo","CA",2009,268145,"Number of persons",0
+"475","San Luis Obispo","CA",2010,269798,"Number of persons",0
+"476","San Luis Obispo","CA",2011,271044,"Number of persons",0
+"477","San Luis Obispo","CA",2012,274152,"Number of persons",0
+"478","San Luis Obispo","CA",2013,275681,"Number of persons",0
+"479","San Luis Obispo","CA",2014,278231,"Number of persons",0
+"480","San Luis Obispo","CA",2015,280088,"Number of persons",0
+"481","San Mateo","CA",2013,750357,"Number of persons",0
+"482","San Mateo","CA",2012,740538,"Number of persons",0
+"483","San Mateo","CA",2011,729402,"Number of persons",0
+"484","San Mateo","CA",2010,720038,"Number of persons",0
+"485","San Mateo","CA",2009,713617,"Number of persons",0
+"486","San Mateo","CA",2008,703830,"Number of persons",0
+"487","San Mateo","CA",2007,693849,"Number of persons",0
+"488","San Mateo","CA",2006,690176,"Number of persons",0
+"489","San Mateo","CA",2005,690078,"Number of persons",0
+"490","San Mateo","CA",2004,690161,"Number of persons",0
+"491","San Mateo","CA",2015,767506,"Number of persons",0
+"492","San Mateo","CA",2014,759276,"Number of persons",0
+"493","Santa Barbara","CA",2004,407284,"Number of persons",0
+"494","Santa Barbara","CA",2005,408079,"Number of persons",0
+"495","Santa Barbara","CA",2006,408085,"Number of persons",0
+"496","Santa Barbara","CA",2007,411243,"Number of persons",0
+"497","Santa Barbara","CA",2008,415859,"Number of persons",0
+"498","Santa Barbara","CA",2009,420356,"Number of persons",0
+"499","Santa Barbara","CA",2010,424292,"Number of persons",0
+"500","Santa Barbara","CA",2011,425775,"Number of persons",0
+"501","Santa Barbara","CA",2012,430311,"Number of persons",0
+"502","Santa Barbara","CA",2013,435492,"Number of persons",0
+"503","Santa Barbara","CA",2014,440227,"Number of persons",0
+"504","Santa Barbara","CA",2015,443677,"Number of persons",0
+"505","Santa Clara","CA",2013,1873133,"Number of persons",0
+"506","Santa Clara","CA",2014,1900682,"Number of persons",0
+"507","Santa Clara","CA",2015,1927498,"Number of persons",0
+"508","Santa Clara","CA",2004,1663167,"Number of persons",0
+"509","Santa Clara","CA",2005,1675312,"Number of persons",0
+"510","Santa Clara","CA",2006,1691159,"Number of persons",0
+"511","Santa Clara","CA",2007,1712026,"Number of persons",0
+"512","Santa Clara","CA",2008,1740964,"Number of persons",0
+"513","Santa Clara","CA",2009,1765137,"Number of persons",0
+"514","Santa Clara","CA",2010,1786519,"Number of persons",0
+"515","Santa Clara","CA",2011,1814528,"Number of persons",0
+"516","Santa Clara","CA",2012,1842432,"Number of persons",0
+"517","Santa Cruz","CA",2004,252356,"Number of persons",0
+"518","Santa Cruz","CA",2005,251377,"Number of persons",0
+"519","Santa Cruz","CA",2006,251616,"Number of persons",0
+"520","Santa Cruz","CA",2007,253304,"Number of persons",0
+"521","Santa Cruz","CA",2008,256520,"Number of persons",0
+"522","Santa Cruz","CA",2009,260009,"Number of persons",0
+"523","Santa Cruz","CA",2010,263182,"Number of persons",0
+"524","Santa Cruz","CA",2011,264968,"Number of persons",0
+"525","Santa Cruz","CA",2012,266467,"Number of persons",0
+"526","Santa Cruz","CA",2013,268946,"Number of persons",0
+"527","Santa Cruz","CA",2014,271009,"Number of persons",0
+"528","Santa Cruz","CA",2015,273677,"Number of persons",0
+"529","Shasta","CA",2013,179331,"Number of persons",0
+"530","Shasta","CA",2014,180064,"Number of persons",0
+"531","Shasta","CA",2015,179816,"Number of persons",0
+"532","Shasta","CA",2004,174867,"Number of persons",0
+"533","Shasta","CA",2005,175615,"Number of persons",0
+"534","Shasta","CA",2006,176166,"Number of persons",0
+"535","Shasta","CA",2007,176548,"Number of persons",0
+"536","Shasta","CA",2008,177247,"Number of persons",0
+"537","Shasta","CA",2009,177279,"Number of persons",0
+"538","Shasta","CA",2010,177344,"Number of persons",0
+"539","Shasta","CA",2011,177950,"Number of persons",0
+"540","Shasta","CA",2012,178517,"Number of persons",0
+"541","Sierra","CA",2004,3430,"Number of persons",0
+"542","Sierra","CA",2005,3378,"Number of persons",0
+"543","Sierra","CA",2006,3424,"Number of persons",0
+"544","Sierra","CA",2007,3373,"Number of persons",0
+"545","Sierra","CA",2008,3320,"Number of persons",0
+"546","Sierra","CA",2009,3248,"Number of persons",0
+"547","Sierra","CA",2010,3228,"Number of persons",0
+"548","Sierra","CA",2011,3138,"Number of persons",0
+"549","Sierra","CA",2012,3136,"Number of persons",0
+"550","Sierra","CA",2013,3129,"Number of persons",0
+"551","Sierra","CA",2014,3102,"Number of persons",0
+"552","Sierra","CA",2015,3148,"Number of persons",0
+"553","Siskiyou","CA",2004,44394,"Number of persons",0
+"554","Siskiyou","CA",2005,44641,"Number of persons",0
+"555","Siskiyou","CA",2006,44487,"Number of persons",0
+"556","Siskiyou","CA",2007,44465,"Number of persons",0
+"557","Siskiyou","CA",2008,44780,"Number of persons",0
+"558","Siskiyou","CA",2009,44788,"Number of persons",0
+"559","Siskiyou","CA",2010,44959,"Number of persons",0
+"560","Siskiyou","CA",2011,44709,"Number of persons",0
+"561","Siskiyou","CA",2012,44247,"Number of persons",0
+"562","Siskiyou","CA",2013,43774,"Number of persons",0
+"563","Siskiyou","CA",2014,43649,"Number of persons",0
+"564","Siskiyou","CA",2015,43635,"Number of persons",0
+"565","Solano","CA",2004,409301,"Number of persons",0
+"566","Solano","CA",2005,408181,"Number of persons",0
+"567","Solano","CA",2006,408402,"Number of persons",0
+"568","Solano","CA",2007,408243,"Number of persons",0
+"569","Solano","CA",2008,408972,"Number of persons",0
+"570","Solano","CA",2009,410290,"Number of persons",0
+"571","Solano","CA",2010,414102,"Number of persons",0
+"572","Solano","CA",2011,417025,"Number of persons",0
+"573","Solano","CA",2012,420918,"Number of persons",0
+"574","Solano","CA",2013,425491,"Number of persons",0
+"575","Solano","CA",2014,431431,"Number of persons",0
+"576","Solano","CA",2015,436450,"Number of persons",0
+"577","Sonoma","CA",2013,493352,"Number of persons",0
+"578","Sonoma","CA",2014,497635,"Number of persons",0
+"579","Sonoma","CA",2015,499752,"Number of persons",0
+"580","Sonoma","CA",2004,466809,"Number of persons",0
+"581","Sonoma","CA",2005,465938,"Number of persons",0
+"582","Sonoma","CA",2006,465188,"Number of persons",0
+"583","Sonoma","CA",2007,467356,"Number of persons",0
+"584","Sonoma","CA",2008,473091,"Number of persons",0
+"585","Sonoma","CA",2009,479479,"Number of persons",0
+"586","Sonoma","CA",2010,484635,"Number of persons",0
+"587","Sonoma","CA",2011,487034,"Number of persons",0
+"588","Sonoma","CA",2012,489428,"Number of persons",0
+"589","Stanislaus","CA",2004,492613,"Number of persons",0
+"590","Stanislaus","CA",2005,500020,"Number of persons",0
+"591","Stanislaus","CA",2006,504651,"Number of persons",0
+"592","Stanislaus","CA",2007,507834,"Number of persons",0
+"593","Stanislaus","CA",2008,509032,"Number of persons",0
+"594","Stanislaus","CA",2009,511536,"Number of persons",0
+"595","Stanislaus","CA",2010,515193,"Number of persons",0
+"596","Stanislaus","CA",2011,517797,"Number of persons",0
+"597","Stanislaus","CA",2012,520847,"Number of persons",0
+"598","Stanislaus","CA",2013,524056,"Number of persons",0
+"599","Stanislaus","CA",2014,528795,"Number of persons",0
+"600","Stanislaus","CA",2015,534178,"Number of persons",0
+"601","Sutter","CA",2004,86484,"Number of persons",0
+"602","Sutter","CA",2005,88764,"Number of persons",0
+"603","Sutter","CA",2006,91112,"Number of persons",0
+"604","Sutter","CA",2007,92959,"Number of persons",0
+"605","Sutter","CA",2008,93855,"Number of persons",0
+"606","Sutter","CA",2009,94366,"Number of persons",0
+"607","Sutter","CA",2010,94814,"Number of persons",0
+"608","Sutter","CA",2011,94827,"Number of persons",0
+"609","Sutter","CA",2012,94803,"Number of persons",0
+"610","Sutter","CA",2013,95399,"Number of persons",0
+"611","Sutter","CA",2014,95959,"Number of persons",0
+"612","Sutter","CA",2015,96764,"Number of persons",0
+"613","Tehama","CA",2005,60602,"Number of persons",0
+"614","Tehama","CA",2004,59571,"Number of persons",0
+"615","Tehama","CA",2015,63701,"Number of persons",0
+"616","Tehama","CA",2014,63239,"Number of persons",0
+"617","Tehama","CA",2013,63216,"Number of persons",0
+"618","Tehama","CA",2012,63449,"Number of persons",0
+"619","Tehama","CA",2011,63468,"Number of persons",0
+"620","Tehama","CA",2010,63588,"Number of persons",0
+"621","Tehama","CA",2009,62891,"Number of persons",0
+"622","Tehama","CA",2008,62648,"Number of persons",0
+"623","Tehama","CA",2007,62147,"Number of persons",0
+"624","Tehama","CA",2006,61587,"Number of persons",0
+"625","Trinity","CA",2004,13159,"Number of persons",0
+"626","Trinity","CA",2005,13440,"Number of persons",0
+"627","Trinity","CA",2006,13634,"Number of persons",0
+"628","Trinity","CA",2007,13648,"Number of persons",0
+"629","Trinity","CA",2008,13656,"Number of persons",0
+"630","Trinity","CA",2009,13762,"Number of persons",0
+"631","Trinity","CA",2010,13847,"Number of persons",0
+"632","Trinity","CA",2011,14152,"Number of persons",0
+"633","Trinity","CA",2012,14334,"Number of persons",0
+"634","Trinity","CA",2013,14651,"Number of persons",0
+"635","Trinity","CA",2014,14711,"Number of persons",0
+"636","Trinity","CA",2015,15074,"Number of persons",0
+"637","Tulare","CA",2013,453758,"Number of persons",0
+"638","Tulare","CA",2014,456831,"Number of persons",0
+"639","Tulare","CA",2015,459243,"Number of persons",0
+"640","Tulare","CA",2004,398226,"Number of persons",0
+"641","Tulare","CA",2005,407970,"Number of persons",0
+"642","Tulare","CA",2006,414921,"Number of persons",0
+"643","Tulare","CA",2007,422140,"Number of persons",0
+"644","Tulare","CA",2008,429283,"Number of persons",0
+"645","Tulare","CA",2009,436987,"Number of persons",0
+"646","Tulare","CA",2010,443066,"Number of persons",0
+"647","Tulare","CA",2011,447277,"Number of persons",0
+"648","Tulare","CA",2012,450656,"Number of persons",0
+"649","Tuolumne","CA",2008,56320,"Number of persons",0
+"650","Tuolumne","CA",2009,55845,"Number of persons",0
+"651","Tuolumne","CA",2010,55188,"Number of persons",0
+"652","Tuolumne","CA",2011,54928,"Number of persons",0
+"653","Tuolumne","CA",2012,54414,"Number of persons",0
+"654","Tuolumne","CA",2013,54282,"Number of persons",0
+"655","Tuolumne","CA",2014,54232,"Number of persons",0
+"656","Tuolumne","CA",2015,54093,"Number of persons",0
+"657","Tuolumne","CA",2004,56602,"Number of persons",0
+"658","Tuolumne","CA",2005,56788,"Number of persons",0
+"659","Tuolumne","CA",2006,56680,"Number of persons",0
+"660","Tuolumne","CA",2007,56339,"Number of persons",0
+"661","Ventura","CA",2013,838135,"Number of persons",0
+"662","Ventura","CA",2014,842648,"Number of persons",0
+"663","Ventura","CA",2015,846263,"Number of persons",0
+"664","Ventura","CA",2004,793994,"Number of persons",0
+"665","Ventura","CA",2005,794197,"Number of persons",0
+"666","Ventura","CA",2006,798183,"Number of persons",0
+"667","Ventura","CA",2007,800027,"Number of persons",0
+"668","Ventura","CA",2008,806353,"Number of persons",0
+"669","Ventura","CA",2009,815130,"Number of persons",0
+"670","Ventura","CA",2010,825175,"Number of persons",0
+"671","Ventura","CA",2011,830061,"Number of persons",0
+"672","Ventura","CA",2012,833566,"Number of persons",0
+"673","Yolo","CA",2004,185237,"Number of persons",0
+"674","Yolo","CA",2005,186269,"Number of persons",0
+"675","Yolo","CA",2006,189615,"Number of persons",0
+"676","Yolo","CA",2007,194339,"Number of persons",0
+"677","Yolo","CA",2008,197154,"Number of persons",0
+"678","Yolo","CA",2009,199791,"Number of persons",0
+"679","Yolo","CA",2010,200981,"Number of persons",0
+"680","Yolo","CA",2011,201533,"Number of persons",0
+"681","Yolo","CA",2012,203831,"Number of persons",0
+"682","Yolo","CA",2013,205209,"Number of persons",0
+"683","Yolo","CA",2014,206971,"Number of persons",0
+"684","Yolo","CA",2015,210245,"Number of persons",0
+"685","Yuba","CA",2013,73583,"Number of persons",0
+"686","Yuba","CA",2014,74187,"Number of persons",0
+"687","Yuba","CA",2015,74862,"Number of persons",0
+"688","Yuba","CA",2004,63742,"Number of persons",0
+"689","Yuba","CA",2005,66285,"Number of persons",0
+"690","Yuba","CA",2006,69272,"Number of persons",0
+"691","Yuba","CA",2007,70761,"Number of persons",0
+"692","Yuba","CA",2008,71773,"Number of persons",0
+"693","Yuba","CA",2009,71607,"Number of persons",0
+"694","Yuba","CA",2010,72382,"Number of persons",0
+"695","Yuba","CA",2011,72670,"Number of persons",0
+"696","Yuba","CA",2012,73115,"Number of persons",0
