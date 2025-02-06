@@ -1,5 +1,5 @@
 
-
+#%%
 import requests
 import pandas as pd
 
@@ -8,12 +8,12 @@ url = "https://aqs.epa.gov/data/api/dailyData/byState"
 params = {
     "email": "dlucko@hbs.edu",
     "key": "sandram44",
-    "param": "42601",  # Ozone
+    "param": "42602",  # NO2
     "state": "06"  # California
 }
 
 # Loop through each year from 2004 to 2015
-for year in range(2004, 2016):
+for year in range(2004, 2018):
     # Set the start and end dates for the current year
     bdate = f"{year}0101"
     edate = f"{year}1231"
@@ -36,7 +36,7 @@ for year in range(2004, 2016):
             df = pd.DataFrame(data["Data"])
             
             # Save to a CSV file named by the year
-            csv_filename = f"daily_air_quality_data_{year}.csv"
+            csv_filename = f"42602_04_18_daily_air_quality_data_{year}.csv"
             df.to_csv(csv_filename, index=False)
             print(f"Data for {year} saved to '{csv_filename}'.")
         else:
