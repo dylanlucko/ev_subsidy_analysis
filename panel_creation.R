@@ -100,3 +100,99 @@ ev_subsidies_daily <- ev_subsidies_daily %>%
 
 merged_data <- merged_data %>%
   rename(date = date_local)
+
+
+
+####
+####
+#### Merge in EV Subsidy Data ####
+####
+####
+
+
+
+# Load necessary library
+library(dplyr)
+
+# Ensure 'date' column is in Date format in both datasets
+ev_subsidies_daily <- ev_subsidies_daily %>%
+  mutate(date = as.Date(date))
+
+merged_data <- merged_data %>%
+  mutate(date = as.Date(date))
+
+# Merge ev_subsidies_daily into merged_data based on county and date
+final_merged_data <- merged_data %>%
+  left_join(ev_subsidies_daily, by = c("county", "date"))
+
+# View first few rows of the merged dataset
+head(final_merged_data)
+
+
+####
+####
+#### Vehicles on the Road ####
+####
+####
+
+Vehicle_Population_Last_updated_04_30_2024_ada <- Vehicle_Population_Last_updated_04_30_2024_ada %>%
+  rename(year = `Data Year`) %>%
+  rename(county = County)
+
+final_merged_data <- final_merged_data %>%
+  mutate(year = date_local_year)
+
+# Load necessary libraries
+library(dplyr)
+library(tidyr)
+
+# Ensure 'Data Year' and 'date_local_year' are numeric for merging
+Vehicle_Population_Last_updated_04_30_2024_ada <- Vehicle_Population_Last_updated_04_30_2024_ada %>%
+  mutate(year = as.integer(year))
+
+final_merged_data <- final_merged_data %>%
+  mutate(year = as.integer(year))
+
+# Convert `Number of Vehicles` to numeric if needed
+Vehicle_Population_Last_updated_04_30_2024_ada <- Vehicle_Population_Last_updated_04_30_2024_ada %>%
+  mutate(`Number of Vehicles` = as.numeric(`Number of Vehicles`))  # Ensure it's numeric
+
+
+Vehicle_Population_Last_updated_04_30_2024_ada <- Vehicle_Population_Last_updated_04_30_2024_ada %>%
+  rename(fuel_type = `Fuel Type`, number_of_vehicles = `Number of Vehicles`) %>%
+  select(year, county, fuel_type, number_of_vehicles)
+
+
+
+# Load necessary libraries
+library(dplyr)
+library(tidyr)
+
+# Load necessary libraries
+library(dplyr)
+library(tidyr)
+
+# Handle NAs and ensure 'number_of_vehicles' is numeric
+Vehicle_Population_Last_updated_04_30_2024_ada <- Vehicle_Population_Last_updated_04_30_2024_ada %>%
+  mutate(
+    fuel_type = replace_na(fuel_type, "Unknown"),  # Replace NA fuel types with "Unknown"
+    number_of_vehicles = as.numeric(replace_na(number_of_vehicles, 0))  # Ensure numeric and replace NA with 0
+  )
+
+# First, group by year, county, and fuel_type to aggregate total vehicles
+vehicle_population_grouped <- Vehicle_Population_Last_updated_04_30_2024_ada %>%
+  group_by(year, county, fuel_type) %>%
+  summarise(number_of_vehicles = sum(number_of_vehicles, na.rm = TRUE), .groups = 'drop')
+
+# Now pivot to create separate columns for each fuel type
+vehicle_population_wide <- vehicle_population_grouped %>%
+  pivot_wider(
+    names_from = fuel_type,   # Unique fuel types become new columns
+    values_from = number_of_vehicles,   # Values to fill these columns
+    values_fill = list(number_of_vehicles = 0)  # Fill missing values with 0
+  )
+
+# View the transformed data
+head(vehicle_population_wide)
+
+
