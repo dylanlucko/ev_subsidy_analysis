@@ -324,3 +324,15 @@ final_merged_data_2 <- final_merged_data %>%
 # View the merged dataset
 head(merged_data)
 
+
+#########
+#########
+######### Clean up panel dataset #########
+#########
+#########
+
+
+panel_data <- final_merged_data_2 %>%
+  select(-c(X.x, State.x, State.y, Unit.x, Unit.y, Multiplier.x, Multiplier.y))
+
+
