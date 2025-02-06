@@ -15,8 +15,9 @@ ev_subsidies_per_day_2010_2023 <- read_excel("~/GitHub/ev_subsidy_analysis/Datas
 Vehicle_Population_Last_updated_04_30_2024_ada <- read_excel("~/GitHub/ev_subsidy_analysis/Datasets Pre Panel Creation/Vehicle_Population_Last_updated_04-30-2024_ada.xlsx", 
 sheet = "County")
 
-
 ca_farmland_by_use <- read.csv("~/GitHub/ev_subsidy_analysis/Datasets Pre Panel Creation/ca_farmland_by_use.csv")
+
+
 ###################
 ###################
 
@@ -233,7 +234,7 @@ write.csv(final_merged_data, "main_df_2_6.csv")
 
 ca_farmland_by_use <- ca_farmland_by_use %>%
   rename(county = County) %>%
-  rename(acres = Value, category = Domain.Category)
+  rename(acres = Value, category = Domain.Category, year = Year)
 
 
 # Load the stringr package
@@ -241,4 +242,65 @@ library(stringr)
 
 # Convert the 'county' column to title case
 ca_farmland_by_use$county <- str_to_title(ca_farmland_by_use$county)
+
+
+ca_farmland_by_use <- ca_farmland_by_use %>%
+  select(year, county, category, acres)
+
+
+# Convert 'acres' to numeric, remove commas, and replace NAs with 0
+ca_farmland_by_use <- ca_farmland_by_use %>%
+  mutate(acres = as.numeric(gsub(",", "", acres)),  # Remove commas and convert to numeric
+         acres = ifelse(is.na(acres), 0, acres))  
+
+
+
+# Step 1: Aggregate duplicate county-year-category rows by summing acres
+ca_farmland_grouped <- ca_farmland_by_use %>%
+  group_by(county, year, category) %>%
+  summarise(acres = sum(acres, na.rm = TRUE), .groups = "drop")
+
+# Step 2: Pivot to wide format: 'category' becomes columns, 'acres' fills values
+ca_farmland_wide <- ca_farmland_grouped %>%
+  pivot_wider(
+    names_from = category,  # Column names from 'category'
+    values_from = acres,    # Values from 'acres'
+    values_fill = list(acres = 0)  # Fill missing values with 0
+  )
+
+# View the transformed dataset
+head(ca_farmland_wide)
+
+
+#####
+#####
+##### Merge farmland #####
+#####
+#####
+
+
+# Load necessary libraries
+library(dplyr)
+library(fuzzyjoin)
+
+# Convert 'year' to numeric in both datasets
+final_merged_data <- final_merged_data %>%
+  mutate(year = as.integer(date_local_year), county = as.character(county))
+
+ca_farmland_wide <- ca_farmland_wide %>%
+  mutate(year = as.integer(year), county = as.character(county))
+
+# Perform a closest year join using fuzzyjoin::difference_left_join
+final_merged_data <- final_merged_data %>%
+  difference_left_join(ca_farmland_wide, by = "county", 
+                       max_dist = Inf, distance_col = "year_diff") %>%
+  mutate(year_diff = abs(year - year)) %>%  # Compute absolute difference
+  group_by(county, date_local_year) %>%
+  filter(year_diff == min(year_diff)) %>%  # Keep only the closest year match
+  ungroup() %>%
+  select(-year_diff, -year) %>%  # Drop helper columns
+  rename(year = year.x)  # Rename back to 'year'
+
+# View the merged dataset
+head(final_merged_data)
 
