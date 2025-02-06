@@ -55,38 +55,6 @@ merged_data <- merged_data %>%
 ##############
 ###############
 
-# Load necessary library
-library(dplyr)
-
-# Convert Application Date to proper date format if not already
-ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
-  mutate(`Application Date` = as.Date(`Application Date`))
-
-# Aggregate data to have one daily record per county
-ev_subsidies_daily <- ev_subsidies_per_day_2010_2023 %>%
-  group_by(County, `Application Date`) %>%
-  summarise(
-    `Total Rebate Dollars` = sum(`Rebate Dollars`, na.rm = TRUE),  # Total sum of rebate dollars
-    `Min Rebate Amount` = min(`Rebate Dollars`, na.rm = TRUE),  # Minimum subsidy amount per day
-    `Mean Rebate Amount` = mean(`Rebate Dollars`, na.rm = TRUE),  # Average subsidy amount per day
-    `Median Rebate Amount` = median(`Rebate Dollars`, na.rm = TRUE),  # Median subsidy amount per day
-    `Max Rebate Amount` = max(`Rebate Dollars`, na.rm = TRUE),  # Maximum subsidy amount per day
-    `Total Applications` = n(),  # Counting number of applications per day
-    `Total Low-Income Count` = sum(`Low-/Moderate-Income Increased Rebate`, na.rm = TRUE),  # Counting low-income rebates
-    `Vehicle Categories` = paste(unique(`Vehicle Category`), collapse = ", "),  # Concatenating unique categories
-    `Vehicle Makes` = paste(unique(`Vehicle Make`), collapse = ", "),  # Concatenating unique vehicle makes
-    `Electric Utilities` = paste(unique(`Electric Utility`), collapse = ", "),  # Concatenating unique utilities
-    `Funding Sources` = paste(unique(`Funding Source`), collapse = ", ")  # Concatenating funding sources
-  ) %>%
-  ungroup()
-
-# View the first few rows of the cleaned dataset
-head(ev_subsidies_daily)
-
-################
-##### Att 2 ####
-################
-
 
 # Load necessary library
 library(dplyr)
