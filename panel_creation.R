@@ -336,3 +336,11 @@ panel_data <- final_merged_data_2 %>%
   select(-c(X.x, State.x, State.y, Unit.x, Unit.y, Multiplier.x, Multiplier.y))
 
 
+# Remove rows where pollutant_standard is "NO2 Annual 1971"
+panel_data <- panel_data %>%
+  filter(pollutant_standard != "NO2 Annual 1971")
+
+# View the updated dataset
+head(panel_data)
+
+write.csv(panel_data, "panel_data.csv")
