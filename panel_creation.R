@@ -92,3 +92,11 @@ ev_subsidies_daily <- ev_subsidies_per_day_2010_2023 %>%
 # View the first few rows of the cleaned dataset
 head(ev_subsidies_daily)
 
+
+ev_subsidies_daily <- ev_subsidies_daily %>%
+  rename(date = `Application Date`) %>%
+  rename(county = County)
+
+
+merged_data <- merged_data %>%
+  rename(date = date_local)
