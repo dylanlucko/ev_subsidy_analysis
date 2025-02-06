@@ -25,12 +25,12 @@ library(dplyr)
 # Convert data types for merging
 ca_no2 <- ca_no2 %>%
   mutate(county_code = as.character(county_code), 
-         date_local = as.integer(substr(date_local, 1, 4)))  # Extracting year as integer
+         date_local_year = as.integer(substr(date_local, 1, 4)))  # Extracting year as integer
 
 # Perform the left join
 merged_data <- ca_no2 %>%
   left_join(california_income_per_capita, 
-            by = c("county" = "County", "date_local" = "Year"))
+            by = c("county" = "County", "date_local_year" = "Year"))
 
 # View the merged dataframe
 head(merged_data)
@@ -40,11 +40,14 @@ head(merged_data)
 # Merge the result with california_population
 merged_data <- merged_data %>%
   left_join(california_population, 
-            by = c("county" = "County", "date_local" = "Year"))
+            by = c("county" = "County", "date_local_year" = "Year"))
 
 # View the merged dataframe
 head(merged_data)
 
+
+merged_data <- merged_data %>%
+  mutate(date_local = as.Date(date_local))
 
 ##############
 ##############
