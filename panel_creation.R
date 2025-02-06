@@ -232,7 +232,8 @@ write.csv(final_merged_data, "main_df_2_6.csv")
 ####
 
 ca_farmland_by_use <- ca_farmland_by_use %>%
-  rename(county = County)
+  rename(county = County) %>%
+  rename(acres = Value, category = Domain.Category)
 
 
 # Load the stringr package
