@@ -15,6 +15,8 @@ ev_subsidies_per_day_2010_2023 <- read_excel("~/GitHub/ev_subsidy_analysis/Datas
 Vehicle_Population_Last_updated_04_30_2024_ada <- read_excel("~/GitHub/ev_subsidy_analysis/Datasets Pre Panel Creation/Vehicle_Population_Last_updated_04-30-2024_ada.xlsx", 
 sheet = "County")
 
+
+ca_farmland_by_use <- read.csv("~/GitHub/ev_subsidy_analysis/Datasets Pre Panel Creation/ca_farmland_by_use.csv")
 ###################
 ###################
 
@@ -195,4 +197,47 @@ vehicle_population_wide <- vehicle_population_grouped %>%
 # View the transformed data
 head(vehicle_population_wide)
 
+
+####
+####
+#### Merge vehicle population into dataset ####
+####
+####
+
+# Load necessary library
+library(dplyr)
+
+# Ensure both datasets have matching data types for merging
+vehicle_population_wide <- vehicle_population_wide %>%
+  mutate(year = as.integer(year), county = as.character(county))
+
+final_merged_data <- final_merged_data %>%
+  mutate(year = as.integer(date_local_year), county = as.character(county))
+
+# Merge vehicle population data into final_merged_data
+final_merged_data <- final_merged_data %>%
+  left_join(vehicle_population_wide, by = c("county", "year"))
+
+# View first few rows of the merged dataset
+head(final_merged_data)
+
+
+write.csv(final_merged_data, "main_df_2_6.csv")
+
+
+####
+####
+#### Farmland ####
+####
+####
+
+ca_farmland_by_use <- ca_farmland_by_use %>%
+  rename(county = County)
+
+
+# Load the stringr package
+library(stringr)
+
+# Convert the 'county' column to title case
+ca_farmland_by_use$county <- str_to_title(ca_farmland_by_use$county)
 
