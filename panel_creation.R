@@ -290,17 +290,37 @@ final_merged_data <- final_merged_data %>%
 ca_farmland_wide <- ca_farmland_wide %>%
   mutate(year = as.integer(year), county = as.character(county))
 
-# Perform a closest year join using fuzzyjoin::difference_left_join
+
+ca_farmland_wide <- ca_farmland_wide %>%
+  rename(Year_farmland = year)
+
+
+# Load necessary libraries
+library(dplyr)
+
+# Ensure 'year' and 'Year_farmland' are integers
 final_merged_data <- final_merged_data %>%
-  difference_left_join(ca_farmland_wide, by = "county", 
-                       max_dist = Inf, distance_col = "year_diff") %>%
-  mutate(year_diff = abs(year - year)) %>%  # Compute absolute difference
-  group_by(county, date_local_year) %>%
-  filter(year_diff == min(year_diff)) %>%  # Keep only the closest year match
-  ungroup() %>%
-  select(-year_diff, -year) %>%  # Drop helper columns
-  rename(year = year.x)  # Rename back to 'year'
+  mutate(year = as.integer(year), county = as.character(county))
+
+ca_farmland_wide <- ca_farmland_wide %>%
+  mutate(Year_farmland = as.integer(Year_farmland), county = as.character(county))
+
+# Define the available farmland years
+available_years <- c(2002, 2007, 2012, 2017, 2022)
+
+# Function to find the closest year in available_years
+find_closest_year <- function(year) {
+  available_years[which.min(abs(available_years - year))]
+}
+
+# Apply the function to assign the closest Year_farmland for each year in final_merged_data
+final_merged_data <- final_merged_data %>%
+  mutate(Year_farmland = sapply(year, find_closest_year))  # Find the closest match
+
+# Merge the datasets on county and matched Year_farmland
+final_merged_data_2 <- final_merged_data %>%
+  left_join(ca_farmland_wide, by = c("county", "Year_farmland"))
 
 # View the merged dataset
-head(final_merged_data)
+head(merged_data)
 
