@@ -7,13 +7,13 @@ import pandas as pd
 url = "https://aqs.epa.gov/data/api/dailyData/byState"
 params = {
     "email": "dlucko@hbs.edu",
-    "key": "sandram44",
+    "key": "goldosprey13",
     "param": "42602",  # NO2
     "state": "06"  # California
 }
 
 # Loop through each year from 2004 to 2015
-for year in range(2004, 2018):
+for year in range(2004, 2019):
     # Set the start and end dates for the current year
     bdate = f"{year}0101"
     edate = f"{year}1231"
@@ -43,3 +43,5 @@ for year in range(2004, 2018):
             print(f"No data found for {year}.")
     else:
         print(f"Failed to fetch data for {year}. Status code: {response.status_code}")
+
+# %%

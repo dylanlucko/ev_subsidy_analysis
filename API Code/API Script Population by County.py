@@ -195,8 +195,8 @@ params = {
     "datasetname": "Regional",
     "TableName": "CAINC4",       # Personal income by major component
     "GeoFIPS": "COUNTY",         # All counties in California
-    "Year": "2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015",              # Single year example (extend for other years if needed)
-    "LineCode": "20",            # Per capita personal income (example)
+    "Year": "2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018",              # Single year example (extend for other years if needed)
+    "LineCode": "20",            # 20 is Pop
     "ResultFormat": "json"       # Requesting data in JSON format
 }
 
