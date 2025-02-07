@@ -25,7 +25,7 @@ library(dplyr)
 library(ggplot2)
 
 # Define a threshold for significant increase (e.g., 50% increase)
-threshold <- 0.3
+threshold <- 0.5
 
 # Step 1: Get 2010 values for each county (Ensure uniqueness)
 base_year_data <- panel_data %>%
@@ -49,11 +49,42 @@ panel_data <- panel_data %>%
 ggplot(panel_data, aes(x = longitude, y = latitude, color = factor(Treatment))) +
   geom_point(alpha = 0.6, size = 2) +
   scale_color_manual(values = c("0" = "blue", "1" = "red"), labels = c("Control", "Treatment")) +
-  labs(title = "EV Treatment vs. Control Counties (Based on Growth Since 2010)",
+  labs(title = "EV Treatment vs. Control Counties (Based on EV Adoption 2010-2011)",
        x = "Longitude", y = "Latitude", color = "Group") +
   theme_minimal()
 
 
+########
+######## Overlay with map of California ########
+########
+
+# Load necessary libraries
+library(ggplot2)
+library(maps)
+library(dplyr)
+
+# Load the map of California
+california_map <- map_data("state") %>%
+  filter(region == "california")
+
+# Plot the map with Treatment vs. Control points overlaid
+ggplot() +
+  # Add California state outline
+  geom_polygon(data = california_map, aes(x = long, y = lat, group = group), 
+               fill = "gray90", color = "black", alpha = 0.5) +
+  
+  # Overlay treatment vs. control points
+  geom_point(data = panel_data, aes(x = longitude, y = latitude, color = factor(Treatment)), 
+             alpha = 0.6, size = 2) +
+  
+  # Define color scheme for Treatment and Control
+  scale_color_manual(values = c("0" = "blue", "1" = "red"), labels = c("Control", "Treatment")) +
+  
+  # Labels and formatting
+  labs(title = "EV Treatment vs. Control Counties in California (2010-2011)",
+       x = "Longitude", y = "Latitude", color = "Group") +
+  
+  theme_minimal()
 
 ########
 ########
