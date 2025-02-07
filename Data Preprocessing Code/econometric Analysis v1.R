@@ -25,21 +25,24 @@ library(dplyr)
 library(ggplot2)
 
 # Define a threshold for significant increase (e.g., 50% increase)
-threshold <- 0.5
+threshold <- 0.3
 
-# Step 1: Get 2010 values for each county
+# Step 1: Get 2010 values for each county (Ensure uniqueness)
 base_year_data <- panel_data %>%
   filter(year == 2010) %>%
-  select(county, battery_electric_vehicle, total_subsidy_applications) %>%
-  rename(base_ev = battery_electric_vehicle, base_subsidy = total_subsidy_applications)
+  group_by(county) %>%
+  summarise(
+    base_ev = mean(battery_electric_vehicle, na.rm = TRUE),  # Use mean if duplicates exist
+    base_subsidy = mean(total_subsidy_applications, na.rm = TRUE)
+  ) %>%
+  ungroup()
 
-# Step 2: Merge 2010 base values into panel_data
 panel_data <- panel_data %>%
-  left_join(base_year_data, by = "county") %>%
   mutate(
-    ev_growth = (battery_electric_vehicle - base_ev) / (base_ev + 1),  # Avoid division by zero
+    ev_growth = (battery_electric_vehicle - base_ev) / (base_ev + 1),
     subsidy_growth = (total_subsidy_applications - base_subsidy) / (base_subsidy + 1),
-    Treatment = ifelse(ev_growth > threshold | subsidy_growth > threshold, 1, 0)  # Assign treatment
+    Treatment = ifelse(ev_growth > threshold | subsidy_growth > threshold, 1, 0),
+    Treatment = replace_na(Treatment, 0)  # Convert NA to Control (0)
   )
 
 # Step 3: Plot treatment vs. control on a map
@@ -56,32 +59,3 @@ ggplot(panel_data, aes(x = longitude, y = latitude, color = factor(Treatment))) 
 ########
 ########
 
-
-# Load necessary libraries
-library(dplyr)
-library(fixest)  # For fixed effects regression
-
-
-# Step 2: Create Treatment Variable (EV Presence)
-# Assuming "EV Count" is a variable tracking the number of electric vehicles in a county
-panel_data <- panel_data %>%
-  group_by(county, year) %>%
-  mutate(EV_Presence = ifelse(`EV Count` > median(`EV Count`, na.rm = TRUE), 1, 0)) %>%
-  ungroup()
-
-# Step 3: Create the DiD Interaction Term
-panel_data <- panel_data %>%
-  mutate(Post_Treatment = ifelse(year >= 2011, 1, 0),  # Assuming EV adoption increases post-2011
-         DiD_Term = EV_Presence * Post_Treatment)
-
-# Step 4: Run Difference-in-Differences Model
-# Pollution is measured at the site level (daily), while controls are at the county level (yearly)
-did_model <- feols(
-  pollution_level ~ DiD_Term + EV_Presence + Post_Treatment + 
-    income_per_capita + population + rebates_per_day + 
-    `EV Count` + `PHEV Count` + `Gasoline Count` + `Diesel Count` | county + year + site_id,
-  data = panel_data, cluster = "county"
-)
-
-# Step 5: Display Results
-summary(did_model)
