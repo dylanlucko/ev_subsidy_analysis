@@ -59,3 +59,8 @@ ggplot(panel_data, aes(x = longitude, y = latitude, color = factor(Treatment))) 
 ########
 ########
 
+####
+####
+#### DiD prelim ####
+####
+####
