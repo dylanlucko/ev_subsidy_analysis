@@ -56,3 +56,173 @@ ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
 ##### Assign treatment and control at the zip level #####
 #####
 #####
+library(dplyr)
+library(tidyr)
+
+# Extract Year from Date & Aggregate at (zip_lat, zip_long) level
+ev_subsidies_per_location <- ev_subsidies_per_day_2010_2023 %>%
+  mutate(year = as.integer(format(as.Date(Application.Date, format="%Y-%m-%d"), "%Y"))) %>%
+  group_by(zip_lat, zip_long, year) %>%
+  summarise(
+    total_rebates = n(),  # Total EV rebates per ZIP coordinate per year
+    total_dollars = sum(Rebate.Dollars, na.rm = TRUE),  # Total rebate amount
+    low_income_rebates = sum(`Low-/Moderate-Income Increased Rebate`, na.rm = TRUE),
+    public_fleet_rebates = sum(`Increased Rebates for Public Fleets in DACs`, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+#
+
+
+# Define treatment threshold (e.g., 50% increase)
+threshold <- 0.2  # Adjust as needed
+
+# Get 2010 & 2011 data
+baseline_2010 <- ev_subsidies_per_location %>%
+  filter(year == 2011) %>%
+  select(zip_lat, zip_long, total_rebates, total_dollars) %>%
+  rename(base_rebates = total_rebates, base_dollars = total_dollars)
+
+comparison_2011 <- ev_subsidies_per_location %>%
+  filter(year == 2015) %>%
+  select(zip_lat, zip_long, total_rebates, total_dollars) %>%
+  rename(rebates_2011 = total_rebates, dollars_2011 = total_dollars)
+
+# Merge 2010 and 2011 data
+ev_growth <- baseline_2010 %>%
+  left_join(comparison_2011, by = c("zip_lat", "zip_long")) %>%
+  mutate(
+    rebate_growth = (rebates_2011 - base_rebates) / (base_rebates + 1),  # Avoid division by zero
+    dollar_growth = (dollars_2011 - base_dollars) / (base_dollars + 1),
+    Treatment = ifelse(rebate_growth > threshold | dollar_growth > threshold, 1, 0)  # Define Treatment
+  )
+
+
+# Merge treatment status back into ev_subsidies_per_location
+ev_subsidies_per_location <- ev_subsidies_per_location %>%
+  left_join(ev_growth %>% select(zip_lat, zip_long, Treatment), by = c("zip_lat", "zip_long"))
+
+
+library(ggplot2)
+library(maps)
+
+# Load California county map
+county_map <- map_data("county") %>%
+  filter(region == "california")
+
+# Ensure `zip_lat`, `zip_long`, and `Treatment` are formatted correctly
+ev_subsidies_per_location <- ev_subsidies_per_location %>%
+  mutate(zip_lat = as.numeric(zip_lat),
+         zip_long = as.numeric(zip_long),
+         Treatment = as.factor(Treatment))  # Convert to factor for color mapping
+
+# Plot California counties with ZIP coordinate-level treatment vs. control
+ggplot() +
+  # Add county boundaries
+  geom_polygon(data = county_map, aes(x = long, y = lat, group = group), 
+               fill = "gray90", color = "black", alpha = 0.5) +
+  
+  # Overlay ZIP lat-long points, colored by Treatment
+  geom_point(data = ev_subsidies_per_location, aes(x = zip_long, y = zip_lat, color = Treatment), 
+             alpha = 0.7, size = 2) +
+  
+  # Define Treatment vs. Control colors
+  scale_color_manual(values = c("0" = "blue", "1" = "red"), labels = c("Control", "Treatment")) +
+  
+  # Labels and styling
+  labs(title = "EV Adoption: Treatment vs. Control at the ZIP Coordinate Level (2010-2011 Growth)",
+       x = "Longitude", y = "Latitude", color = "Group") +
+  theme_minimal()
+
+
+
+##### 
+#####
+##### Attempt 2 #####
+#####
+#####
+
+
+library(dplyr)
+
+# Extract Year from Date & Aggregate at ZIP level
+ev_subsidies_per_zip <- ev_subsidies_per_day_2010_2023 %>%
+  mutate(year = as.integer(format(as.Date(Application.Date, format="%Y-%m-%d"), "%Y"))) %>%
+  group_by(ZIP, year) %>%
+  summarise(
+    total_rebates = n(),  # Total EV rebates per ZIP per year
+    total_dollars = sum(Rebate.Dollars, na.rm = TRUE),  # Total rebate amount
+    low_income_rebates = sum(`Low-/Moderate-Income Increased Rebate`, na.rm = TRUE),
+    public_fleet_rebates = sum(`Increased Rebates for Public Fleets in DACs`, na.rm = TRUE),
+    zip_lat = first(zip_lat),  # Retain ZIP centroid lat/long
+    zip_long = first(zip_long),
+    .groups = "drop"
+  )
+
+
+#
+
+# Define treatment threshold (e.g., 20% increase)
+threshold <- 0.45  
+
+# Get 2011 baseline values per ZIP
+baseline_2011 <- ev_subsidies_per_zip %>%
+  filter(year == 2011) %>%
+  select(ZIP, total_rebates, total_dollars) %>%
+  rename(base_rebates = total_rebates, base_dollars = total_dollars)
+
+# Get 2015 comparison values per ZIP
+comparison_2015 <- ev_subsidies_per_zip %>%
+  filter(year == 2012) %>%
+  select(ZIP, total_rebates, total_dollars) %>%
+  rename(rebates_2015 = total_rebates, dollars_2015 = total_dollars)
+
+# Merge 2011 and 2015 data
+ev_growth <- baseline_2011 %>%
+  full_join(comparison_2015, by = "ZIP") %>%  # Include all ZIPs
+  mutate(
+    base_rebates = replace_na(base_rebates, 0),  # Handle missing 2011 values
+    base_dollars = replace_na(base_dollars, 0),
+    rebates_2015 = replace_na(rebates_2015, 0),  # Handle missing 2015 values
+    dollars_2015 = replace_na(dollars_2015, 0),
+    rebate_growth = (rebates_2015 - base_rebates) / (base_rebates + 1),  # Avoid division by zero
+    dollar_growth = (dollars_2015 - base_dollars) / (base_dollars + 1),
+    Treatment = ifelse(rebate_growth > threshold | dollar_growth > threshold, 1, 0)  # Define Treatment
+  )
+
+
+#
+
+# Merge treatment status back into ev_subsidies_per_zip
+ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
+  left_join(ev_growth %>% select(ZIP, Treatment), by = "ZIP") %>%
+  mutate(Treatment = replace_na(Treatment, 0))  # Ensure no NA values
+
+
+library(ggplot2)
+library(maps)
+
+# Load California county map
+county_map <- map_data("county") %>%
+  filter(region == "california")
+
+# Ensure `zip_lat`, `zip_long`, and `Treatment` are formatted correctly
+ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
+  mutate(Treatment = as.factor(Treatment))
+
+# Plot ZIP-level treatment vs. control over county outlines
+ggplot() +
+  geom_polygon(data = county_map, aes(x = long, y = lat, group = group), 
+               fill = "gray90", color = "black", alpha = 0.5) +
+  
+  # Overlay ZIP points, colored by Treatment
+  geom_point(data = ev_subsidies_per_zip, aes(x = zip_long, y = zip_lat, color = Treatment), 
+             alpha = 0.7, size = 2) +
+  
+  # Define Treatment vs. Control colors
+  scale_color_manual(values = c("0" = "blue", "1" = "red"), labels = c("Control", "Treatment")) +
+  
+  # Labels and styling
+  labs(title = "EV Adoption: Treatment vs. Control at the ZIP Level (2011-2015 Growth)",
+       x = "Longitude", y = "Latitude", color = "Group") +
+  theme_minimal()
