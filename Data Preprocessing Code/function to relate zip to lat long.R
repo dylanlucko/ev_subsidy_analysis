@@ -59,6 +59,10 @@ ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
 library(dplyr)
 library(tidyr)
 
+ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
+  rename(Application.Date = `Application Date`, Rebate.Dollars = `Rebate Dollars`, Vehicle.Make = `Vehicle Make`, Vehicle.Category = `Vehicle Category`, Low.Income.Community = `Low-Income Community`)
+
+
 # Extract Year from Date & Aggregate at (zip_lat, zip_long) level
 ev_subsidies_per_location <- ev_subsidies_per_day_2010_2023 %>%
   mutate(year = as.integer(format(as.Date(Application.Date, format="%Y-%m-%d"), "%Y"))) %>%
@@ -75,7 +79,7 @@ ev_subsidies_per_location <- ev_subsidies_per_day_2010_2023 %>%
 
 
 # Define treatment threshold (e.g., 50% increase)
-threshold <- 0.2  # Adjust as needed
+threshold <- 0.25  # Adjust as needed
 
 # Get 2010 & 2011 data
 baseline_2010 <- ev_subsidies_per_location %>%
@@ -163,7 +167,7 @@ ev_subsidies_per_zip <- ev_subsidies_per_day_2010_2023 %>%
 #
 
 # Define treatment threshold (e.g., 20% increase)
-threshold <- 0.45  
+threshold <- 0.25  
 
 # Get 2011 baseline values per ZIP
 baseline_2011 <- ev_subsidies_per_zip %>%
@@ -229,7 +233,7 @@ ggplot() +
   
   # Labels and styling
   labs(
-    title = "EV Adoption: Treatment vs. Control at the ZIP Level (2011-2012 Growth)",
+    title = "EV Adoption: Treatment vs. Control at the ZIP Level",
     x = "Longitude", 
     y = "Latitude"
   ) +
