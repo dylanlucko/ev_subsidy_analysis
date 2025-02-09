@@ -57,3 +57,54 @@ city_bounds <- list(
   "San Francisco" = list(lat_min = 37.6, lat_max = 37.9, long_min = -123, long_max = -122),
   "Sacramento" = list(lat_min = 38.4, lat_max = 38.7, long_min = -121.7, long_max = -121.2)
 )
+
+
+library(ggplot2)
+library(maps)
+library(dplyr)
+
+# Load California county map
+county_map <- map_data("county") %>%
+  filter(region == "california")
+
+# Function to create a zoomed-in plot for a specific city
+plot_city <- function(city_name, bounds) {
+  # Filter data within city boundaries
+  city_data <- ev_subsidies_per_zip %>%
+    filter(zip_lat >= bounds$lat_min, zip_lat <= bounds$lat_max,
+           zip_long >= bounds$long_min, zip_long <= bounds$long_max)
+  
+  # Create plot
+  ggplot() +
+    # Add county boundaries
+    geom_polygon(data = county_map, aes(x = long, y = lat, group = group), 
+                 fill = "gray90", color = "black", alpha = 0.5) +
+    
+    # Overlay ZIP points with color gradient for low-income rebates
+    geom_point(data = city_data, aes(x = zip_long, y = zip_lat, 
+                                     color = low_income_rebates, alpha = opacity), 
+               size = 2) +
+    
+    # Define color gradient and opacity scale
+    scale_color_gradient(low = "lightblue", high = "darkblue", name = "Low-Income Rebates") +
+    scale_alpha(range = c(0.3, 1), guide = "none") +
+    
+    # Labels and title
+    labs(
+      title = paste("Low-Income EV Rebates in", city_name),
+      x = "Longitude", 
+      y = "Latitude"
+    ) +
+    
+    # Set zoom limits
+    coord_cartesian(xlim = c(bounds$long_min, bounds$long_max), 
+                    ylim = c(bounds$lat_min, bounds$lat_max)) +
+    
+    theme_minimal()
+}
+
+# Generate plots for each city
+plot_LA <- plot_city("Los Angeles", city_bounds$"Los Angeles")
+plot_SD <- plot_city("San Diego", city_bounds$"San Diego")
+plot_SF <- plot_city("San Francisco", city_bounds$"San Francisco")
+plot_Sac <- plot_city("Sacramento", city_bounds$"Sacramento")
