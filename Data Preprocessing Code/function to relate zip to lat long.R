@@ -331,6 +331,9 @@ site_treatment_data <- site_locations %>%
   ungroup()
 
 
+panel_data <- panel_data %>%
+  select(-c(nearest_zip.x, nearest_zip.y, nearest_zip, Treatment.x, Treatment.y, Treatment_zip))
+
 # Merge treatment assignments back into panel_data
 panel_data <- panel_data %>%
   left_join(site_treatment_data, by = c("latitude", "longitude", "site_number"))
@@ -340,7 +343,7 @@ head(panel_data)
 
 
 panel_data <- panel_data %>%
-  rename(Treatment_zip = Treatment.y, Treatment_county = Treatment.x)
+  rename(Treatment_zip = Treatment)
 
 ##
 ##
@@ -388,3 +391,27 @@ ggplot() +
   ) +
   
   theme_minimal()
+
+
+# Ensure Treatment_zip is numeric or factor
+panel_data <- panel_data %>%
+  mutate(Treatment_zip = as.factor(Treatment_zip))  # Convert to factor if needed
+
+# Count the number of treatment and control points
+treatment_counts <- panel_data %>%
+  group_by(Treatment_zip) %>%
+  summarise(count = n())
+
+# Print the counts
+print(treatment_counts)
+
+
+
+# Count unique (latitude, longitude, site_number) locations
+unique_sites <- panel_data %>%
+  distinct(latitude, longitude, site_number, Treatment_zip) %>%
+  group_by(Treatment_zip) %>%
+  summarise(count = n())
+
+# Print the counts
+print(unique_sites)
