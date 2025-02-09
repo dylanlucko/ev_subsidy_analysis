@@ -210,19 +210,38 @@ county_map <- map_data("county") %>%
 ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
   mutate(Treatment = as.factor(Treatment))
 
-# Plot ZIP-level treatment vs. control over county outlines
+# Plot with explicit legend settings
 ggplot() +
+  # Add California county boundaries
   geom_polygon(data = county_map, aes(x = long, y = lat, group = group), 
                fill = "gray90", color = "black", alpha = 0.5) +
   
-  # Overlay ZIP points, colored by Treatment
+  # Overlay ZIP-level treatment vs. control points
   geom_point(data = ev_subsidies_per_zip, aes(x = zip_long, y = zip_lat, color = Treatment), 
              alpha = 0.7, size = 2) +
   
-  # Define Treatment vs. Control colors
-  scale_color_manual(values = c("0" = "blue", "1" = "red"), labels = c("Control", "Treatment")) +
+  # Define Treatment vs. Control colors & ensure legend appears
+  scale_color_manual(
+    values = c("0" = "blue", "1" = "red"), 
+    labels = c("Control", "Treatment"), 
+    name = "Treatment Group"  # Legend title
+  ) +
   
   # Labels and styling
-  labs(title = "EV Adoption: Treatment vs. Control at the ZIP Level (2011-2015 Growth)",
-       x = "Longitude", y = "Latitude", color = "Group") +
-  theme_minimal()
+  labs(
+    title = "EV Adoption: Treatment vs. Control at the ZIP Level (2011-2012 Growth)",
+    x = "Longitude", 
+    y = "Latitude"
+  ) +
+  
+  # Ensure the legend is displayed
+  theme_minimal() +
+  theme(legend.position = "right")  # Ensures legend is visible
+
+
+#####
+#####
+##### Attempt 3: Use Ratio of EVs to ICE #####
+#####
+#####
+
