@@ -280,7 +280,107 @@ zip_latlong_data <- convert_zip_to_latlong(zip_list)
 zip_latlong_data <- zip_latlong_data %>%
   rename(ZIP = zipcode)
 
-# Merge latitude & longitude back into ev_subsidies_per_zip
+colnames(ev_subsidies_per_zip)  # Check existing column names
+colnames(zip_latlong_data)  # Check ZIP coordinate data
+
+
+# Remove existing zip_lat and zip_long columns before merging to avoid conflicts
+ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
+  select(-zip_lat, -zip_long)  # Remove duplicates if they exist
+
+
+# Rename ZIP column in zip_latlong_data
+zip_latlong_data <- zip_latlong_data %>%
+  rename(ZIP = zipcode)
+
+# Perform the merge
 ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
   left_join(zip_latlong_data, by = "ZIP") %>%
   rename(zip_lat = lat, zip_long = lng)
+
+
+##
+##
+
+# Extract unique air quality monitoring site locations
+site_locations <- panel_data %>%
+  select(latitude, longitude, site_number) %>%
+  distinct()
+
+
+library(geosphere)
+
+# Function to find the nearest ZIP for each air quality site
+find_nearest_zip <- function(site_lat, site_long, zip_df) {
+  distances <- distHaversine(matrix(c(site_long, site_lat), ncol = 2), 
+                             matrix(c(zip_df$zip_long, zip_df$zip_lat), ncol = 2))
+  closest_zip_idx <- which.min(distances)  # Find index of closest ZIP
+  return(zip_df[closest_zip_idx, c("ZIP", "Treatment")])  # Return closest ZIP & its treatment status
+}
+
+# Assign each air quality site the closest ZIP and its Treatment status
+site_treatment_data <- site_locations %>%
+  rowwise() %>%
+  mutate(closest_zip_info = list(find_nearest_zip(latitude, longitude, ev_subsidies_per_zip))) %>%
+  unnest_wider(closest_zip_info) %>%
+  rename(nearest_zip = ZIP, Treatment = Treatment) %>%
+  ungroup()
+
+
+# Merge treatment assignments back into panel_data
+panel_data <- panel_data %>%
+  left_join(site_treatment_data, by = c("latitude", "longitude", "site_number"))
+
+# View the dataset with assigned treatment status
+head(panel_data)
+
+
+panel_data <- panel_data %>%
+  rename(Treatment_zip = Treatment.y, Treatment_county = Treatment.x)
+
+##
+##
+## Plot ##
+##
+##
+
+
+# Load California county map data
+county_map <- map_data("county") %>%
+  filter(region == "california")
+
+# Ensure Treatment_zip and latitude/longitude are numeric and properly formatted
+panel_data <- panel_data %>%
+  mutate(
+    latitude = as.numeric(latitude),
+    longitude = as.numeric(longitude),
+    Treatment_zip = as.factor(Treatment_zip)  # Convert to factor for coloring
+  )
+
+
+# Plot California counties with air quality sites colored by Treatment status
+ggplot() +
+  # Add county boundaries
+  geom_polygon(data = county_map, aes(x = long, y = lat, group = group), 
+               fill = "gray90", color = "black", alpha = 0.5) +
+  
+  # Overlay air quality monitoring sites with treatment vs. control colors
+  geom_point(data = panel_data, aes(x = longitude, y = latitude, color = Treatment_zip), 
+             alpha = 0.7, size = 2) +
+  
+  # Define Treatment vs. Control colors
+  scale_color_manual(
+    values = c("0" = "blue", "1" = "red"),
+    labels = c("Control", "Treatment"),
+    name = "Treatment Status"
+  ) +
+  
+  # Labels and styling
+  labs(
+    title = "Air Quality Monitoring Sites: Treatment vs. Control by ZIP",
+    x = "Longitude", 
+    y = "Latitude",
+    color = "Treatment Status"
+  ) +
+  
+  theme_minimal()
