@@ -252,3 +252,27 @@ ggplot() +
 #####
 ##### 
 
+# Convert ZIP codes to character format to ensure compatibility
+ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
+  mutate(ZIP = as.character(ZIP))
+
+zip_latlong_data <- zip_latlong_data %>%
+  rename(ZIP = zipcode)
+
+zip_latlong_data <- zip_latlong_data %>%
+  mutate(ZIP = as.character(ZIP))
+
+
+convert_zip_to_latlong <- function(zip_list) {
+  zip_data <- lapply(zip_list, function(zip) {
+    tryCatch({
+      reverse_zipcode(zip)  # Fetch ZIP lat/long
+    }, error = function(e) {
+      return(data.frame(ZIP = zip, lat = NA, lng = NA))  # Handle errors
+    })
+  }) %>% bind_rows()
+  return(zip_data)
+}
+
+# Fetch lat-long for ZIPs again
+zip_latlong_data <- convert_zip_to_latlong(zip_list)
