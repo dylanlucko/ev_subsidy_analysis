@@ -276,3 +276,11 @@ convert_zip_to_latlong <- function(zip_list) {
 
 # Fetch lat-long for ZIPs again
 zip_latlong_data <- convert_zip_to_latlong(zip_list)
+
+zip_latlong_data <- zip_latlong_data %>%
+  rename(ZIP = zipcode)
+
+# Merge latitude & longitude back into ev_subsidies_per_zip
+ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
+  left_join(zip_latlong_data, by = "ZIP") %>%
+  rename(zip_lat = lat, zip_long = lng)
