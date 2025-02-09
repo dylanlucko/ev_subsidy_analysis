@@ -49,3 +49,5 @@ zip_data <- zip_data %>%
 # Merge ZIP lat/long into the EV subsidies dataset
 ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
   left_join(zip_data, by = "ZIP")
+
+
