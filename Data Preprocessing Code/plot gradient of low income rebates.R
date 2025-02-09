@@ -115,3 +115,4 @@ library(gridExtra)
 # Arrange all plots in a 2x2 grid
 grid.arrange(plot_LA, plot_SD, plot_SF, plot_Sac, ncol = 2)
 
+# Data above are for the entire data range ... please note. 
