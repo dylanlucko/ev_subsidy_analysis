@@ -86,7 +86,7 @@ plot_city <- function(city_name, bounds) {
                size = 2) +
     
     # Define color gradient and opacity scale
-    scale_color_gradient(low = "lightblue", high = "darkblue", name = "Low-Income Rebates") +
+    scale_color_gradient(low = "lightblue", high = "red", name = "Low-Income Rebates") +
     scale_alpha(range = c(0.3, 1), guide = "none") +
     
     # Labels and title
@@ -108,3 +108,10 @@ plot_LA <- plot_city("Los Angeles", city_bounds$"Los Angeles")
 plot_SD <- plot_city("San Diego", city_bounds$"San Diego")
 plot_SF <- plot_city("San Francisco", city_bounds$"San Francisco")
 plot_Sac <- plot_city("Sacramento", city_bounds$"Sacramento")
+
+
+library(gridExtra)
+
+# Arrange all plots in a 2x2 grid
+grid.arrange(plot_LA, plot_SD, plot_SF, plot_Sac, ncol = 2)
+
