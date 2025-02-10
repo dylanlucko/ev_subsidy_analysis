@@ -10,10 +10,3 @@ panel_data_did <- panel_data_did %>%
 
 colnames(panel_data_did)
 
-
-#####
-#####
-##### Define pre and post based on EV adoption relative to all vehicles #####
-#####
-#####
-
