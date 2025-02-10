@@ -70,7 +70,7 @@ colSums(is.na(panel_data_did))
 
 # Run the Difference-in-Differences (DiD) model
 did_model <- feols(
-  no2_ppb ~ Treatment_zip * Post + (population) + (income_per_capita) + total_fertilizer +  chemical_insecticide + total_chemical_fungicide + total_chemical_herbicide + num_gasoline_cars | cbsa_code + year + month,  # Fixed effects
+  no2_ppb ~ Treatment_zip * Post + (population) + (income_per_capita) + total_fertilizer  +  num_gasoline_cars + total_cars  +  chemical_insecticide | site_number + county + year + month,  # Fixed effects
   data = panel_data_did, 
   cluster = "county"  # Cluster SEs at site level
 )
