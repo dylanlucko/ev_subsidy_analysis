@@ -36,7 +36,7 @@ ggplot(no2_trends, aes(x = month_year, y = avg_no2_ppb, color = as.factor(Treatm
   
   # Labels and styling
   labs(
-    title = "Trends in NO2 Levels Over Time",
+    title = "Trends in NO2 Levels Over Time (Monthly)",
     x = "Date (Monthly)",
     y = "Average NO2 (ppb)",
     color = "Treatment Group"
