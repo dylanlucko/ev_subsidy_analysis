@@ -341,9 +341,9 @@ panel_data <- panel_data %>%
 # View the dataset with assigned treatment status
 head(panel_data)
 
-
+colnames(panel_data)
 panel_data <- panel_data %>%
-  rename(Treatment_zip = Treatment)
+  rename(Treatment_zip = Treatment.y, Treatment_county = Treatment.x)
 
 ##
 ##
