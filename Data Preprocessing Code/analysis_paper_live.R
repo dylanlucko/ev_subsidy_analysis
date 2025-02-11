@@ -170,7 +170,7 @@ ggplot(gasoline_trends_yearly, aes(x = year, y = total_vehicles, color = fuel_ca
   scale_y_continuous(labels = comma) +  # Format y-axis with commas
   scale_color_manual(values = c("Gasoline" = "red"), name = "Fuel Type") +  # Manually add legend
   labs(
-    title = "Trends in Gasoline Vehicles Over Time (Up to 2016)",
+    title = "Trends in Gasoline Vehicles Over Time (Through 2016)",
     x = "Year",
     y = "Total Gasoline Vehicles"
   ) +
@@ -198,7 +198,7 @@ ggplot(non_gasoline_trends_yearly, aes(x = year, y = total_vehicles, color = fue
                limits = c(min(non_gasoline_trends_yearly$year), as.Date("2016-01-01"))) +  # Set x-axis limit
   scale_y_continuous(labels = comma) +  # Format y-axis with commas
   labs(
-    title = "Trends in Non-Gasoline Vehicle Types Over Time (Up to 2016)",
+    title = "Trends in Non-Gasoline Vehicle Types Over Time (Through 2016)",
     x = "Year",
     y = "Total Vehicles",
     color = "Fuel Type"
