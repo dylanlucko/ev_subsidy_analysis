@@ -48,7 +48,7 @@ vehicle_summary <- vehicle_data %>%
 
 # Filter for gasoline vehicles in 2010 and sum across all counties
 total_gasoline_2010 <- vehicle_summary %>%
-  filter(year == 2010, fuel_type == "Gasoline") %>%
+  filter(year == 2017, fuel_type == "Gasoline") %>%
   summarise(total_gasoline = sum(total_vehicles, na.rm = TRUE))
 
 # Print result
@@ -130,3 +130,78 @@ ggplot(gasoline_trends_yearly, aes(x = year, y = total_vehicles)) +
   ) +
   theme_minimal()
 
+
+
+library(ggplot2)
+library(scales)
+
+# Add a dummy column for legend assignment
+gasoline_trends_yearly <- gasoline_trends_yearly %>%
+  mutate(fuel_category = "Gasoline")  # Assign category for legend
+
+# Plot gasoline vehicles with a manually added legend
+ggplot(gasoline_trends_yearly, aes(x = year, y = total_vehicles, color = fuel_category)) +
+  geom_line(size = 1) +  # Line for gasoline vehicles
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +  # Yearly labels
+  scale_y_continuous(labels = comma) +  # Format y-axis with commas
+  scale_color_manual(values = c("Gasoline" = "red"), name = "Fuel Type") +  # Manually add legend
+  labs(
+    title = "Trends in Gasoline Vehicles Over Time (Yearly Aggregated)",
+    x = "Year",
+    y = "Total Gasoline Vehicles"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "right")  # Ensure legend is displayed
+
+
+
+library(ggplot2)
+library(scales)
+
+# Add a dummy column for legend assignment
+gasoline_trends_yearly <- gasoline_trends_yearly %>%
+  mutate(fuel_category = "Gasoline") %>%  # Assign category for legend
+  filter(year <= as.Date("2016-01-01"))  # Ensure the plot ends in 2016
+
+# Plot gasoline vehicles with a manually added legend
+ggplot(gasoline_trends_yearly, aes(x = year, y = total_vehicles, color = fuel_category)) +
+  geom_line(size = 1) +  # Line for gasoline vehicles
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y", limits = c(min(gasoline_trends_yearly$year), as.Date("2016-01-01"))) +  
+  scale_y_continuous(labels = comma) +  # Format y-axis with commas
+  scale_color_manual(values = c("Gasoline" = "red"), name = "Fuel Type") +  # Manually add legend
+  labs(
+    title = "Trends in Gasoline Vehicles Over Time (Up to 2016)",
+    x = "Year",
+    y = "Total Gasoline Vehicles"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "right")  # Ensure legend is displayed
+
+
+
+
+
+
+
+
+library(ggplot2)
+library(scales)
+
+# Filter out gasoline and ensure the plot only includes years up to 2016
+non_gasoline_trends_yearly <- vehicle_trends_yearly %>%
+  filter(fuel_type != "Gasoline", year <= as.Date("2016-01-01"))
+
+# Plot all non-Gasoline fuel types with a continuous x-axis and formatted y-axis
+ggplot(non_gasoline_trends_yearly, aes(x = year, y = total_vehicles, color = fuel_type)) +
+  geom_line(size = 1) +  # Line plot for all fuel types
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y", 
+               limits = c(min(non_gasoline_trends_yearly$year), as.Date("2016-01-01"))) +  # Set x-axis limit
+  scale_y_continuous(labels = comma) +  # Format y-axis with commas
+  labs(
+    title = "Trends in Non-Gasoline Vehicle Types Over Time (Up to 2016)",
+    x = "Year",
+    y = "Total Vehicles",
+    color = "Fuel Type"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "right")  # Ensure legend is displayed

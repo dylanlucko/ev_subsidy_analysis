@@ -35,3 +35,32 @@ ggplot(plot_data, aes(x = YearMonth, y = `Total Applications`, color = `Vehicle 
   ) +
   theme_minimal() +  # Clean theme
   theme(legend.position = "right")
+
+
+#####
+#####
+##### End in 2017 #####
+#####
+#####
+
+
+library(ggplot2)
+library(scales)
+
+# Filter data to include only observations up to 2017
+plot_data_filtered <- plot_data %>%
+  filter(YearMonth <= as.Date("2017-12-31"))
+
+# Plot using ggplot with x-axis limit set to 2017
+ggplot(plot_data_filtered, aes(x = YearMonth, y = `Total Applications`, color = `Vehicle Category`)) +
+  geom_line(size = 1) +  # Line plot for trends over time
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y", 
+               limits = c(min(plot_data_filtered$YearMonth), as.Date("2017-12-31"))) +  # Ensure the x-axis ends in 2017
+  labs(
+    title = "Total EV Subsidy Applications Over Time by Vehicle Type (Monthly)",
+    x = "Date (Monthly)",
+    y = "Total Applications",
+    color = "Vehicle Type"
+  ) +
+  theme_minimal() +  # Clean theme
+  theme(legend.position = "right")
