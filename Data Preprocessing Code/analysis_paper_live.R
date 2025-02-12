@@ -205,3 +205,99 @@ ggplot(non_gasoline_trends_yearly, aes(x = year, y = total_vehicles, color = fue
   ) +
   theme_minimal() +
   theme(legend.position = "right")  # Ensure legend is displayed
+
+
+
+#####
+#####
+##### Ratio by ZIP #####
+#####
+#####
+
+
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(tidyr)
+
+vehicle_data <- Vehicle_Population_Last_updated_04_30_2024_ada
+
+
+# Ensure data is formatted correctly
+vehicle_data <- vehicle_data %>%
+  rename(
+    year = `Data Year`,
+    zip_code = `ZIP`,
+    fuel_type = `Fuel Type`,
+    zip_code = `ZIP`,
+    num_vehicles = `Number of Vehicles`
+  )
+
+# Summarize total vehicles per ZIP per year
+vehicle_summary <- vehicle_data %>%
+  group_by(year, zip_code, fuel_type) %>%
+  summarise(total_vehicles = sum(num_vehicles, na.rm = TRUE), .groups = "drop")
+
+# Separate BEV and Gasoline counts
+bev_data <- vehicle_summary %>%
+  filter(fuel_type == "Battery Electric (BEV)") %>%
+  rename(bev_count = total_vehicles)
+
+gasoline_data <- vehicle_summary %>%
+  filter(fuel_type == "Gasoline") %>%
+  rename(gasoline_count = total_vehicles)
+
+# Merge BEV and Gasoline data by ZIP and year
+vehicle_ratio <- full_join(bev_data, gasoline_data, by = c("year", "zip_code")) %>%
+  mutate(
+    bev_count = replace_na(bev_count, 0),  # Ensure no NA values
+    gasoline_count = replace_na(gasoline_count, 1),  # Avoid division by zero
+    bev_gas_ratio = bev_count / gasoline_count  # Compute the ratio
+  )
+
+# Extract unique ZIP codes
+zip_list <- unique(vehicle_ratio$zip_code)
+
+# Retrieve latitude and longitude for each ZIP
+zip_latlong_data <- zipcodeR::reverse_zipcode(zip_list)
+
+
+# Convert ZIP codes to character in both datasets
+vehicle_ratio <- vehicle_ratio %>%
+  mutate(zip_code = as.character(zip_code))
+
+zip_latlong_data <- zip_latlong_data %>%
+  rename(zip_code = zipcode)
+
+zip_latlong_data <- zip_latlong_data %>%
+  mutate(zip_code = as.character(zip_code))
+
+# Merge ZIP coordinates with vehicle ratio data
+vehicle_ratio <- vehicle_ratio %>%
+  left_join(zip_latlong_data %>% rename(zip_lat = lat, zip_long = lng), by = "zip_code")
+
+
+plot_ratio_by_zip <- function(data, year) {
+  ggplot(data, aes(x = zip_long, y = zip_lat, color = bev_gas_ratio)) +
+    geom_point(alpha = 0.7, size = 2) +
+    scale_color_gradient(low = "red", high = "darkblue", name = "BEV/Gas Ratio") +
+    labs(
+      title = paste("BEV-to-Gasoline Ratio by ZIP in", year),
+      x = "Longitude",
+      y = "Latitude"
+    ) +
+    theme_minimal()
+}
+
+
+# Filter for 2010 and 2016
+bev_gas_2010 <- vehicle_ratio %>% filter(year == 2011)
+bev_gas_2016 <- vehicle_ratio %>% filter(year == 2023)
+
+# Generate plots
+plot_2010 <- plot_ratio_by_zip(bev_gas_2010, 2011)
+plot_2016 <- plot_ratio_by_zip(bev_gas_2016, 2023)
+
+# Display plots side by side
+library(gridExtra)
+grid.arrange(plot_2010, plot_2016, ncol = 2)
