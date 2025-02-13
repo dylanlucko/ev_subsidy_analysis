@@ -114,3 +114,73 @@ did_model <- feols(
 summary(did_model)
 
 summary(did_model, se = "hetero")
+
+
+
+#####
+#####
+##### Model 1 #####
+#####
+#####
+
+
+# Run the Difference-in-Differences (DiD) model
+did_model <- feols(
+  (no2_ppb) ~ Treatment_zip * Post  + population + income_per_capita| cbsa_code + site_number  + year + month,  # Fixed effects
+  data = panel_data_did, 
+  cluster = "county"  # Cluster SEs at site level
+)
+
+# View results
+summary(did_model)
+
+summary(did_model, se = "hetero")
+
+
+
+#####
+#####
+##### Model 3 #####
+#####
+#####
+
+
+# Run the Difference-in-Differences (DiD) model
+did_model <- feols(
+  (no2_ppb) ~ Treatment_zip * Post  + population + income_per_capita + total_cars + num_bev_cars| cbsa_code + site_number  + year + month,  # Fixed effects
+  data = panel_data_did, 
+  cluster = "county"  # Cluster SEs at site level
+)
+
+# View results
+summary(did_model)
+
+summary(did_model, se = "hetero")
+
+
+#####
+#####
+##### Model 4 #####
+#####
+#####
+
+# Check for any problematic values
+summary(panel_data_did$no2_ppb)  # Look for negative values, Inf, or extreme values
+
+# Ensure all values are non-negative before taking log
+panel_data_did$no2_ppb_clean <- ifelse(panel_data_did$no2_ppb < 0 | is.na(panel_data_did$no2_ppb), 0, panel_data_did$no2_ppb)
+
+# Now apply log1p safely
+panel_data_did$log_no2_ppb <- log1p(panel_data_did$no2_ppb_clean)
+
+# Run the Difference-in-Differences (DiD) model
+did_model <- feols(
+  (no2_ppb) ~ Treatment_zip * Post  + (population) + (income_per_capita) + fertiizer_manure + fertilizer_organic + ANHYDROUS_AMMONIA  + AMMONIUM_NITRATE_1 + NITRATE_SOLUTION + UREA| cbsa_code + site_number  + year + month,  # Fixed effects
+  data = panel_data_did, 
+  cluster = "county"  # Cluster SEs at site level
+)
+
+# View results
+summary(did_model)
+
+summary(did_model, se = "hetero")
