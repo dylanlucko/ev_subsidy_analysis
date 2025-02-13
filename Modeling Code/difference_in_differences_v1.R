@@ -177,7 +177,7 @@ panel_data_did$log_no2_ppb <- log1p(panel_data_did$no2_ppb_clean)
 did_model <- feols(
   (no2_ppb) ~ Treatment_zip * Post  + (population) + (income_per_capita) + fertiizer_manure + fertilizer_organic + ANHYDROUS_AMMONIA  + AMMONIUM_NITRATE_1 + NITRATE_SOLUTION + UREA| cbsa_code + site_number  + year + month,  # Fixed effects
   data = panel_data_did, 
-  cluster = "county"  # Cluster SEs at site level
+  cluster = "county"  # Cluster SEs at site levelt
 )
 
 # View results
