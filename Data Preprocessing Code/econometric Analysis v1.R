@@ -10,9 +10,9 @@ panel_data  <- panel_data %>%
 
 # Step 1: Filter Data for 2009-2016
 panel_data <- panel_data %>%
-  filter(year >= 2009 & year <= 2016)
+  filter(year >= 2005 & year <= 2016)
 
-write.csv(panel_data, "panel_data_clean_09_16.csv")
+#write.csv(panel_data, "panel_data_clean_09_16.csv")
 
 
 ########
@@ -29,7 +29,7 @@ threshold <- 0.5
 
 # Step 1: Get 2010 values for each county (Ensure uniqueness)
 base_year_data <- panel_data %>%
-  filter(year == 2010) %>%
+  filter(year == 2011) %>%
   group_by(county) %>%
   summarise(
     base_ev = mean(battery_electric_vehicle, na.rm = TRUE),  # Use mean if duplicates exist
@@ -37,12 +37,29 @@ base_year_data <- panel_data %>%
   ) %>%
   ungroup()
 
-panel_data <- panel_data %>%
+
+# Step 1: Handle NA values when computing the base year (2010) summary
+base_year_data <- panel_data %>%
+  filter(year == 2010) %>%
+  group_by(county) %>%
+  summarise(
+    base_ev = mean(replace_na(battery_electric_vehicle, 0), na.rm = TRUE),  # Replace NA with 0 before mean
+    base_subsidy = mean(replace_na(total_subsidy_applications, 0), na.rm = TRUE)  # Replace NA with 0 before mean
+  ) %>%
+  ungroup() %>%
   mutate(
-    ev_growth = (battery_electric_vehicle - base_ev) / (base_ev + 1),
-    subsidy_growth = (total_subsidy_applications - base_subsidy) / (base_subsidy + 1),
+    base_ev = replace_na(base_ev, 0),  # Ensure no NA values after aggregation
+    base_subsidy = replace_na(base_subsidy, 0)
+  )
+
+# Step 2: Merge base year data and compute treatment assignment
+panel_data <- panel_data %>%
+  left_join(base_year_data, by = "county") %>%
+  mutate(
+    ev_growth = (replace_na(battery_electric_vehicle, 0) - base_ev) / (base_ev + 1),  # Avoid division by zero
+    subsidy_growth = (replace_na(total_subsidy_applications, 0) - base_subsidy) / (base_subsidy + 1),
     Treatment = ifelse(ev_growth > threshold | subsidy_growth > threshold, 1, 0),
-    Treatment = replace_na(Treatment, 0)  # Convert NA to Control (0)
+    Treatment = replace_na(Treatment, 0)  # Ensure Treatment is never NA
   )
 
 # Step 3: Plot treatment vs. control on a map

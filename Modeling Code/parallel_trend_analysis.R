@@ -70,3 +70,6 @@ pre_trend_model <- feols(
 
 # View results
 summary(pre_trend_model)
+
+
+write.csv(panel_data_did, "panel_data_did_2_15.csv")
