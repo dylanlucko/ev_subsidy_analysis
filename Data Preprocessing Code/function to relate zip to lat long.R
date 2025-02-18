@@ -79,7 +79,7 @@ ev_subsidies_per_location <- ev_subsidies_per_day_2010_2023 %>%
 
 
 # Define treatment threshold (e.g., 50% increase)
-threshold <- 0.25  # Adjust as needed
+threshold <- 0.35  # Adjust as needed
 
 # Get 2010 & 2011 data
 baseline_2010 <- ev_subsidies_per_location %>%
@@ -167,7 +167,7 @@ ev_subsidies_per_zip <- ev_subsidies_per_day_2010_2023 %>%
 #
 
 # Define treatment threshold (e.g., 20% increase)
-threshold <- 0.25  
+threshold <- 0.35  
 
 # Get 2011 baseline values per ZIP
 baseline_2011 <- ev_subsidies_per_zip %>%
@@ -314,6 +314,10 @@ site_locations <- panel_data %>%
 
 library(geosphere)
 
+panel_data <- panel_data %>%
+  select(-c(nearest_zip.x, nearest_zip.y, Treatment_zip))
+colnames(panel_data)
+
 # Function to find the nearest ZIP for each air quality site
 find_nearest_zip <- function(site_lat, site_long, zip_df) {
   distances <- distHaversine(matrix(c(site_long, site_lat), ncol = 2), 
@@ -334,16 +338,28 @@ site_treatment_data <- site_locations %>%
 panel_data <- panel_data %>%
   select(-c(nearest_zip.x, nearest_zip.y, nearest_zip, Treatment.x, Treatment.y, Treatment_zip))
 
+panel_data <- panel_data %>%
+  select(-c(Treatment_county, Treatment_zip, Treatment))
+
+colnames(panel_data)
+
+panel_data <- panel_data %>%
+  select(-c(Treatment_zip))
+
+panel_data <- panel_data %>%
+  select(-c(Treatment.x, Treatment.y))
+
+
 # Merge treatment assignments back into panel_data
 panel_data <- panel_data %>%
   left_join(site_treatment_data, by = c("latitude", "longitude", "site_number"))
 
 # View the dataset with assigned treatment status
 head(panel_data)
-
+# .y, Treatment_county = Treatment
 colnames(panel_data)
 panel_data <- panel_data %>%
-  rename(Treatment_zip = Treatment.y, Treatment_county = Treatment.x)
+  rename(Treatment_zip = Treatment)
 
 ##
 ##
@@ -415,3 +431,6 @@ unique_sites <- panel_data %>%
 
 # Print the counts
 print(unique_sites)
+
+
+write.csv(panel_data, "panel_data_2_9.csv")
