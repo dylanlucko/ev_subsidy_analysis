@@ -1,10 +1,8 @@
 
+# Source the preamble script to load necessary functions and libraries
+source("C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data Preprocessing Code/preamble.R")
+panel_data_did <- read.csv("~/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/panel_data_did_2_13.csv")
 
-library(dplyr)
-library(ggplot2)
-
-library(dplyr)
-library(lubridate)
 
 # Fix the issue by ensuring `year` and `month` are numeric before formatting as date
 

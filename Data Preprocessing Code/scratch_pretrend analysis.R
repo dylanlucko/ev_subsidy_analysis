@@ -1,8 +1,8 @@
 
+# Source the preamble script to load necessary functions and libraries
+source("C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data Preprocessing Code/preamble.R")
 
-library(dplyr)
-library(lubridate)
-library(ggplot2)
+
 
 #####
 #####

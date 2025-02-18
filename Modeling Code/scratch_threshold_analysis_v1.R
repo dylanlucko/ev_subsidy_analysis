@@ -7,8 +7,9 @@
 #####
 #####
 
-library(dplyr)
-library(lubridate)
+# Source the preamble script to load necessary functions and libraries
+source("C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data Preprocessing Code/preamble.R")
+
 
 # Ensure `date` is in Date format
 panel_data_did <- panel_data_did %>%
@@ -51,9 +52,6 @@ bev_threshold_df <- panel_data_did %>%
 # View the dataset
 head(bev_threshold_df)
 
-
-library(ggplot2)
-library(dplyr)
 
 # Aggregate average BEV share by year and treatment status
 bev_trends <- panel_data_did %>%

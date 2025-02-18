@@ -1,8 +1,5 @@
-# Load necessary libraries
-library(ggplot2)
-library(dplyr)
-library(lubridate)
-library(tidyr)
+
+source("C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data Preprocessing Code/preamble.R")
 
 # Convert Application Date to Date format if necessary
 ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
