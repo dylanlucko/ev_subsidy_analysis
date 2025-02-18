@@ -73,3 +73,22 @@ summary(pre_trend_model)
 
 
 write.csv(panel_data_did, "panel_data_did_2_15.csv")
+
+
+
+
+
+#################
+#################
+#################
+
+
+
+# Run DiD with pre-trend interactions
+pre_trend_model <- feols(
+  no2_ppb ~ pre_trend_2011 + pre_trend_2010 + Treatment_zip * Post + population + income_per_capita + total_cars+ num_bev_cars  + fertiizer_manure + fertilizer_organic + total_fertilizer + ANHYDROUS_AMMONIA  + AMMONIUM_NITRATE_1 + NITRATE_SOLUTION + UREA |   year + month,  
+  data = panel_data_did_test, cluster = "county"
+)
+
+# View results
+summary(pre_trend_model)

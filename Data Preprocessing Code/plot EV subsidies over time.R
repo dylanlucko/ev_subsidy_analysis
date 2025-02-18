@@ -64,3 +64,37 @@ ggplot(plot_data_filtered, aes(x = YearMonth, y = `Total Applications`, color = 
   ) +
   theme_minimal() +  # Clean theme
   theme(legend.position = "right")
+
+
+#############
+#############
+############# Plot so differentiable in BW ##########
+#############
+#############
+
+
+library(ggplot2)
+library(dplyr)
+
+# Filter data: Exclude "Total" category and limit to 2017
+plot_data_filtered <- plot_data %>%
+  filter(YearMonth <= as.Date("2017-12-31"), `Vehicle Category` != "Total")
+
+# Plot using ggplot
+ggplot(plot_data_filtered, aes(x = YearMonth, y = `Total Applications`, 
+                               linetype = `Vehicle Category`, shape = `Vehicle Category`)) +
+  geom_line(size = 1) +  # Line plot
+  geom_point(size = 2) +  # Add points for BW differentiation
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y", 
+               limits = c(min(plot_data_filtered$YearMonth), as.Date("2017-12-31"))) +  
+  scale_linetype_manual(values = c("solid", "solid", "solid", "solid", "solid")) +  # BW-friendly line types
+  scale_shape_manual(values = c(16, 17, 18, 15, 8)) +  # Different shapes for BW printing
+  labs(
+    title = "Total EV Subsidy Applications Over Time by Vehicle Type (Monthly)",
+    x = "Date (Monthly)",
+    y = "Total Applications",
+    linetype = "Vehicle Type",
+    shape = "Vehicle Type"
+  ) +
+  theme_minimal() +  
+  theme(legend.position = "right")
