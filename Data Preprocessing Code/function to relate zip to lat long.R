@@ -79,7 +79,7 @@ ev_subsidies_per_location <- ev_subsidies_per_day_2010_2023 %>%
 
 
 # Define treatment threshold (e.g., 50% increase)
-threshold <- 0.35  # Adjust as needed
+threshold <- 0.5  # Adjust as needed
 
 # Get 2010 & 2011 data
 baseline_2010 <- ev_subsidies_per_location %>%
@@ -167,7 +167,7 @@ ev_subsidies_per_zip <- ev_subsidies_per_day_2010_2023 %>%
 #
 
 # Define treatment threshold (e.g., 20% increase)
-threshold <- 0.35  
+threshold <- 0.5  
 
 # Get 2011 baseline values per ZIP
 baseline_2011 <- ev_subsidies_per_zip %>%
@@ -233,7 +233,7 @@ ggplot() +
   
   # Labels and styling
   labs(
-    title = "EV Adoption: Treatment vs. Control at the ZIP Level",
+    title = "EV Adoption: Treatment vs. Control at the ZIP Level (50%)",
     x = "Longitude", 
     y = "Latitude"
   ) +
@@ -400,7 +400,7 @@ ggplot() +
   
   # Labels and styling
   labs(
-    title = "Air Quality Monitoring Sites: Treatment vs. Control by ZIP",
+    title = "Air Quality Monitoring Sites: Treatment vs. Control by ZIP (50%)",
     x = "Longitude", 
     y = "Latitude",
     color = "Treatment Status"

@@ -311,4 +311,27 @@ ggplot(ev_adoption_long, aes(x = Time, y = NO2_Level, group = Threshold, linetyp
 ##########
 ##########
 
+library(ggplot2)
+
+# Plot NO2 reductions over time for each EV adoption threshold
+ggplot(ev_adoption_long, aes(x = Time, y = NO2_Level, group = Threshold, linetype = Threshold, shape = Threshold)) +
+  geom_line(size = 1.2) +  # Smooth curved lines
+  geom_point(data = final_points, aes(x = X_Axis, y = NO2_Level), size = 4) +  # End markers
+  geom_errorbar(data = final_points, aes(x = X_Axis, ymin = NO2_Level - SE, ymax = NO2_Level + SE), 
+                width = 0.02, color = "black") +  # Error bars at endpoints
+  scale_x_continuous(breaks = c(0, 1.05, 1.08, 1.11), labels = c("Pre", "15%", "25%", "35%")) +  # Adjusted x-axis labels
+  scale_linetype_manual(values = c("solid", "dashed", "dotted")) +  # Different line types for BW printing
+  scale_shape_manual(values = c(16, 17, 18)) +  # Different point shapes for BW printing
+  labs(
+    title = "NO_2 Reductions from Baseline Across EV Adoption Thresholds",
+    x = "",
+    y = "NO_2 Levels (ppb)",
+    linetype = "EV Adoption Threshold",
+    shape = "EV Adoption Threshold"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = "right",
+    axis.text.x = element_text(angle = 270, hjust = 1)  # Tilt x-axis labels
+  )
 

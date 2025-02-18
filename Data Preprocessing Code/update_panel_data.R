@@ -1,6 +1,6 @@
 
 
-panel_data_did <- read.csv("~/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_4_35_pct/panel_data_2_9.csv")
+panel_data_did <- read.csv("~/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/panel_data_2_9.csv")
 
 
 colnames(panel_data_did)

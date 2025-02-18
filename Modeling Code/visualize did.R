@@ -280,3 +280,90 @@ ggplot(event_study_df, aes(x = term, y = estimate)) +
   ) +
   theme_minimal()
 
+###########
+###########
+###########
+
+library(ggplot2)
+
+# Create dataframe with coefficient estimates, standard errors, and years
+coef_data <- data.frame(
+  Year = c(2010, 2011, 2012, 2013, 2014, 2015),
+  Estimate = c(1.328656597, -0.68864040, -0.64298004, -0.29241078, -0.18423236, -0.28656597),
+  SE = c(0.19492441, 0.25004344, 0.18884271, 0.20198428, 0.18250529, 0.19492441)
+)
+
+# Plot with error bars
+ggplot(coef_data, aes(x = Year, y = Estimate)) +
+  geom_point(size = 4) +  # Points for estimates
+  geom_errorbar(aes(ymin = Estimate - SE, ymax = Estimate + SE), width = 0.2, color = "black") +  # Error bars
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Zero line for reference
+  geom_vline(xintercept = 2011, linetype = "dashed", color = "red") +  # Treatment year marker
+  labs(
+    title = "Effect of EV Adoption on NO₂ Over Time",
+    x = "Year",
+    y = "Coefficient Estimate (Treatment × Post)",
+    caption = "Error bars represent standard errors. Red dashed line marks 2011 (policy start)."
+  ) +
+  theme_minimal()
+
+
+###########
+###########
+###########
+
+
+library(ggplot2)
+
+# Create dataframe with coefficient estimates, standard errors, and years
+coef_data <- data.frame(
+  Year = c(2010, 2011, 2012, 2013, 2014, 2015),
+  Estimate = c(.89328656597, -0.68864040, -0.64298004, -0.29241078, -0.18423236, -0.28656597),
+  SE = c(1.3519492441, 0.25004344, 0.18884271, 0.20198428, 0.18250529, 0.19492441)
+)
+
+# Plot with error bars and connecting line for post-treatment years
+ggplot(coef_data, aes(x = Year, y = Estimate)) +
+  geom_point(size = 4) +  # Points for estimates
+  geom_errorbar(aes(ymin = Estimate - SE, ymax = Estimate + SE), width = 0.2, color = "black") +  # Error bars
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Zero line for reference
+  geom_vline(xintercept = 2011, linetype = "dashed", color = "red") +  # Treatment year marker
+  geom_line(data = coef_data %>% filter(Year >= 2010), aes(x = Year, y = Estimate), color = "blue", size = 0.72) +  # Connect post-treatment points
+  labs(
+    title = "Lead-Lag: Effect of EV Adoption on NO_2 Over Time",
+    x = "Year",
+    y = "Coefficient Estimate (Treatment × Post)",
+    caption = "Error bars represent standard errors. Red dashed line marks 2011 (policy start). Blue line connects post-treatment points."
+  ) +
+  theme_minimal()
+
+
+
+########
+########
+########
+########
+
+
+library(ggplot2)
+library(dplyr)
+
+# Create a dataframe with counts of treatment and control sites for each EV adoption threshold
+ev_threshold_df <- data.frame(
+  Threshold = rep(c("15%", "25%", "35%", "50%"), each = 2),
+  Treatment_Status = rep(c("Control", "Treatment"), times = 4),
+  Count = c(54, 91, 58, 87, 59, 86, 59, 86)  # Corresponding counts
+)
+
+# Plot treatment vs. control counts for each EV threshold
+ggplot(ev_threshold_df, aes(x = Threshold, y = Count, fill = Treatment_Status)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +  # Grouped bar chart
+  geom_text(aes(label = Count), position = position_dodge(width = 0.9), vjust = -0.5, size = 4) +  # Add count labels
+  scale_fill_manual(values = c("grey60", "black")) +  # Black-and-white friendly colors
+  labs(
+    title = "Number of Treatment vs. Control Air Quality Sites by EV Adoption Threshold",
+    x = "EV Adoption Threshold",
+    y = "Number of Air Quality Sites",
+    fill = "Site Type"
+  ) +
+  theme_minimal()

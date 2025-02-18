@@ -1,6 +1,6 @@
 #difference_in_differences
 
-panel_data_did <- read.csv("~/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_4_35_pct/panel_data_did_2_13.csv")
+panel_data_did <- read.csv("~/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/panel_data_did_2_13.csv")
 
 colnames(panel_data_did)
 
@@ -184,3 +184,18 @@ did_model <- feols(
 summary(did_model)
 
 summary(did_model, se = "hetero")
+
+
+########
+########
+########
+
+
+# Run the Difference-in-Differences (DiD) model
+did_model <- feols(
+  (no2_ppb) ~ Treatment_zip * Post  + (population) + (income_per_capita) + total_cars + num_bev_cars + fertiizer_manure + fertilizer_organic + total_fertilizer + ANHYDROUS_AMMONIA  + AMMONIUM_NITRATE_1 + NITRATE_SOLUTION + UREA| cbsa_code + site_number  + year + month,  # Fixed effects
+  data = panel_data_did, 
+  cluster = "county"  # Cluster SEs at site levelt
+)
+
+summary(did_model)
