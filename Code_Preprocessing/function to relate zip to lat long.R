@@ -14,12 +14,14 @@ length(unique(ev_subsidies_per_day_2010_2023$ZIP))
 colnames(ev_subsidies_per_day_2010_2023)
 
 
+# define EV adoption threshold:
+threshold_var <- 0.25
+
 #####
 #####
 ##### Relate Zip code to range of lat long for comparison with lat-long-site metric
 #####
 #####
-
 
 # Get unique ZIP codes from ev_subsidies_per_day_2010_2023
 zip_list <- unique(ev_subsidies_per_day_2010_2023$ZIP)
@@ -51,10 +53,8 @@ ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
 #####
 #####
 
-
 ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
   rename(Application.Date = `Application Date`, Rebate.Dollars = `Rebate Dollars`, Vehicle.Make = `Vehicle Make`, Vehicle.Category = `Vehicle Category`, Low.Income.Community = `Low-Income Community`)
-
 
 # Extract Year from Date & Aggregate at (zip_lat, zip_long) level
 ev_subsidies_per_location <- ev_subsidies_per_day_2010_2023 %>%
@@ -70,9 +70,8 @@ ev_subsidies_per_location <- ev_subsidies_per_day_2010_2023 %>%
 
 #
 
-
 # Define treatment threshold (e.g., 50% increase)
-threshold <- 0.5  # Adjust as needed
+threshold <- threshold_var  # Adjust as needed
 
 # Get 2010 & 2011 data
 baseline_2010 <- ev_subsidies_per_location %>%
@@ -98,8 +97,6 @@ ev_growth <- baseline_2010 %>%
 # Merge treatment status back into ev_subsidies_per_location
 ev_subsidies_per_location <- ev_subsidies_per_location %>%
   left_join(ev_growth %>% select(zip_lat, zip_long, Treatment), by = c("zip_lat", "zip_long"))
-
-
 
 
 # Load California county map
@@ -134,11 +131,9 @@ ggplot() +
 
 ##### 
 #####
-##### Attempt 2 #####
+##### Fix issue with Plotting #####
 #####
 #####
-
-
 
 # Extract Year from Date & Aggregate at ZIP level
 ev_subsidies_per_zip <- ev_subsidies_per_day_2010_2023 %>%
@@ -154,11 +149,9 @@ ev_subsidies_per_zip <- ev_subsidies_per_day_2010_2023 %>%
     .groups = "drop"
   )
 
-
 #
-
 # Define treatment threshold (e.g., 20% increase)
-threshold <- 0.5  
+threshold <- threshold_var  
 
 # Get 2011 baseline values per ZIP
 baseline_2011 <- ev_subsidies_per_zip %>%
@@ -185,15 +178,10 @@ ev_growth <- baseline_2011 %>%
     Treatment = ifelse(rebate_growth > threshold | dollar_growth > threshold, 1, 0)  # Define Treatment
   )
 
-
-#
-
 # Merge treatment status back into ev_subsidies_per_zip
 ev_subsidies_per_zip <- ev_subsidies_per_zip %>%
   left_join(ev_growth %>% select(ZIP, Treatment), by = "ZIP") %>%
   mutate(Treatment = replace_na(Treatment, 0))  # Ensure no NA values
-
-
 
 # Load California county map
 county_map <- map_data("county") %>%
@@ -230,14 +218,6 @@ ggplot() +
   # Ensure the legend is displayed
   theme_minimal() +
   theme(legend.position = "right")  # Ensures legend is visible
-
-
-#####
-#####
-##### Attempt 3: Use Ratio of EVs to ICE #####
-#####
-#####
-
 
 #####
 #####
@@ -397,6 +377,11 @@ ggplot() +
   theme_minimal()
 
 
+###########
+###########
+########### Checks ##########
+###########
+###########
 # Ensure Treatment_zip is numeric or factor
 panel_data <- panel_data %>%
   mutate(Treatment_zip = as.factor(Treatment_zip))  # Convert to factor if needed

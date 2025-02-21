@@ -1,15 +1,18 @@
 
 
+############################################################################
+########## Having Defined Treatment Groups, Let Us Update Panel Data #######
+############################################################################
+
+
 # Source the preamble script to load necessary functions and libraries
 source("C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data Preprocessing Code/preamble.R")
 
 
 panel_data_did <- read.csv("~/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/panel_data_2_9.csv")
 
-
 colnames(panel_data_did)
 colnames(fertilizers_by_type_by_county_2016)
-
 
 # Rename columns: Replace "." with "_" and rename COUNTY to county
 fertilizers_by_type_by_county_2016 <- fertilizers_by_type_by_county_2016 %>%
@@ -18,11 +21,9 @@ fertilizers_by_type_by_county_2016 <- fertilizers_by_type_by_county_2016 %>%
 
 unique(fertilizers_by_type_by_county_2016$county)
 
-
 # Capitalize the first letter of each county name
 fertilizers_by_type_by_county_2016 <- fertilizers_by_type_by_county_2016 %>%
   mutate(county = str_to_title(county))  # Capitalizes first letter of each word
-
 
 # Create a named vector for correcting county names
 county_corrections <- c(
@@ -32,11 +33,9 @@ county_corrections <- c(
   "Santa Barbar" = "Santa Barbara"
 )
 
-
 # Replace truncated county names with correct ones
 fertilizers_by_type_by_county_2016 <- fertilizers_by_type_by_county_2016 %>%
   mutate(county = recode(county, !!!county_corrections))
-
 
 # Check which counties are still mismatched
 mismatched_counties <- setdiff(fertilizers_by_type_by_county_2016$county, panel_data_did$county)
@@ -44,7 +43,6 @@ mismatched_counties <- setdiff(fertilizers_by_type_by_county_2016$county, panel_
 print("Counties in fertilizer data that do NOT match panel_data_did:")
 print(mismatched_counties)
 unique(panel_data_did$county)
-
 
 # Merge fertilizer data into panel_data_did by county
 panel_data_did <- panel_data_did %>%

@@ -7,7 +7,7 @@
 # Source the preamble script to load necessary functions and libraries
 source("C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data Preprocessing Code/preamble.R")
 
-
+# NO2 data is not stored on github due to the size constraints. 
 ca_no2 <- read.csv("C:/Users/dlucko/Desktop/2025/EV Paper/42602_04_18_California_Data_Combined.csv")
 
 california_income_per_capita <- read.csv("~/GitHub/ev_subsidy_analysis/Datasets Pre Panel Creation/california_income_per_capita.csv")
@@ -24,7 +24,6 @@ ca_farmland_by_use <- read.csv("~/GitHub/ev_subsidy_analysis/Datasets Pre Panel 
 
 ###################
 ###################
-
 
 # Load necessary library
 library(dplyr)
@@ -43,7 +42,6 @@ merged_data <- ca_no2 %>%
 head(merged_data)
 
 
-
 # Merge the result with california_population
 merged_data <- merged_data %>%
   left_join(california_population, 
@@ -51,7 +49,6 @@ merged_data <- merged_data %>%
 
 # View the merged dataframe
 head(merged_data)
-
 
 merged_data <- merged_data %>%
   mutate(date_local = as.Date(date_local))
@@ -61,9 +58,6 @@ merged_data <- merged_data %>%
 # Handle EV Subsidy Per Day ###
 ##############
 ###############
-
-
-
 
 # Convert Application Date to proper date format if not already
 ev_subsidies_per_day_2010_2023 <- ev_subsidies_per_day_2010_2023 %>%
@@ -107,15 +101,11 @@ merged_data <- merged_data %>%
   rename(date = date_local)
 
 
-
 ####
 ####
 #### Merge in EV Subsidy Data ####
 ####
 ####
-
-
-
 
 # Ensure 'date' column is in Date format in both datasets
 ev_subsidies_daily <- ev_subsidies_daily %>%
@@ -211,7 +201,7 @@ final_merged_data <- final_merged_data %>%
 head(final_merged_data)
 
 
-write.csv(final_merged_data, "main_df_2_6.csv")
+#write.csv(final_merged_data, "main_df_2_6.csv")
 
 
 ####
@@ -223,8 +213,6 @@ write.csv(final_merged_data, "main_df_2_6.csv")
 ca_farmland_by_use <- ca_farmland_by_use %>%
   rename(county = County) %>%
   rename(acres = Value, category = Domain.Category, year = Year)
-
-
 
 
 # Convert the 'county' column to title case
@@ -239,8 +227,6 @@ ca_farmland_by_use <- ca_farmland_by_use %>%
 ca_farmland_by_use <- ca_farmland_by_use %>%
   mutate(acres = as.numeric(gsub(",", "", acres)),  # Remove commas and convert to numeric
          acres = ifelse(is.na(acres), 0, acres))  
-
-
 
 # Step 1: Aggregate duplicate county-year-category rows by summing acres
 ca_farmland_grouped <- ca_farmland_by_use %>%
@@ -265,8 +251,6 @@ head(ca_farmland_wide)
 #####
 #####
 
-
-
 # Convert 'year' to numeric in both datasets
 final_merged_data <- final_merged_data %>%
   mutate(year = as.integer(date_local_year), county = as.character(county))
@@ -277,7 +261,6 @@ ca_farmland_wide <- ca_farmland_wide %>%
 
 ca_farmland_wide <- ca_farmland_wide %>%
   rename(Year_farmland = year)
-
 
 # Ensure 'year' and 'Year_farmland' are integers
 final_merged_data <- final_merged_data %>%
@@ -305,17 +288,14 @@ final_merged_data_2 <- final_merged_data %>%
 # View the merged dataset
 head(merged_data)
 
-
 #########
 #########
 ######### Clean up panel dataset #########
 #########
 #########
 
-
 panel_data <- final_merged_data_2 %>%
   select(-c(X.x, State.x, State.y, Unit.x, Unit.y, Multiplier.x, Multiplier.y))
-
 
 # Remove rows where pollutant_standard is "NO2 Annual 1971"
 panel_data <- panel_data %>%

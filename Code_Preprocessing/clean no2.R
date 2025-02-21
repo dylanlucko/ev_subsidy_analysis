@@ -14,7 +14,7 @@ source("C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data Preprocessing 
 
 
 # Set the folder containing the CSV files
-folder_path <- "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/California Data 42602"
+folder_path <- "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/Data_California Data 42602 (Nitrogen Dioxide)"
 
 # Get a list of all CSV files in the folder
 file_list <- list.files(path = folder_path, pattern = "*.csv", full.names = TRUE)

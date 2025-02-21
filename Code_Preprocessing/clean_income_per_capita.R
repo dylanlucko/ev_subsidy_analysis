@@ -1,5 +1,7 @@
 
 
+
+
 # Load required libraries
 library(dplyr)
 library(tidyr)
@@ -34,8 +36,3 @@ write.csv(california_income_per_capita, "california_income_per_capita.csv")
 
 
 ##
-
-colorado_income_per_capita <- california_data_income %>%
-  filter(State == "CO") %>%
-  rename(Income_per_Capita = DataValue)
-write.csv(colorado_income_per_capita, "colorado_income_per_capita.csv")
