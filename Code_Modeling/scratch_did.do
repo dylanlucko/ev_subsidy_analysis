@@ -1,4 +1,88 @@
-/******************************************************************
+* (Optional: Set your working directory)
+cd "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/"
+
+* Import the CSV data file (adjust the path if necessary)
+import delimited "panel_data_did_2_13.csv", clear
+
+* Verify the imported variables
+describe
+
+* Drop unwanted columns
+* (Assumes the unwanted variables are named: X_1, X, X_y, and X_2;
+   adjust the variable names if they differ in your file.)
+drop X_1 X X_y X_2* (Optional: Set your working directory)
+cd "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/"
+
+* Import the CSV data file (adjust the path if necessary)
+import delimited "panel_data_did_2_13.csv", clear
+
+* Verify the imported variables
+describe
+
+* Drop unwanted columns
+* (Assumes the unwanted variables are named: X_1, X, X_y, and X_2;
+   adjust the variable names if they differ in your file.)
+drop X_1 X X_y X_2* (Optional: Set your working directory)
+cd "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/"
+
+* Import the CSV data file (adjust the path if necessary)
+import delimited "panel_data_did_2_13.csv", clear
+
+* Verify the imported variables
+describe
+
+* Drop unwanted columns
+* (Assumes the unwanted variables are named: X_1, X, X_y, and X_2;
+   adjust the variable names if they differ in your file.)
+drop X_1 X X_y X_2* (Optional: Set your working directory)
+cd "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/"
+
+* Import the CSV data file (adjust the path if necessary)
+import delimited "panel_data_did_2_13.csv", clear
+
+* Verify the imported variables
+describe
+
+* Drop unwanted columns
+* (Assumes the unwanted variables are named: X_1, X, X_y, and X_2;
+   adjust the variable names if they differ in your file.)
+drop X_1 X X_y X_2* (Optional: Set your working directory)
+cd "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/"
+
+* Import the CSV data file (adjust the path if necessary)
+import delimited "panel_data_did_2_13.csv", clear
+
+* Verify the imported variables
+describe
+
+* Drop unwanted columns
+* (Assumes the unwanted variables are named: X_1, X, X_y, and X_2;
+   adjust the variable names if they differ in your file.)
+drop X_1 X X_y X_2* (Optional: Set your working directory)
+cd "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/"
+
+* Import the CSV data file (adjust the path if necessary)
+import delimited "panel_data_did_2_13.csv", clear
+
+* Verify the imported variables
+describe
+
+* Drop unwanted columns
+* (Assumes the unwanted variables are named: X_1, X, X_y, and X_2;
+   adjust the variable names if they differ in your file.)
+drop X_1 X X_y X_2* (Optional: Set your working directory)
+cd "C:/Users/dlucko/Documents/GitHub/ev_subsidy_analysis/EV_NOX_PROJECT/cache_5_50_pct/"
+
+* Import the CSV data file (adjust the path if necessary)
+import delimited "panel_data_did_2_13.csv", clear
+
+* Verify the imported variables
+describe
+
+* Drop unwanted columns
+* (Assumes the unwanted variables are named: X_1, X, X_y, and X_2;
+   adjust the variable names if they differ in your file.)
+drop X_1 X X_y X_2/******************************************************************
   STATA DO-FILE: Difference-in-Differences Analysis and EV Adoption
  ******************************************************************/
 
@@ -177,6 +261,28 @@ twoway ///
     ytitle("Final NO₂ (ppb)") xtitle("EV Adoption Threshold") ///
     title("Effect of EV Adoption on NO₂ Levels") ///
     xlabel(1 "15%" 2 "25%" 3 "35%") legend(off)
+	* Example Plot 1: Scatter plot with error bars
+twoway ///
+    (rcap Final_NO2-SE Final_NO2+SE threshold_num, lcolor(black)) ///
+    (scatter Final_NO2 threshold_num, msize(medium) mcolor(blue)), ///
+    ytitle("Final NO₂ (ppb)") xtitle("EV Adoption Threshold") ///
+    title("Effect of EV Adoption on NO₂ Levels") ///
+    xlabel(1 "15%" 2 "25%" 3 "35%") legend(off)
+	* Example Plot 1: Scatter plot with error bars
+twoway ///
+    (rcap Final_NO2-SE Final_NO2+SE threshold_num, lcolor(black)) ///
+    (scatter Final_NO2 threshold_num, msize(medium) mcolor(blue)), ///
+    ytitle("Final NO₂ (ppb)") xtitle("EV Adoption Threshold") ///
+    title("Effect of EV Adoption on NO₂ Levels") ///
+    xlabel(1 "15%" 2 "25%" 3 "35%") legend(off)
+	* Example Plot 1: Scatter plot with error bars
+twoway ///
+    (rcap Final_NO2-SE Final_NO2+SE threshold_num, lcolor(black)) ///
+    (scatter Final_NO2 threshold_num, msize(medium) mcolor(blue)), ///
+    ytitle("Final NO₂ (ppb)") xtitle("EV Adoption Threshold") ///
+    title("Effect of EV Adoption on NO₂ Levels") ///
+    xlabel(1 "15%" 2 "25%" 3 "35%") legend(off)
+	
 
 * (Optional) You can add more advanced plots using additional twoway options.
 
